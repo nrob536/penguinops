@@ -1,16 +1,16 @@
 import { Logo } from "@once-ui-system/core";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Nestor M.",
+  lastName: "Robinson",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
+  role: "Data Scientist",
   avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  email: "nrob536@aucklanduni.ac.nz",
+  location: "Pacific/Auckland", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English", "Spanish", "Te Reo Maori"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
@@ -18,8 +18,8 @@ const newsletter = {
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: (
     <>
-      I occasionally write about design, technology, and share thoughts on the intersection of
-      creativity and engineering.
+      I occasionally write about data analytics, technology, statistics, and share thoughts on the intersection of
+      creativity and data science.
     </>
   ),
 };
@@ -30,12 +30,12 @@ const social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/nrob536",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/nrob536/",
   },
   {
     name: "Threads",
@@ -55,7 +55,7 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>Building bridges between data science and decision making.  </>,
   featured: {
     display: true,
     title: <>Recent project: <strong className="ml-4">Once UI</strong></>,
@@ -63,7 +63,7 @@ const home = {
   },
   subline: (
     <>
-      I'm Selene, a design engineer at <Logo icon="/trademarks/wordmark-dark.svg" style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}/>, where I craft intuitive
+      I'm Nestor, a data scientist at <Logo icon="/trademarks/logo-dark.svg" style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}/>, where I craft intuitive
       <br /> user experiences. After hours, I build my own projects.
     </>
   ),
@@ -90,8 +90,8 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
+        Nestor is a Carterton, Wairarapa based data scientist with a passion for transforming complex challenges
+        into simple, elegant design solutions. His work spans digital interfaces, interactive
         experiences, and the convergence of design and technology.
       </>
     ),
@@ -101,17 +101,24 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Tautauranga Aotearoa - Stats NZ",
+        timeframe: "Feb 2023 - Present",
+        role: "Kaitātari Hoahoa — Design Analyst",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+           Maintained and develop two data portals known as Ngā Tūtohu Aotearoa - Indicators Aotearoa New
+Zealand and the COVID-19 Data Portal.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Acted as the administrator of StatsNZ shinyapps.io account: Providing trouble shooting and updating ser-
+vices to over 200 Rshiny apps.
+          </>,
+          <>
+            Acted as the administrator for the StatsNZ public-facing GitHub page.
+          </>,
+          <>
+            Developed interactive dashboard to visualize outcomes for different modelling frameworks for census-
+related products. One example is the Estimated Resident Population (ERP).
           </>,
         ],
         images: [
@@ -125,17 +132,23 @@ const about = {
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
+        company: "National Instutute of Water and Atmospheric Research (NIWA)",
+        timeframe: "Feb 2021 - Apr 2022",
         role: "Lead Designer",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Created and R-shiny app to explore the catalogue of weather stations plus their associated error logs, and
+daily data upload status.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Improved daily quality control procedures for the network of manual observer weather stations in New
+Zealand.
+          </>,
+          <>
+            Co-authored the Standard Operating Procedures manual for Climate Data services and SharePoint library
+          </>,
+          <>
+            Delivered Climate data services for more than 10 commercial contracts.
           </>,
         ],
         images: [],
@@ -147,12 +160,16 @@ const about = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "University of Auckland",
+        description: <>Doctoral degree - Biological Sciences</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Universidad Autonomad de Baja California Sur",
+        description: <>Master’s in Marine and Coastal Sciences</>,
+      },
+      {
+        name: "Instituto Technologico de Bocal del Rio",
+        description: <>Bachelor’s Degree, Biology</>,
       },
     ],
   },
