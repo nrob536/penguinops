@@ -55,7 +55,8 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between data science and decision making.  </>,
+  headline: <>Building bridges between data science and decision making.
+  </>,
   featured: {
     display: true,
     title: <>Recent project: <strong className="ml-4">Once UI</strong></>,
@@ -63,8 +64,10 @@ const home = {
   },
   subline: (
     <>
-      I'm Nestor, a data scientist at <Logo icon="/trademarks/logo-dark.svg" style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}/>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      I'm Nestor, a data scientist at <Logo icon="/trademarks/logo-light.png" style={{ display: "inline-flex", top: "0.50em", marginLeft: "-0.25em" }}/>, where I craft intuitive
+      <br /> user experiences.  
+This portfolio is currently under active development with Magic Portfolio (TypeScript + OnceUI).  
+New projects and case studies are being added soon — stay tuned!
     </>
   ),
 };
