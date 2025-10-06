@@ -6,7 +6,7 @@ const person = {
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Data Scientist",
+  role: "Senior Data Scientist | Social Sector Analytics",
   avatar: "/images/avatar.jpg",
   email: "nrob536@aucklanduni.ac.nz",
   location: "Pacific/Auckland", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
@@ -18,8 +18,8 @@ const newsletter = {
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: (
     <>
-      I occasionally write about data analytics, technology, statistics, and share thoughts on the intersection of
-      creativity and data science.
+      I write about social sector analytics, evidence-based policy making, and the intersection of
+      data science with social investment principles.
     </>
   ),
 };
@@ -55,19 +55,19 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between data science and decision making.
+  headline: <>Data science for social good and evidence-based policy making.
   </>,
   featured: {
     display: true,
-    title: <>Recent project: <strong className="ml-4">Once UI</strong></>,
-    href: "/work/building-once-ui-a-customizable-design-system",
+    title: <>Featured project: <strong className="ml-4">COVID-19 Data Portal</strong></>,
+    href: "/work/covid-19-data-portal-social-impact",
   },
   subline: (
     <>
-      I'm Nestor, a data scientist at <Logo icon="/trademarks/logo-light.png" style={{ display: "inline-flex", top: "0.50em", marginLeft: "-0.25em" }}/>, where I craft intuitive
-      <br /> user experiences.  
-This portfolio is currently under active development with Magic Portfolio (TypeScript + OnceUI).  
-New projects and case studies are being added soon — stay tuned!
+      I'm Nestor, a data scientist at <Logo icon="/trademarks/logo-light.png" style={{ display: "inline-flex", top: "0.50em", marginLeft: "-0.25em" }}/> Stats NZ, where I develop data solutions
+      <br /> for social good and evidence-based policy.  
+Experienced in social sector analytics, administrative data, and public health dashboards.  
+Passionate about using data to improve community outcomes.
     </>
   ),
 };
@@ -93,9 +93,10 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Nestor is a Carterton, Wairarapa based data scientist with a passion for transforming complex challenges
-        into simple, elegant design solutions. His work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Nestor is a Carterton, Wairarapa based data scientist with a passion for using data for social good.
+        Specializing in social sector analytics, he transforms complex administrative and survey data 
+        into actionable insights for evidence-based policy making. His work includes public health dashboards,
+        economic impact analysis, and community indicators that serve diverse stakeholders across government and civil society.
       </>
     ),
   },
@@ -109,19 +110,24 @@ const about = {
         role: "Kaitātari Hoahoa — Design Analyst",
         achievements: [
           <>
-           Maintained and develop two data portals known as Ngā Tūtohu Aotearoa - Indicators Aotearoa New
-Zealand and the COVID-19 Data Portal.
+           Led development and maintenance of two national data portals: Ngā Tūtohu Aotearoa - Indicators Aotearoa New
+Zealand and the COVID-19 Data Portal, serving government agencies and public health decision-makers.
           </>,
           <>
-            Acted as the administrator of StatsNZ shinyapps.io account: Providing trouble shooting and updating ser-
-vices to over 200 Rshiny apps.
+            Managed administrative and technical operations for 200+ R Shiny applications on StatsNZ platform, 
+            ensuring reliable access to social and economic data for policy analysts and researchers.
           </>,
           <>
-            Acted as the administrator for the StatsNZ public-facing GitHub page.
+            Administered StatsNZ public-facing GitHub repositories, promoting open data initiatives and transparent 
+            government analytics practices.
           </>,
           <>
-            Developed interactive dashboard to visualize outcomes for different modelling frameworks for census-
-related products. One example is the Estimated Resident Population (ERP).
+            Developed interactive dashboards for census-related products including Estimated Resident Population (ERP),
+            supporting demographic analysis for social investment planning and resource allocation.
+          </>,
+          <>
+            Applied statistical modeling frameworks to evaluate population estimates, directly informing government 
+            funding decisions for health, education, and social services.
           </>,
         ],
         images: [
@@ -140,18 +146,20 @@ related products. One example is the Estimated Resident Population (ERP).
         role: "Lead Designer",
         achievements: [
           <>
-            Created and R-shiny app to explore the catalogue of weather stations plus their associated error logs, and
-daily data upload status.
+            Developed R Shiny applications for climate data quality control, supporting environmental monitoring 
+            for agricultural and public health planning in New Zealand.
           </>,
           <>
-            Improved daily quality control procedures for the network of manual observer weather stations in New
-Zealand.
+            Enhanced quality control procedures for the national weather station network, ensuring reliable data 
+            for climate research and agricultural decision-making.
           </>,
           <>
-            Co-authored the Standard Operating Procedures manual for Climate Data services and SharePoint library
+            Co-authored Standard Operating Procedures for Climate Data services, establishing best practices 
+            for data governance and stakeholder communication.
           </>,
           <>
-            Delivered Climate data services for more than 10 commercial contracts.
+            Delivered climate data analysis for 10+ commercial contracts, providing evidence-based insights 
+            for agricultural, insurance, and infrastructure planning decisions.
           </>,
         ],
         images: [],
@@ -181,26 +189,39 @@ Zealand.
     title: "Technical skills",
     skills: [
       {
-        title: "R programming",
-        description: <>Able to develop R packages and R shiny applications. </>,
-        // optional: leave the array empty if you don't want to display images
+        title: "Social Sector Data Analytics",
+        description: <>Expert in administrative data, survey analysis, and social investment principles. 
+        Experienced with IDI-style datasets covering health, education, justice, and social services.</>,
         images: [
           {
             src: "/images/projects/project-01/ianz-project.jpg",
-            alt: "Project image",
+            alt: "Social sector analytics project",
             width: 16,
             height: 9,
           },
         ],
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-        // optional: leave the array empty if you don't want to display images
+        title: "Statistical & Econometric Modeling",
+        description: <>Proficient in time series analysis, causal inference, and economic impact assessment. 
+        Strong foundation in R, Python, SQL, and SAS for policy evaluation and forecasting.</>,
         images: [
           {
             src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
+            alt: "Statistical modeling project",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        title: "Data Visualization & Communication",
+        description: <>Creating interactive dashboards and reports for diverse stakeholders. 
+        Experience with R Shiny, web technologies, and presenting complex findings to non-technical audiences.</>,
+        images: [
+          {
+            src: "/images/projects/project-01/cover-01.jpg",
+            alt: "Data visualization project",
             width: 16,
             height: 9,
           },

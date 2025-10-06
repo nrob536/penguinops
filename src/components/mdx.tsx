@@ -74,18 +74,58 @@ function createImage({ alt, src, ...props }: MediaProps & { src: string }) {
   );
 }
 
-function slugify(str: string): string {
-  return str
+function extractTextFromChildren(children: any): string {
+  if (typeof children === 'string') {
+    return children;
+  }
+  
+  if (typeof children === 'number') {
+    return String(children);
+  }
+  
+  if (Array.isArray(children)) {
+    return children.map(extractTextFromChildren).join('');
+  }
+  
+  if (children && typeof children === 'object') {
+    // Handle React elements
+    if (children.props && children.props.children) {
+      return extractTextFromChildren(children.props.children);
+    }
+    
+    // Handle other objects with toString
+    if (children.toString && typeof children.toString === 'function') {
+      const stringified = children.toString();
+      // Avoid React component toString output
+      if (!stringified.includes('[object Object]') && !stringified.includes('function')) {
+        return stringified;
+      }
+    }
+  }
+  
+  return '';
+}
+
+function slugify(str: any): string {
+  const text = extractTextFromChildren(str);
+  
+  if (!text || text.length === 0) {
+    return 'section';
+  }
+  
+  return text
     .toLowerCase()
+    .trim()
     .replace(/\s+/g, "-") // Replace spaces with -
     .replace(/&/g, "-and-") // Replace & with 'and'
     .replace(/[^\w\-]+/g, "") // Remove all non-word characters except for -
-    .replace(/\-\-+/g, "-"); // Replace multiple - with single -
+    .replace(/\-\-+/g, "-") // Replace multiple - with single -
+    .replace(/^-+|-+$/g, ""); // Remove leading and trailing dashes
 }
 
 function createHeading(as: "h1" | "h2" | "h3" | "h4" | "h5" | "h6") {
   const CustomHeading = ({ children, ...props }: Omit<React.ComponentProps<typeof HeadingLink>, 'as' | 'id'>) => {
-    const slug = slugify(children as string);
+    const slug = slugify(children);
     return (
       <HeadingLink
         marginTop="24"
