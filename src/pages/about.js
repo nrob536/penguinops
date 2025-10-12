@@ -22,25 +22,35 @@ const skills = {
 
 const experience = [
   {
-    title: 'Senior Data Scientist',
-    company: 'Company Name',
-    period: '2022 - Present',
-    description: 'Leading data science initiatives and building ML models for production.',
+    title: 'Kaitātari Hoahoa — Design Analyst',
+    company: 'Tautauranga Aotearoa - Stats NZ',
+    period: 'February2023 - Present',
+    description: 'Technical lead for national data science initiatives, focusing on health and wellbeing data to support decision-making and policy.',
     achievements: [
-      'Developed predictive models improving accuracy by 25%',
-      'Led team of 3 data scientists',
-      'Deployed 5+ models to production',
+      'Maintainer and developer of two data portals: Ngā Tūtohu Aotearoa – Indicators Aotearoa New Zealand and the COVID-19 Data Portal.',
+      'Stats NZ Shinyapps.io administrator, overseeing and troubleshooting over 200 Rshiny apps.',
+      'Statistics NZ GitHub administrator, managing all private and public repositories published by Stats NZ.',
     ],
   },
   {
-    title: 'Data Scientist',
-    company: 'Previous Company',
-    period: '2020 - 2022',
-    description: 'Built and deployed machine learning solutions.',
+    title: 'Climate Database Technician',
+    company: 'National Institute of Water and Atmospheric Research (formerly, NIWA)',
+    period: 'February 2021- April 2022',
+    description: 'Managed and enhanced climate data systems, ensuring high-quality data delivery for research and commercial use.',
     achievements: [
-      'Created automated reporting dashboards',
-      'Reduced processing time by 40%',
-      'Collaborated with cross-functional teams',
+      'Created and R-shiny app to explore the catalogue of weather stations plus their associated error logs, and daily data upload status.',
+      'Improved daily quality control procedures for the network of manual observer weather stations in New Zealand.',
+      'Delivered Climate data services for more than 10 commercial contracts.',
+    ],
+  },
+  {
+    title: 'Molecular Biologist (Part-time)',
+    company: 'National Institute of Water and Atmospheric Research (formerly, NIWA)',
+    period: 'February 2021- April 2022',
+    description: 'Conducted genetic sequencing and analysis to support biodiversity and ecological research projects.',
+    achievements: [
+      'Acquired experience working in a biocontainment laboratory analyzing genetic data for research projects.',
+      'Produced hundreds of genetic sequences for the biodiversity programme on marine algae',
     ],
   },
 ];
