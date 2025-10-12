@@ -1,0 +1,122 @@
+.heroBanner {
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  min-height: calc(100vh - 60px);
+  display: flex;
+  align-items: center;
+}
+
+.heroContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.profileSection {
+  flex: 0 0 auto;
+}
+
+.profilePhoto {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid var(--ifm-color-primary);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.profilePhoto:hover {
+  transform: scale(1.05);
+}
+
+.textSection {
+  flex: 1 1 500px;
+  text-align: left;
+  max-width: 600px;
+}
+
+.heroTitle {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(120deg, var(--ifm-color-primary), var(--ifm-color-primary-light));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.heroSubtitle {
+  font-size: 1.5rem;
+  color: var(--ifm-color-primary);
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.heroDescription {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  color: var(--ifm-font-color-base);
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.socialLink {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  background: var(--ifm-background-surface-color);
+  color: var(--ifm-font-color-base);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.socialLink:hover {
+  background: var(--ifm-color-primary);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (max-width: 996px) {
+  .heroContent {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .textSection {
+    text-align: center;
+  }
+  
+  .buttons {
+    justify-content: center;
+  }
+  
+  .socialLinks {
+    justify-content: center;
+  }
+  
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+}
