@@ -7,17 +7,16 @@ const skills = {
     { name: 'Python', icon: '🐍' },
     { name: 'R', icon: '📊' },
     { name: 'SQL', icon: '🗄️' },
-    { name: 'Machine Learning', icon: '🤖' },
+    { name: 'JavaScript', icon: '⚡' },
     { name: 'Deep Learning', icon: '🧠' },
     { name: 'Data Visualization', icon: '📈' },
   ],
   secondary: [
     { name: 'Git', icon: '📝' },
     { name: 'Docker', icon: '🐳' },
-    { name: 'JavaScript', icon: '⚡' },
+    { name: 'Machine Learning', icon: '🤖' },
     { name: 'Proxmox', icon: '💻' },
-    { name: 'Linux', icon: '🐧' },
-    { name: 'AWS', icon: '☁️' },
+    { name: 'Linux', icon: '🐧' }
   ],
 };
 
