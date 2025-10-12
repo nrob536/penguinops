@@ -8,15 +8,21 @@ const skills = {
     { name: 'R', icon: '📊' },
     { name: 'SQL', icon: '🗄️' },
     { name: 'JavaScript', icon: '⚡' },
-    { name: 'Deep Learning', icon: '🧠' },
+    { name: 'Git ecosystem', icon: '📝' },
+    { name: 'API development', icon: '🔌' },
     { name: 'Data Visualization', icon: '📈' },
   ],
   secondary: [
-    { name: 'Git', icon: '📝' },
+   
     { name: 'Docker', icon: '🐳' },
     { name: 'Machine Learning', icon: '🤖' },
     { name: 'Proxmox', icon: '💻' },
-    { name: 'Linux', icon: '🐧' }
+    { name: 'Linux', icon: '🐧' },
+    { name: 'Shiny apps', icon: '🖥️' },
+    { name: 'Jupyter Notebooks', icon: '📓' },
+    { name: 'LaTeX', icon: '📜' },
+    { name: 'Markdown', icon: '🖋️' },
+    { name: 'Continuous Integration/Continuous Deployment (CI/CD)', icon: '⚙️' },
   ],
 };
 
@@ -57,16 +63,22 @@ const experience = [
 
 const education = [
   {
-    degree: 'Master of Data Science',
-    institution: 'University Name',
-    period: '2018 - 2020',
-    description: 'Specialized in Machine Learning and Statistical Analysis',
+    degree: 'Doctoral Degree, Biological Sciences',
+    institution: 'The University of Auckland',
+    period: 'Dec 2015 – Nov 2019',
+    description: 'Specialized in Machine Learning and Statistical Analysis to forecast marine species distributions.',
   },
   {
-    degree: 'Bachelor of Computer Science',
-    institution: 'University Name',
-    period: '2014 - 2018',
-    description: 'Focus on Software Engineering and Algorithms',
+    degree: 'Master’s in Marine and Coastal Sciences',
+    institution: 'Universidad Autonoma de Baja California Sur, UABCS',
+    period: 'Aug 2011 - June 2013',
+    description: 'Specialized in bioinformatics and DNA sequencing tools to investigate phylogenetic patterns of marine algae.',
+  },
+  {
+    degree: 'Bachelor’s Degree, Biology',
+    institution: 'Instituto Technologico de Bocal del Rio',
+    period: 'Jun 2007 - May 2011',
+    description: 'Specialized in taxonomic techniques to study the algal diversity in coral reefs from the Gulf of Mexico',
   },
 ];
 
