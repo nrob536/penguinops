@@ -9,11 +9,11 @@ const config = {
   tagline: 'Building data-driven solutions',
   favicon: 'img/favicon.ico',
 
-  url: 'https://your-username.github.io',
+  url: 'https://nrob536.github.io',
   baseUrl: '/',
 
-  organizationName: 'your-username',
-  projectName: 'your-username.github.io',
+  organizationName: 'nrob536',
+  projectName: 'nrob536.github.io',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -53,10 +53,10 @@ const config = {
         respectPrefersColorScheme: false,
       },
       navbar: {
-        title: 'Your Name',
+        title: 'Nestor M. Robinson',
         logo: {
           alt: 'Portfolio Logo',
-          src: 'img/logo.svg',
+          src: 'img/logo-dark.png',
         },
         items: [
           {to: '/', label: 'Home', position: 'left'},
@@ -64,7 +64,7 @@ const config = {
           {to: '/work', label: 'Work', position: 'left'},
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/your-username',
+            href: 'https://github.com/nrob536',
             label: 'GitHub',
             position: 'right',
           },
@@ -78,25 +78,25 @@ const config = {
             items: [
               {
                 label: 'LinkedIn',
-                href: 'https://linkedin.com/in/your-profile',
+                href: 'https://linkedin.com/in/nrob536',
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/your-username',
+                href: 'https://github.com/nrob536',
               },
               {
                 label: 'Email',
-                href: 'mailto:your.email@gmail.com',
+                href: 'mailto:nrob536@aucklanduni.ac.nz',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Your Name. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Nestor M. Robinson. Built with Docusaurus.`,
       },
       prism: {
         theme: themes.github,
         darkTheme: themes.dracula,
-        additionalLanguages: ['python', 'r'],
+        additionalLanguages: ['Python', 'R', 'SQL', "JavaScript", "bash"],
       },
     }),
 };

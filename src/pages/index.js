@@ -11,15 +11,15 @@ function HomepageHeader() {
         <div className={styles.heroContent}>
           <div className={styles.profileSection}>
             <img 
-              src="/img/profile.jpg" 
-              alt="Your Name" 
+              src="/img/profile.jpeg" 
+              alt="Nestor M. Robinson" 
               className={styles.profilePhoto}
             />
           </div>
           <div className={styles.textSection}>
-            <h1 className={styles.heroTitle}>Hi, I'm Your Name</h1>
+            <h1 className={styles.heroTitle}>Hi, I'm Nestor M. Robinson</h1>
             <p className={styles.heroSubtitle}>
-              Data Scientist | Machine Learning Engineer
+              Data Scientist | Data Analyst
             </p>
             <p className={styles.heroDescription}>
               I transform complex data into actionable insights and build 
@@ -41,7 +41,7 @@ function HomepageHeader() {
             </div>
             <div className={styles.socialLinks}>
               <a 
-                href="https://github.com/your-username" 
+                href="https://github.com/nrob536" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className={styles.socialLink}
@@ -52,7 +52,7 @@ function HomepageHeader() {
                 GitHub
               </a>
               <a 
-                href="https://linkedin.com/in/your-profile" 
+                href="https://linkedin.com/in/nrob536" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className={styles.socialLink}
@@ -63,7 +63,7 @@ function HomepageHeader() {
                 LinkedIn
               </a>
               <a 
-                href="mailto:your.email@gmail.com"
+                href="mailto:nrob536@aucklanduni.ac.nz"
                 className={styles.socialLink}
               >
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
