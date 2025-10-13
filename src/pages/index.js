@@ -16,8 +16,9 @@ function HomepageHeader() {
               className={styles.profilePhoto}
             />
           </div>
-          <div className={styles.textSection}>
-            <h1 className={styles.heroTitle}>Hi, I'm Nestor M. Robinson</h1>
+          <div className={styles.textSection}> 
+            <h1 className={styles.heroTitle}>Kia ora! Hello! Hola! </h1>
+            <p className={styles.heroSubtitle}> I'm Nestor M. Robinson, the mind behind Penguinops</p>
             <p className={styles.heroSubtitle}>
               Data Scientist | Data Analyst
             </p>
@@ -26,6 +27,9 @@ function HomepageHeader() {
               intelligent systems that solve real-world problems. With expertise 
               in Python, R, and modern ML frameworks, I help organizations make 
               data-driven decisions.
+            </p>
+            <p className={styles.heroDescription}>
+              My programming days began before GenAI and LLMs made everyone look like a genius. I’m a self-taught coder who’s spent enough hours debugging to qualify for an honorary degree in existential dread. In those days, the best debugging tools were caffeine and denial, sometimes in that order. If you need someone who’s wrestled unruly code into submission using equal parts wit and willpower, look no further.
             </p>
             <div className={styles.buttons}>
               <Link
