@@ -23,6 +23,8 @@ const skills = {
     { name: 'LaTeX', icon: '📜' },
     { name: 'Markdown', icon: '🖋️' },
     { name: 'Continuous Integration/Continuous Deployment (CI/CD)', icon: '⚙️' },
+    { name: 'Static Site Generators', icon: '🌐' },
+    { name: 'Security Best Practices', icon: '🔒' },
   ],
 };
 
@@ -104,7 +106,23 @@ export default function About() {
               </p>
             </div>
           </section>
-
+          <section className={styles.section}>
+            <h2>The Story Behind Penguinops</h2>
+            <div className={styles.introduction}>
+              <p>
+                Before the world collectively discovered the joys of Zoom fatigue, I was a Marine Biologist. My days were spent pondering the mysteries of the ocean, wrangling algae, and occasionally wondering if my thesis would ever see the light of day. Then, the COVID-19 pandemic arrived, and so my career turned upside down.
+              </p>
+              <p>
+                During my PhD, my now wife (then my best friend) observed my uncanny resemblance to a Gentoo Penguin. Whether it was my waddling gait after a long day in the lab or my inexplicable fondness for collecting pebbles, she declared the penguin my spirit animal. I embraced this with the sort of enthusiasm usually reserved for free conference snacks.
+              </p>
+              <p>
+                Since then, the penguin has become my personal brand. At work, I’m known for data science; outside work, I’m “Pinguino” (Spanish for Penguin). It’s a name that sticks, much like the smell of seaweed after fieldwork. Thus, Penguinops was born: a tribute to my aquatic past, my dry sense of humor, and my ongoing quest to bring a little penguin magic to the world of data.
+              </p>
+              <p>
+                And yes, Penguinops is a clumsy word play on Penguin and DevOps. It waddles into the world of tech with all the grace of a penguin on an ice floe. Slightly awkward, but undeniably memorable.
+              </p>
+            </div>
+          </section>
           <section className={styles.section}>
             <h2>Work Experience</h2>
             <div className={styles.timeline}>
