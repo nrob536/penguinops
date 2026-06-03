@@ -1,0 +1,28 @@
+---
+title: Penguinops
+page-layout: full
+toc: false
+---
+
+::: {.hero-wrap}
+![](/static/img/profile.jpeg){.hero-avatar fig-alt="Nestor M. Robinson"}
+
+# Kia ora! Hello! Hola!
+
+I am Nestor M. Robinson, the mind behind Penguinops.
+
+Data Scientist | Data Analyst
+
+I transform complex data into actionable insights and build intelligent systems that solve real-world problems. With expertise in Python, R, and modern ML frameworks, I help organizations make data-driven decisions.
+
+My programming days began before GenAI and LLMs made everyone look like a genius. I am a self-taught coder who has spent enough hours debugging to qualify for an honorary degree in existential dread. In those days, the best debugging tools were caffeine and denial, sometimes in that order.
+
+[Learn More About Me](about.qmd){.btn-main}
+[View My Work](work.qmd){.btn-alt}
+
+::: {.hero-social}
+[GitHub](https://github.com/nrob536)
+[LinkedIn](https://linkedin.com/in/nrob536)
+[Email](mailto:nrob536@aucklanduni.ac.nz)
+:::
+:::

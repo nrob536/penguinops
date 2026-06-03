@@ -1,0 +1,60 @@
+---
+title: Work
+---
+
+A showcase of projects, from machine learning research to production-ready tools.
+
+## Git Learning Environment
+
+- Period: August 2024
+- Status: Current
+- Technologies: Git, shell scripting, R
+- Description: A repository to test Git skills through unsupervised challenges, from beginner to expert levels, set in a magical fantasy world.
+
+Highlights:
+
+- Immersive storylines and characters for each challenge.
+- Tasks covering branching, merging, rebasing, and conflict resolution.
+- Automated feedback and hints for learners.
+- Open-sourced design for community contributions.
+
+Links:
+
+- [GitHub](https://github.com/nrob536/git-fantasy-quest)
+
+## Predicting Macroalgal Introductions at Global and Regional Scales
+
+- Period: Dec 2015 - Nov 2019
+- Status: Completed
+- Technologies: LaTeX, R, Git, Machine Learning, GIS
+- Description: Doctoral thesis focused on predicting the introduction and spread of invasive macroalgal species using machine learning and spatial analysis.
+
+Highlights:
+
+- Predictive models using Random Forest and MaxEnt for invasion hotspots.
+- Analysis of environmental and biological drivers.
+- Peer-reviewed publications and conference presentations.
+- Contributions to open-source ecological modeling workflows.
+
+Links:
+
+- [GitHub](https://github.com/nrob536/doctoral-thesis)
+
+## Interactive Population Clock (Demo)
+
+- Period: September 2025
+- Status: Current
+- Technologies: R plumber, REST API, Docker, JavaScript, HTML, CSS
+- Description: Interactive Population Clock built with Plumber and deployed with Docker.
+
+Highlights:
+
+- Real-time population REST API implementation.
+- Containerized deployment for reproducibility.
+- Cloud-hosted deployment on Render.
+- Interactive front-end experience.
+
+Links:
+
+- [GitHub](https://github.com/nrob536/popclock-api)
+- [Live demo](https://nrob536.github.io/popclock-api/)

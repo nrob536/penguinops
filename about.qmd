@@ -1,0 +1,59 @@
+---
+title: About
+---
+
+## About Me
+
+I am a passionate data scientist with a strong foundation in statistical analysis, machine learning, and data engineering. My journey in data science began with curiosity about patterns in data and has evolved into a career focused on extracting actionable insights from complex datasets.
+
+I specialize in building end-to-end machine learning pipelines, from data collection and preprocessing to model deployment and monitoring. My approach combines technical rigor with business acumen to deliver solutions that create real value.
+
+## The Story Behind Penguinops
+
+Before the world collectively discovered the joys of Zoom fatigue, I was a Marine Biologist. My days were spent pondering the mysteries of the ocean, wrangling algae, and occasionally wondering if my thesis would ever see the light of day. Then, the COVID-19 pandemic arrived, and so my career turned upside down.
+
+During my PhD, my now wife (then my best friend) observed my uncanny resemblance to a Gentoo Penguin. Whether it was my waddling gait after a long day in the lab or my inexplicable fondness for collecting pebbles, she declared the penguin my spirit animal.
+
+Since then, the penguin has become my personal brand. At work, I am known for data science; outside work, I am Pinguino (Spanish for Penguin). Thus, Penguinops was born: a tribute to my aquatic past, my dry sense of humor, and my ongoing quest to bring a little penguin magic to the world of data.
+
+## Work Experience
+
+### Kaitatari Hoahoa - Design Analyst
+
+Tautauranga Aotearoa - Stats NZ | February 2023 - Present
+
+- Technical lead for national data science initiatives focused on health and wellbeing data.
+- Maintainer and developer of two data portals: Nga Tutohu Aotearoa and the COVID-19 Data Portal.
+- Stats NZ shinyapps.io administrator for 200+ R Shiny apps.
+- Statistics NZ GitHub administrator for private and public repositories.
+
+### Climate Database Technician
+
+National Institute of Water and Atmospheric Research (NIWA) | February 2021 - April 2022
+
+- Managed and enhanced climate data systems for research and commercial use.
+- Built an R Shiny app to explore weather station catalogues, error logs, and upload status.
+- Improved quality control workflows for New Zealand's manual observer weather station network.
+
+### Molecular Biologist (Part-time)
+
+National Institute of Water and Atmospheric Research (NIWA) | February 2021 - April 2022
+
+- Conducted genetic sequencing and analysis for biodiversity and ecology projects.
+- Produced hundreds of genetic sequences for the marine algae biodiversity programme.
+
+## Education
+
+- Doctoral Degree, Biological Sciences - The University of Auckland (Dec 2015 - Nov 2019)
+- Master's in Marine and Coastal Sciences - UABCS (Aug 2011 - Jun 2013)
+- Bachelor's Degree, Biology - Instituto Tecnologico de Bocal del Rio (Jun 2007 - May 2011)
+
+## Skills
+
+### Primary Skills
+
+Python, R, SQL, JavaScript, Git ecosystem, API development, Data Visualization
+
+### Secondary Skills
+
+Docker, Machine Learning, Proxmox, Linux, Shiny apps, Jupyter Notebooks, LaTeX, Markdown, CI/CD, Static Site Generators, Security Best Practices

@@ -1,41 +1,39 @@
-# Website
+# Penguinops Website
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+This project is now a [Quarto](https://quarto.org/) static website.
 
-## Installation
+## Prerequisites
 
-```bash
-yarn
-```
+Install Quarto on your system:
+
+https://quarto.org/docs/get-started/
 
 ## Local Development
 
 ```bash
-yarn start
+quarto preview
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+This starts a local preview server with live reload.
+
+You can also use the helper npm scripts (no runtime dependencies):
+
+```bash
+npm run preview
+```
 
 ## Build
 
 ```bash
-yarn build
+quarto render
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+The generated static site is written to `_site/`.
 
-## Deployment
+## Publish
 
-Using SSH:
+For GitHub Pages (via `gh-pages` branch):
 
 ```bash
-USE_SSH=true yarn deploy
+quarto publish gh-pages
 ```
-
-Not using SSH:
-
-```bash
-GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
