@@ -1,0 +1,13 @@
+---
+title: Blog
+listing:
+  contents: posts/*.qmd
+  sort: date desc
+  type: default
+  categories: true
+  feed: true
+  sort-ui: false
+  filter-ui: true
+---
+
+Personal notes on data science, public policy, and technical practice.

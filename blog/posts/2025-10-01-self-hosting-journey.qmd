@@ -1,0 +1,34 @@
+---
+title: "A Game Changer in My Data Science Journey: A Year of Self-Hosting with Proxmox VE"
+date: 2025-10-01
+categories: [data-science, self-hosting, proxmox, virtualization, home-lab]
+description: How Proxmox VE transformed my approach to data science and self-hosting.
+---
+
+## Day One: How I Accidentally Became My Own IT Department
+
+It started innocently enough: a dusty ex-lease desktop, a vague memory of someone online saying "Proxmox is awesome", and a dangerous amount of curiosity.
+
+A year later, my home office looked like a low-budget science-fiction movie.
+
+## Enter Proxmox: The Rabbit Hole Beckons
+
+When I first installed Proxmox VE, I thought, "How hard could it be?"
+
+Within days, evenings were spent spinning up LXC containers and virtual machines like a caffeinated DJ at a tech conference.
+
+## From Hello World to Hello, World of Problems
+
+Most of my early adventures centered on programming environments, data pipelines, and getting JupyterLab to cooperate. Soon, I was running media servers, exploring distributed databases, and learning hard lessons about networking.
+
+## Lessons Learned (Or: How I Learned to Love Snapshots)
+
+Snapshots became my safety net. Before every risky change, I took a snapshot, crossed my fingers, and experimented freely.
+
+Through all the breaking and fixing, Proxmox became a cornerstone of my data science workflow: enabling rapid experiments, safer failures, and faster iteration.
+
+## Final Thoughts
+
+If you are thinking about building a home lab, do it. You will learn far more than expected about infrastructure, reliability, and your own debugging patience.
+
+May your containers always start, your VMs stay calm, and your family never notice the 2am reboots.

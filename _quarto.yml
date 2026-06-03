@@ -1,0 +1,39 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: Penguinops
+  site-url: https://nrob536.github.io
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: about.qmd
+        text: About
+      - href: work.qmd
+        text: Work
+      - href: blog/index.qmd
+        text: Blog
+    right:
+      - icon: github
+        href: https://github.com/nrob536
+        aria-label: GitHub
+      - icon: linkedin
+        href: https://linkedin.com/in/nrob536
+        aria-label: LinkedIn
+  page-footer:
+    left: Copyright 2026 Nestor M. Robinson
+    right:
+      - text: Email
+        href: mailto:nrob536@aucklanduni.ac.nz
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    smooth-scroll: true
+
+execute:
+  freeze: auto

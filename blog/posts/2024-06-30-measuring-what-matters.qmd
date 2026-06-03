@@ -1,0 +1,49 @@
+---
+title: "Measuring What Matters: Reflections on Nga Tutohu Aotearoa"
+date: 2024-06-30
+categories: [data-science, wellbeing, public-policy, indicators, te-ao-maori]
+description: Reflections on using wellbeing indicators to support long-term policy decisions.
+---
+
+**Note:** This post reflects my personal views and experiences working on the Nga Tutohu Aotearoa project. It does not represent the official position of any organisation or government agency.
+
+## Introduction
+
+Societal progress is often measured through economic metrics such as GDP, but those numbers are only part of the picture. Working on Nga Tutohu Aotearoa reinforced that meaningful progress must include wellbeing.
+
+## What Is Nga Tutohu Aotearoa?
+
+Nga Tutohu Aotearoa is a national wellbeing framework with indicators across social, environmental, and economic dimensions. It supports policy design that values long-term sustainability and collective wellbeing.
+
+At its core, the framework aims to:
+
+- Measure what matters to people and communities
+- Track wellbeing outcomes over time and across groups
+- Support evidence-informed policy
+- Reflect Te Ao Maori perspectives
+
+## My Role and Reflections
+
+My work focused on data integration, dashboard development, and analytical consistency. Through this, I saw how deeply interconnected wellbeing outcomes are across domains.
+
+## From Data to Insight
+
+### 1. Context Matters
+
+Indicators need lived context. A metric can improve while lived wellbeing declines.
+
+### 2. Accessibility Drives Impact
+
+Well-designed dashboards and visual tools broaden participation and understanding.
+
+### 3. Consistency Enables Trust
+
+Metadata quality, version control, and reproducible workflows are essential for credibility.
+
+## Te Ao Maori and Wellbeing
+
+Integrating Te Ao Maori perspectives expanded the analytical lens by emphasizing collective and relational wellbeing, values such as manaakitanga, whanaungatanga, and kaitiakitanga, and the stewardship role of data.
+
+## Conclusion
+
+Data science is not only about managing information; it is also about shaping narratives that influence collective choices. When those narratives reflect people, place, and values, they can drive more inclusive progress.
