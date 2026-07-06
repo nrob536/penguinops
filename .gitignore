@@ -1,5 +1,4 @@
 # Quarto output and cache
-_site/
 .quarto/
 
 # Optional local dependencies
