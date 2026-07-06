@@ -1,0 +1,520 @@
+[
+  {
+    "objectID": "work.html",
+    "href": "work.html",
+    "title": "Work",
+    "section": "",
+    "text": "A showcase of projects focused on environmental science, public-sector data systems, and reproducible analysis."
+  },
+  {
+    "objectID": "work.html#predicting-macroalgal-introductions-at-global-and-regional-scales",
+    "href": "work.html#predicting-macroalgal-introductions-at-global-and-regional-scales",
+    "title": "Work",
+    "section": "Predicting Macroalgal Introductions at Global and Regional Scales",
+    "text": "Predicting Macroalgal Introductions at Global and Regional Scales\n\nPeriod: Dec 2015 - Nov 2019\nStatus: Completed\nTechnologies: LaTeX, R, Git, Machine Learning, GIS\nDescription: Doctoral thesis focused on predicting the introduction and spread of invasive macroalgal species using machine learning and spatial analysis.\n\nHighlights:\n\nPredictive models using Random Forest and MaxEnt for invasion hotspots.\nAnalysis of environmental and biological drivers.\nPeer-reviewed publications and conference presentations.\nContributions to open-source ecological modeling workflows.\n\nLinks:\n\nGitHub"
+  },
+  {
+    "objectID": "work.html#git-learning-environment",
+    "href": "work.html#git-learning-environment",
+    "title": "Work",
+    "section": "Git Learning Environment",
+    "text": "Git Learning Environment\n\nPeriod: August 2024\nStatus: Current\nTechnologies: Git, shell scripting, R\nDescription: A repository to test Git skills through unsupervised challenges, from beginner to expert levels, set in a magical fantasy world.\n\nHighlights:\n\nImmersive storylines and characters for each challenge.\nTasks covering branching, merging, rebasing, and conflict resolution.\nAutomated feedback and hints for learners.\nOpen-sourced design for community contributions.\n\nLinks:\n\nGitHub"
+  },
+  {
+    "objectID": "work.html#interactive-population-clock-demo",
+    "href": "work.html#interactive-population-clock-demo",
+    "title": "Work",
+    "section": "Interactive Population Clock (Demo)",
+    "text": "Interactive Population Clock (Demo)\n\nPeriod: September 2025\nStatus: Current\nTechnologies: R plumber, REST API, Docker, JavaScript, HTML, CSS\nDescription: Interactive Population Clock built with Plumber and deployed with Docker.\n\nHighlights:\n\nReal-time population REST API implementation.\nContainerized deployment for reproducibility.\nCloud-hosted deployment on Render.\nInteractive front-end experience.\n\nLinks:\n\nGitHub\nLive demo"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Penguinops",
+    "section": "",
+    "text": "Kia ora! Hello! Hola!\nI am Nestor M. Robinson, the mind behind Penguinops.\nEnvironmental Scientist | Data Analyst\nI turn environmental monitoring data into practical evidence for regional councils, local authorities, and environmental consultancies. With expertise in R, Python, geospatial workflows, and reproducible reporting, I build analysis that supports policy, planning, and on-the-ground decisions.\nMy programming days began before GenAI and LLMs made everyone look like a genius. I am a self-taught coder who has spent enough hours debugging to qualify for an honorary degree in existential dread. In those days, the best debugging tools were caffeine and denial, sometimes in that order.\nLearn More About Me View My Work Explore Indicators\n\nGitHub LinkedIn Email"
+  },
+  {
+    "objectID": "indicators/index.html",
+    "href": "indicators/index.html",
+    "title": "Indicators",
+    "section": "",
+    "text": "This section presents compact environmental indicators for policy and planning audiences, including regional councils, local authorities, and environmental consultancies.\n\n\nWater Consents Dashboard\nA compact view of consented freshwater takes by use type and source, with map context for where takes are located.\nOpen indicator\n\nFreshwater Consent records Northland focus\n\n\n\nFreshwater Habitat Quality\nInteractive summary of habitat quality scores, dominant landcover context, and site-level distribution.\nOpen indicator\n\nHabitat condition Site monitoring Multi-region\n\n\n\nGroundwater Quality Trends\nExploration view of long-term groundwater quality data structure and measured variables.\nOpen indicator\n\nGroundwater quality 1964-2014 state Trend context\n\n\n\nRiver Water Quality Nitrogen Trends\nExploration view of river nitrogen trend records by period, direction, and site geography.\nOpen indicator\n\nRiver quality 1991-2020 trends Nitrogen focus\n\n\n\n\n\n\n\n\n\nNoteSource and transparency\n\n\n\nAll pages include a Methods and source section and a collapsed code block so readers can inspect the exact analysis steps."
+  },
+  {
+    "objectID": "indicators/02-freshwater-habitat.html",
+    "href": "indicators/02-freshwater-habitat.html",
+    "title": "Freshwater Habitat Quality",
+    "section": "",
+    "text": "Most monitored sites in this dataset are rated Fair to Good, with a smaller set of Excellent sites often associated with native or less-modified catchments."
+  },
+  {
+    "objectID": "indicators/02-freshwater-habitat.html#headline-finding",
+    "href": "indicators/02-freshwater-habitat.html#headline-finding",
+    "title": "Freshwater Habitat Quality",
+    "section": "",
+    "text": "Most monitored sites in this dataset are rated Fair to Good, with a smaller set of Excellent sites often associated with native or less-modified catchments."
+  },
+  {
+    "objectID": "indicators/02-freshwater-habitat.html#why-this-matters-for-councils",
+    "href": "indicators/02-freshwater-habitat.html#why-this-matters-for-councils",
+    "title": "Freshwater Habitat Quality",
+    "section": "Why this matters for councils",
+    "text": "Why this matters for councils\nHabitat-quality indicators support prioritization of restoration investment, catchment action plans, and communication of where ecological gains are being retained or lost."
+  },
+  {
+    "objectID": "indicators/02-freshwater-habitat.html#interactive-overview",
+    "href": "indicators/02-freshwater-habitat.html#interactive-overview",
+    "title": "Freshwater Habitat Quality",
+    "section": "Interactive overview",
+    "text": "Interactive overview\n\n\nCode\nlibrary(readr)\nlibrary(dplyr)\nlibrary(plotly)\nlibrary(leaflet)\n\nhabitat &lt;- read_csv(\"../data/freshwater-physical-habitat/habitat_quality_scores.csv\", show_col_types = FALSE)\n\nby_class &lt;- habitat |&gt;\n  count(habitat_quality, sort = TRUE)\n\nplot_ly(\n  by_class,\n  x = ~reorder(habitat_quality, n),\n  y = ~n,\n  type = \"bar\",\n  marker = list(color = \"#ff7a59\")\n) |&gt;\n  layout(\n    xaxis = list(title = \"Habitat class\"),\n    yaxis = list(title = \"Number of sites\")\n  )\n\n\n\n\n\n\n\n\nCode\nplot_ly(\n  habitat,\n  x = ~dominant_landcover,\n  y = ~habitat_quality_score,\n  color = ~habitat_quality,\n  colors = c(\"#ef4444\", \"#f59e0b\", \"#10b981\"),\n  type = \"box\"\n) |&gt;\n  layout(\n    xaxis = list(title = \"Dominant landcover\"),\n    yaxis = list(title = \"Habitat quality score\")\n  )\n\n\n\n\n\n\n\n\nCode\nleaflet(habitat) |&gt;\n  addProviderTiles(providers$CartoDB.Positron) |&gt;\n  addCircleMarkers(\n    lng = ~long,\n    lat = ~lat,\n    radius = 4,\n    stroke = FALSE,\n    fillOpacity = 0.7,\n    color = \"#2b7a78\",\n    popup = ~paste0(\n      \"Site: \", site_name,\n      \"&lt;br&gt;Region: \", region,\n      \"&lt;br&gt;Score: \", habitat_quality_score,\n      \"&lt;br&gt;Class: \", habitat_quality,\n      \"&lt;br&gt;Landcover: \", dominant_landcover\n    )\n  )"
+  },
+  {
+    "objectID": "indicators/02-freshwater-habitat.html#methods-and-source",
+    "href": "indicators/02-freshwater-habitat.html#methods-and-source",
+    "title": "Freshwater Habitat Quality",
+    "section": "Methods and source",
+    "text": "Methods and source\n\nSource: freshwater physical habitat indicator dataset.\nFile used: data/freshwater-physical-habitat/habitat_quality_scores.csv.\nIndicator fields include score, class, landcover context, and site coordinates.\nCaveat: this is a compact communication layer; interpretation should include local context and sampling design.\n\n\n\n\n\n\n\nNoteShow code\n\n\n\n\n\nThe complete source code is available in folded code chunks above."
+  },
+  {
+    "objectID": "SECURITY.html",
+    "href": "SECURITY.html",
+    "title": "Security Policy",
+    "section": "",
+    "text": "Use this section to tell people about which versions of your project are currently being supported with security updates.\n\n\n\nVersion\nSupported\n\n\n\n\n5.1.x\n:white_check_mark:\n\n\n5.0.x\n:x:\n\n\n4.0.x\n:white_check_mark:\n\n\n&lt; 4.0\n:x:\n\n\n\n\n\n\nUse this section to tell people how to report a vulnerability.\nTell them where to go, how often they can expect to get an update on a reported vulnerability, what to expect if the vulnerability is accepted or declined, etc."
+  },
+  {
+    "objectID": "SECURITY.html#supported-versions",
+    "href": "SECURITY.html#supported-versions",
+    "title": "Security Policy",
+    "section": "",
+    "text": "Use this section to tell people about which versions of your project are currently being supported with security updates.\n\n\n\nVersion\nSupported\n\n\n\n\n5.1.x\n:white_check_mark:\n\n\n5.0.x\n:x:\n\n\n4.0.x\n:white_check_mark:\n\n\n&lt; 4.0\n:x:"
+  },
+  {
+    "objectID": "SECURITY.html#reporting-a-vulnerability",
+    "href": "SECURITY.html#reporting-a-vulnerability",
+    "title": "Security Policy",
+    "section": "",
+    "text": "Use this section to tell people how to report a vulnerability.\nTell them where to go, how often they can expect to get an update on a reported vulnerability, what to expect if the vulnerability is accepted or declined, etc."
+  },
+  {
+    "objectID": "blog/posts/2025-10-01-self-hosting-journey.html",
+    "href": "blog/posts/2025-10-01-self-hosting-journey.html",
+    "title": "A Game Changer in My Data Science Journey: A Year of Self-Hosting with Proxmox VE",
+    "section": "",
+    "text": "It started innocently enough: a dusty ex-lease desktop, a vague memory of someone online saying “Proxmox is awesome”, and a dangerous amount of curiosity.\nA year later, my home office looked like a low-budget science-fiction movie."
+  },
+  {
+    "objectID": "blog/posts/2025-10-01-self-hosting-journey.html#day-one-how-i-accidentally-became-my-own-it-department",
+    "href": "blog/posts/2025-10-01-self-hosting-journey.html#day-one-how-i-accidentally-became-my-own-it-department",
+    "title": "A Game Changer in My Data Science Journey: A Year of Self-Hosting with Proxmox VE",
+    "section": "",
+    "text": "It started innocently enough: a dusty ex-lease desktop, a vague memory of someone online saying “Proxmox is awesome”, and a dangerous amount of curiosity.\nA year later, my home office looked like a low-budget science-fiction movie."
+  },
+  {
+    "objectID": "blog/posts/2025-10-01-self-hosting-journey.html#enter-proxmox-the-rabbit-hole-beckons",
+    "href": "blog/posts/2025-10-01-self-hosting-journey.html#enter-proxmox-the-rabbit-hole-beckons",
+    "title": "A Game Changer in My Data Science Journey: A Year of Self-Hosting with Proxmox VE",
+    "section": "Enter Proxmox: The Rabbit Hole Beckons",
+    "text": "Enter Proxmox: The Rabbit Hole Beckons\nWhen I first installed Proxmox VE, I thought, “How hard could it be?”\nWithin days, evenings were spent spinning up LXC containers and virtual machines like a caffeinated DJ at a tech conference."
+  },
+  {
+    "objectID": "blog/posts/2025-10-01-self-hosting-journey.html#from-hello-world-to-hello-world-of-problems",
+    "href": "blog/posts/2025-10-01-self-hosting-journey.html#from-hello-world-to-hello-world-of-problems",
+    "title": "A Game Changer in My Data Science Journey: A Year of Self-Hosting with Proxmox VE",
+    "section": "From Hello World to Hello, World of Problems",
+    "text": "From Hello World to Hello, World of Problems\nMost of my early adventures centered on programming environments, data pipelines, and getting JupyterLab to cooperate. Soon, I was running media servers, exploring distributed databases, and learning hard lessons about networking."
+  },
+  {
+    "objectID": "blog/posts/2025-10-01-self-hosting-journey.html#lessons-learned-or-how-i-learned-to-love-snapshots",
+    "href": "blog/posts/2025-10-01-self-hosting-journey.html#lessons-learned-or-how-i-learned-to-love-snapshots",
+    "title": "A Game Changer in My Data Science Journey: A Year of Self-Hosting with Proxmox VE",
+    "section": "Lessons Learned (Or: How I Learned to Love Snapshots)",
+    "text": "Lessons Learned (Or: How I Learned to Love Snapshots)\nSnapshots became my safety net. Before every risky change, I took a snapshot, crossed my fingers, and experimented freely.\nThrough all the breaking and fixing, Proxmox became a cornerstone of my data science workflow: enabling rapid experiments, safer failures, and faster iteration."
+  },
+  {
+    "objectID": "blog/posts/2025-10-01-self-hosting-journey.html#final-thoughts",
+    "href": "blog/posts/2025-10-01-self-hosting-journey.html#final-thoughts",
+    "title": "A Game Changer in My Data Science Journey: A Year of Self-Hosting with Proxmox VE",
+    "section": "Final Thoughts",
+    "text": "Final Thoughts\nIf you are thinking about building a home lab, do it. You will learn far more than expected about infrastructure, reliability, and your own debugging patience.\nMay your containers always start, your VMs stay calm, and your family never notice the 2am reboots."
+  },
+  {
+    "objectID": "blog/posts/2024-06-30-measuring-what-matters.html",
+    "href": "blog/posts/2024-06-30-measuring-what-matters.html",
+    "title": "Measuring What Matters: Reflections on Nga Tutohu Aotearoa",
+    "section": "",
+    "text": "Note: This post reflects my personal views and experiences working on the Nga Tutohu Aotearoa project. It does not represent the official position of any organisation or government agency."
+  },
+  {
+    "objectID": "blog/posts/2024-06-30-measuring-what-matters.html#introduction",
+    "href": "blog/posts/2024-06-30-measuring-what-matters.html#introduction",
+    "title": "Measuring What Matters: Reflections on Nga Tutohu Aotearoa",
+    "section": "Introduction",
+    "text": "Introduction\nSocietal progress is often measured through economic metrics such as GDP, but those numbers are only part of the picture. Working on Nga Tutohu Aotearoa reinforced that meaningful progress must include wellbeing."
+  },
+  {
+    "objectID": "blog/posts/2024-06-30-measuring-what-matters.html#what-is-nga-tutohu-aotearoa",
+    "href": "blog/posts/2024-06-30-measuring-what-matters.html#what-is-nga-tutohu-aotearoa",
+    "title": "Measuring What Matters: Reflections on Nga Tutohu Aotearoa",
+    "section": "What Is Nga Tutohu Aotearoa?",
+    "text": "What Is Nga Tutohu Aotearoa?\nNga Tutohu Aotearoa is a national wellbeing framework with indicators across social, environmental, and economic dimensions. It supports policy design that values long-term sustainability and collective wellbeing.\nAt its core, the framework aims to:\n\nMeasure what matters to people and communities\nTrack wellbeing outcomes over time and across groups\nSupport evidence-informed policy\nReflect Te Ao Maori perspectives"
+  },
+  {
+    "objectID": "blog/posts/2024-06-30-measuring-what-matters.html#my-role-and-reflections",
+    "href": "blog/posts/2024-06-30-measuring-what-matters.html#my-role-and-reflections",
+    "title": "Measuring What Matters: Reflections on Nga Tutohu Aotearoa",
+    "section": "My Role and Reflections",
+    "text": "My Role and Reflections\nMy work focused on data integration, dashboard development, and analytical consistency. Through this, I saw how deeply interconnected wellbeing outcomes are across domains."
+  },
+  {
+    "objectID": "blog/posts/2024-06-30-measuring-what-matters.html#from-data-to-insight",
+    "href": "blog/posts/2024-06-30-measuring-what-matters.html#from-data-to-insight",
+    "title": "Measuring What Matters: Reflections on Nga Tutohu Aotearoa",
+    "section": "From Data to Insight",
+    "text": "From Data to Insight\n\n1. Context Matters\nIndicators need lived context. A metric can improve while lived wellbeing declines.\n\n\n2. Accessibility Drives Impact\nWell-designed dashboards and visual tools broaden participation and understanding.\n\n\n3. Consistency Enables Trust\nMetadata quality, version control, and reproducible workflows are essential for credibility."
+  },
+  {
+    "objectID": "blog/posts/2024-06-30-measuring-what-matters.html#te-ao-maori-and-wellbeing",
+    "href": "blog/posts/2024-06-30-measuring-what-matters.html#te-ao-maori-and-wellbeing",
+    "title": "Measuring What Matters: Reflections on Nga Tutohu Aotearoa",
+    "section": "Te Ao Maori and Wellbeing",
+    "text": "Te Ao Maori and Wellbeing\nIntegrating Te Ao Maori perspectives expanded the analytical lens by emphasizing collective and relational wellbeing, values such as manaakitanga, whanaungatanga, and kaitiakitanga, and the stewardship role of data."
+  },
+  {
+    "objectID": "blog/posts/2024-06-30-measuring-what-matters.html#conclusion",
+    "href": "blog/posts/2024-06-30-measuring-what-matters.html#conclusion",
+    "title": "Measuring What Matters: Reflections on Nga Tutohu Aotearoa",
+    "section": "Conclusion",
+    "text": "Conclusion\nData science is not only about managing information; it is also about shaping narratives that influence collective choices. When those narratives reflect people, place, and values, they can drive more inclusive progress."
+  },
+  {
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Personal notes on data science, public policy, and technical practice.\n\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nA Game Changer in My Data Science Journey: A Year of Self-Hosting with Proxmox VE\n\n\n\ndata-science\n\nself-hosting\n\nproxmox\n\nvirtualization\n\nhome-lab\n\n\n\nHow Proxmox VE transformed my approach to data science and self-hosting.\n\n\n\n\n\nOct 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nI Just Became a Citizen of Aotearoa New Zealand\n\n\n\npersonal\n\ncitizenship\n\naotearoa\n\nidentity\n\nbelonging\n\n\n\nHei te tau titoki, the year the titoki tree blooms.\n\n\n\n\n\nAug 20, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nMeasuring What Matters: Reflections on Nga Tutohu Aotearoa\n\n\n\ndata-science\n\nwellbeing\n\npublic-policy\n\nindicators\n\nte-ao-maori\n\n\n\nReflections on using wellbeing indicators to support long-term policy decisions.\n\n\n\n\n\nJun 30, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nSocial Investment in Practice: Lessons from New Zealand’s COVID-19 Data Portal\n\n\n\ndata-science\n\nsocial-investment\n\ncovid-19\n\npublic-policy\n\nwellbeing\n\n\n\nSocial investment principles behind the COVID-19 data portal and key lessons learned.\n\n\n\n\n\nMar 15, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n5 Critical Lessons from My First Year as a Data Scientist\n\n\n\ndata-science\n\ncareer\n\nlessons-learned\n\nmachine-learning\n\n\n\nReflecting on the key lessons from my first year as a professional data scientist.\n\n\n\n\n\nJan 15, 2023\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "CODE_OF_CONDUCT.html",
+    "href": "CODE_OF_CONDUCT.html",
+    "title": "Contributor Covenant Code of Conduct",
+    "section": "",
+    "text": "We as members, contributors, and leaders pledge to make participation in our community a harassment-free experience for everyone, regardless of age, body size, visible or invisible disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, religion, or sexual identity and orientation.\nWe pledge to act and interact in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community.\n\n\n\nExamples of behavior that contributes to a positive environment for our community include:\n\nDemonstrating empathy and kindness toward other people\nBeing respectful of differing opinions, viewpoints, and experiences\nGiving and gracefully accepting constructive feedback\nAccepting responsibility and apologizing to those affected by our mistakes, and learning from the experience\nFocusing on what is best not just for us as individuals, but for the overall community\n\nExamples of unacceptable behavior include:\n\nThe use of sexualized language or imagery, and sexual attention or advances of any kind\nTrolling, insulting or derogatory comments, and personal or political attacks\nPublic or private harassment\nPublishing others’ private information, such as a physical or email address, without their explicit permission\nOther conduct which could reasonably be considered inappropriate in a professional setting\n\n\n\n\nCommunity leaders are responsible for clarifying and enforcing our standards of acceptable behavior and will take appropriate and fair corrective action in response to any behavior that they deem inappropriate, threatening, offensive, or harmful.\nCommunity leaders have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to this Code of Conduct, and will communicate reasons for moderation decisions when appropriate.\n\n\n\nThis Code of Conduct applies within all community spaces, and also applies when an individual is officially representing the community in public spaces. Examples of representing our community include using an official e-mail address, posting via an official social media account, or acting as an appointed representative at an online or offline event.\n\n\n\nInstances of abusive, harassing, or otherwise unacceptable behavior may be reported to the community leaders responsible for enforcement at . All complaints will be reviewed and investigated promptly and fairly.\nAll community leaders are obligated to respect the privacy and security of the reporter of any incident.\n\n\n\nCommunity leaders will follow these Community Impact Guidelines in determining the consequences for any action they deem in violation of this Code of Conduct:\n\n\nCommunity Impact: Use of inappropriate language or other behavior deemed unprofessional or unwelcome in the community.\nConsequence: A private, written warning from community leaders, providing clarity around the nature of the violation and an explanation of why the behavior was inappropriate. A public apology may be requested.\n\n\n\nCommunity Impact: A violation through a single incident or series of actions.\nConsequence: A warning with consequences for continued behavior. No interaction with the people involved, including unsolicited interaction with those enforcing the Code of Conduct, for a specified period of time. This includes avoiding interactions in community spaces as well as external channels like social media. Violating these terms may lead to a temporary or permanent ban.\n\n\n\nCommunity Impact: A serious violation of community standards, including sustained inappropriate behavior.\nConsequence: A temporary ban from any sort of interaction or public communication with the community for a specified period of time. No public or private interaction with the people involved, including unsolicited interaction with those enforcing the Code of Conduct, is allowed during this period. Violating these terms may lead to a permanent ban.\n\n\n\nCommunity Impact: Demonstrating a pattern of violation of community standards, including sustained inappropriate behavior, harassment of an individual, or aggression toward or disparagement of classes of individuals.\nConsequence: A permanent ban from any sort of public interaction within the community.\n\n\n\n\nThis Code of Conduct is adapted from the Contributor Covenant, version 2.0, available at https://www.contributor-covenant.org/version/2/0/code_of_conduct.html.\nCommunity Impact Guidelines were inspired by Mozilla’s code of conduct enforcement ladder.\nFor answers to common questions about this code of conduct, see the FAQ at https://www.contributor-covenant.org/faq. Translations are available at https://www.contributor-covenant.org/translations."
+  },
+  {
+    "objectID": "CODE_OF_CONDUCT.html#our-pledge",
+    "href": "CODE_OF_CONDUCT.html#our-pledge",
+    "title": "Contributor Covenant Code of Conduct",
+    "section": "",
+    "text": "We as members, contributors, and leaders pledge to make participation in our community a harassment-free experience for everyone, regardless of age, body size, visible or invisible disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, religion, or sexual identity and orientation.\nWe pledge to act and interact in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community."
+  },
+  {
+    "objectID": "CODE_OF_CONDUCT.html#our-standards",
+    "href": "CODE_OF_CONDUCT.html#our-standards",
+    "title": "Contributor Covenant Code of Conduct",
+    "section": "",
+    "text": "Examples of behavior that contributes to a positive environment for our community include:\n\nDemonstrating empathy and kindness toward other people\nBeing respectful of differing opinions, viewpoints, and experiences\nGiving and gracefully accepting constructive feedback\nAccepting responsibility and apologizing to those affected by our mistakes, and learning from the experience\nFocusing on what is best not just for us as individuals, but for the overall community\n\nExamples of unacceptable behavior include:\n\nThe use of sexualized language or imagery, and sexual attention or advances of any kind\nTrolling, insulting or derogatory comments, and personal or political attacks\nPublic or private harassment\nPublishing others’ private information, such as a physical or email address, without their explicit permission\nOther conduct which could reasonably be considered inappropriate in a professional setting"
+  },
+  {
+    "objectID": "CODE_OF_CONDUCT.html#enforcement-responsibilities",
+    "href": "CODE_OF_CONDUCT.html#enforcement-responsibilities",
+    "title": "Contributor Covenant Code of Conduct",
+    "section": "",
+    "text": "Community leaders are responsible for clarifying and enforcing our standards of acceptable behavior and will take appropriate and fair corrective action in response to any behavior that they deem inappropriate, threatening, offensive, or harmful.\nCommunity leaders have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to this Code of Conduct, and will communicate reasons for moderation decisions when appropriate."
+  },
+  {
+    "objectID": "CODE_OF_CONDUCT.html#scope",
+    "href": "CODE_OF_CONDUCT.html#scope",
+    "title": "Contributor Covenant Code of Conduct",
+    "section": "",
+    "text": "This Code of Conduct applies within all community spaces, and also applies when an individual is officially representing the community in public spaces. Examples of representing our community include using an official e-mail address, posting via an official social media account, or acting as an appointed representative at an online or offline event."
+  },
+  {
+    "objectID": "CODE_OF_CONDUCT.html#enforcement",
+    "href": "CODE_OF_CONDUCT.html#enforcement",
+    "title": "Contributor Covenant Code of Conduct",
+    "section": "",
+    "text": "Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the community leaders responsible for enforcement at . All complaints will be reviewed and investigated promptly and fairly.\nAll community leaders are obligated to respect the privacy and security of the reporter of any incident."
+  },
+  {
+    "objectID": "CODE_OF_CONDUCT.html#enforcement-guidelines",
+    "href": "CODE_OF_CONDUCT.html#enforcement-guidelines",
+    "title": "Contributor Covenant Code of Conduct",
+    "section": "",
+    "text": "Community leaders will follow these Community Impact Guidelines in determining the consequences for any action they deem in violation of this Code of Conduct:\n\n\nCommunity Impact: Use of inappropriate language or other behavior deemed unprofessional or unwelcome in the community.\nConsequence: A private, written warning from community leaders, providing clarity around the nature of the violation and an explanation of why the behavior was inappropriate. A public apology may be requested.\n\n\n\nCommunity Impact: A violation through a single incident or series of actions.\nConsequence: A warning with consequences for continued behavior. No interaction with the people involved, including unsolicited interaction with those enforcing the Code of Conduct, for a specified period of time. This includes avoiding interactions in community spaces as well as external channels like social media. Violating these terms may lead to a temporary or permanent ban.\n\n\n\nCommunity Impact: A serious violation of community standards, including sustained inappropriate behavior.\nConsequence: A temporary ban from any sort of interaction or public communication with the community for a specified period of time. No public or private interaction with the people involved, including unsolicited interaction with those enforcing the Code of Conduct, is allowed during this period. Violating these terms may lead to a permanent ban.\n\n\n\nCommunity Impact: Demonstrating a pattern of violation of community standards, including sustained inappropriate behavior, harassment of an individual, or aggression toward or disparagement of classes of individuals.\nConsequence: A permanent ban from any sort of public interaction within the community."
+  },
+  {
+    "objectID": "CODE_OF_CONDUCT.html#attribution",
+    "href": "CODE_OF_CONDUCT.html#attribution",
+    "title": "Contributor Covenant Code of Conduct",
+    "section": "",
+    "text": "This Code of Conduct is adapted from the Contributor Covenant, version 2.0, available at https://www.contributor-covenant.org/version/2/0/code_of_conduct.html.\nCommunity Impact Guidelines were inspired by Mozilla’s code of conduct enforcement ladder.\nFor answers to common questions about this code of conduct, see the FAQ at https://www.contributor-covenant.org/faq. Translations are available at https://www.contributor-covenant.org/translations."
+  },
+  {
+    "objectID": "blog/posts/2025-08-20-becoming-a-citizen.html#kaikorero-response-to-the-mayors-welcome",
+    "href": "blog/posts/2025-08-20-becoming-a-citizen.html#kaikorero-response-to-the-mayors-welcome",
+    "title": "I Just Became a Citizen of Aotearoa New Zealand",
+    "section": "Kaikorero: Response to the Mayor’s Welcome",
+    "text": "Kaikorero: Response to the Mayor’s Welcome\nBefore the ceremony, the organizers asked for a volunteer to say a few words in response to the mayor’s welcome. I did not hesitate to raise my hand.\nI came up with a short speech on behalf of all the new citizens attending the ceremony. Here, I want to share what becoming a citizen means to me."
+  },
+  {
+    "objectID": "blog/posts/2025-08-20-becoming-a-citizen.html#hei-te-tau-titoki-the-year-the-titoki-tree-blooms",
+    "href": "blog/posts/2025-08-20-becoming-a-citizen.html#hei-te-tau-titoki-the-year-the-titoki-tree-blooms",
+    "title": "I Just Became a Citizen of Aotearoa New Zealand",
+    "section": "“Hei te tau titoki”, the year the titoki tree blooms",
+    "text": "“Hei te tau titoki”, the year the titoki tree blooms\nThis whakatauki speaks of a long-awaited moment, a season of renewal and promise. For me, becoming a citizen of Aotearoa is that moment.\nAlthough I have lived away from my birth country of Mexico for many years, I carry my Mexican whakapapa with pride. Becoming a citizen of Aotearoa does not replace that identity; it enriches it.\nAotearoa has welcomed me through its people, culture, and values. Here, I have embraced te ao Maori, the spirit of whanau, manaakitanga, and kotahitanga. Citizenship is more than a legal status. It is a commitment to contribute, protect, and grow alongside the people of this land.\nAs the titoki blooms, so does my sense of identity. I am proud of where I come from, and proud now to call myself a citizen of Aotearoa New Zealand."
+  },
+  {
+    "objectID": "blog/posts/2024-03-15-social-investment-in-practice.html",
+    "href": "blog/posts/2024-03-15-social-investment-in-practice.html",
+    "title": "Social Investment in Practice: Lessons from New Zealand’s COVID-19 Data Portal",
+    "section": "",
+    "text": "Note: This post reflects my personal views and experiences working on the COVID-19 data portal project. It does not represent the official position of any organisation or government agency."
+  },
+  {
+    "objectID": "blog/posts/2024-03-15-social-investment-in-practice.html#introduction",
+    "href": "blog/posts/2024-03-15-social-investment-in-practice.html#introduction",
+    "title": "Social Investment in Practice: Lessons from New Zealand’s COVID-19 Data Portal",
+    "section": "Introduction",
+    "text": "Introduction\nThe COVID-19 pandemic did not just challenge public health systems; it reshaped how governments think about investing in people. For those of us working with data, it became a real-world test of how evidence can guide policy under pressure."
+  },
+  {
+    "objectID": "blog/posts/2024-03-15-social-investment-in-practice.html#covid-19-as-a-social-investment-case-study",
+    "href": "blog/posts/2024-03-15-social-investment-in-practice.html#covid-19-as-a-social-investment-case-study",
+    "title": "Social Investment in Practice: Lessons from New Zealand’s COVID-19 Data Portal",
+    "section": "COVID-19 as a Social Investment Case Study",
+    "text": "COVID-19 as a Social Investment Case Study\nWhen COVID-19 arrived, existing policy frameworks were stretched. Decisions needed to be made quickly while still grounded in evidence. That required:\n\nReal-time data to track fast-changing conditions\nIntegrated analysis across health, social, and economic domains\nPredictive models to anticipate downstream impacts\nRapid evaluation of interventions"
+  },
+  {
+    "objectID": "blog/posts/2024-03-15-social-investment-in-practice.html#the-data-foundation",
+    "href": "blog/posts/2024-03-15-social-investment-in-practice.html#the-data-foundation",
+    "title": "Social Investment in Practice: Lessons from New Zealand’s COVID-19 Data Portal",
+    "section": "The Data Foundation",
+    "text": "The Data Foundation\nThe analytical framework relied on multiple, complementary data sources:\n\nAdministrative data: employment, benefit payments, business activity\nSurvey data: wellbeing and social cohesion\nEconomic indicators: transactions, productivity, GDP trends\nHealth data: case counts, testing rates, hospital capacity"
+  },
+  {
+    "objectID": "blog/posts/2024-03-15-social-investment-in-practice.html#key-insights",
+    "href": "blog/posts/2024-03-15-social-investment-in-practice.html#key-insights",
+    "title": "Social Investment in Practice: Lessons from New Zealand’s COVID-19 Data Portal",
+    "section": "Key Insights",
+    "text": "Key Insights\n\n1. Data Integration Is Transformative\nLinking datasets across agencies revealed patterns no single dataset could capture and improved holistic policy evaluation.\n\n\n2. Balancing Speed and Rigor\nCrisis response demanded iterative analysis: rapid prototypes for immediate decisions, followed by method refinement as data quality improved.\n\n\n3. Engagement Enables Impact\nData analysis alone does not change policy. Collaboration with policy teams and clear communication formats (dashboards, summaries, interactive tools) made evidence usable."
+  },
+  {
+    "objectID": "blog/posts/2024-03-15-social-investment-in-practice.html#te-ao-maori-perspectives-in-social-investment",
+    "href": "blog/posts/2024-03-15-social-investment-in-practice.html#te-ao-maori-perspectives-in-social-investment",
+    "title": "Social Investment in Practice: Lessons from New Zealand’s COVID-19 Data Portal",
+    "section": "Te Ao Maori Perspectives in Social Investment",
+    "text": "Te Ao Maori Perspectives in Social Investment\nSocial investment aligns with Te Ao Maori principles of collective wellbeing, long-term stewardship, and intergenerational equity. This perspective reminds us that data carries values and responsibilities, not just metrics."
+  },
+  {
+    "objectID": "blog/posts/2024-03-15-social-investment-in-practice.html#conclusion",
+    "href": "blog/posts/2024-03-15-social-investment-in-practice.html#conclusion",
+    "title": "Social Investment in Practice: Lessons from New Zealand’s COVID-19 Data Portal",
+    "section": "Conclusion",
+    "text": "Conclusion\nSocial investment is about using evidence to improve lives. The pandemic showed both its potential and its complexity at scale. The most important lesson for me was that robust analysis can support empathy and equity, not only efficiency."
+  },
+  {
+    "objectID": "blog/posts/2023-01-15-lessons-learned.html",
+    "href": "blog/posts/2023-01-15-lessons-learned.html",
+    "title": "5 Critical Lessons from My First Year as a Data Scientist",
+    "section": "",
+    "text": "My first year as a professional data scientist was a whirlwind of learning, challenges, and growth. Here are the five most important lessons I wish someone had told me earlier."
+  },
+  {
+    "objectID": "blog/posts/2023-01-15-lessons-learned.html#communication-is-more-important-than-code",
+    "href": "blog/posts/2023-01-15-lessons-learned.html#communication-is-more-important-than-code",
+    "title": "5 Critical Lessons from My First Year as a Data Scientist",
+    "section": "1. Communication Is More Important Than Code",
+    "text": "1. Communication Is More Important Than Code\nA perfectly optimized model that stakeholders do not understand or trust will never make it to production.\nWhat I learned:\n\nStart with the business problem, not the algorithm.\nUse visualizations to tell a story, not just display data.\nTailor your message to your audience.\nDocument everything for your future self."
+  },
+  {
+    "objectID": "blog/posts/2023-01-15-lessons-learned.html#clean-data-is-a-myth-and-that-is-okay",
+    "href": "blog/posts/2023-01-15-lessons-learned.html#clean-data-is-a-myth-and-that-is-okay",
+    "title": "5 Critical Lessons from My First Year as a Data Scientist",
+    "section": "2. Clean Data Is a Myth (And That Is Okay)",
+    "text": "2. Clean Data Is a Myth (And That Is Okay)\nIn production, data is messy, incomplete, and sometimes wrong.\nCommon real-world issues I faced:\n\n\n\nData Issue\nFrequency (%)\n\n\n\n\nMissing values\n85\n\n\nInconsistent formats\n72\n\n\nDuplicates\n58\n\n\nOutliers\n45\n\n\nSchema changes\n38\n\n\n\nKey takeaway: spend more effort on data pipeline quality and validation than on endless hyperparameter tuning."
+  },
+  {
+    "objectID": "blog/posts/2023-01-15-lessons-learned.html#simple-models-often-win",
+    "href": "blog/posts/2023-01-15-lessons-learned.html#simple-models-often-win",
+    "title": "5 Critical Lessons from My First Year as a Data Scientist",
+    "section": "3. Simple Models Often Win",
+    "text": "3. Simple Models Often Win\nSimple, interpretable models often outperform complex pipelines in business settings because they are easier to trust and maintain.\n\n\n\nModel Complexity\nAccuracy (%)\nMaintainability (%)\n\n\n\n\n1\n82\n95\n\n\n2\n87\n85\n\n\n3\n91\n70\n\n\n4\n93\n50\n\n\n5\n94\n30\n\n\n\nMy approach now: start simple, measure impact, then add complexity only when justified."
+  },
+  {
+    "objectID": "blog/posts/2023-01-15-lessons-learned.html#version-control-everything-not-just-code",
+    "href": "blog/posts/2023-01-15-lessons-learned.html#version-control-everything-not-just-code",
+    "title": "5 Critical Lessons from My First Year as a Data Scientist",
+    "section": "4. Version Control Everything (Not Just Code)",
+    "text": "4. Version Control Everything (Not Just Code)\nVersion control should include data schemas, model artifacts, experiment metadata, and environment configurations.\nOne of my hardest lessons was being unable to reproduce a model from three months earlier because I did not track the exact data version."
+  },
+  {
+    "objectID": "blog/posts/2023-01-15-lessons-learned.html#the-best-model-is-the-one-that-ships",
+    "href": "blog/posts/2023-01-15-lessons-learned.html#the-best-model-is-the-one-that-ships",
+    "title": "5 Critical Lessons from My First Year as a Data Scientist",
+    "section": "5. The Best Model Is the One That Ships",
+    "text": "5. The Best Model Is the One That Ships\nPerfect is the enemy of done.\nPlanned timeline:\n\n2 weeks data prep\n2 weeks modeling\n1 week deployment\n\nReality:\n\n4 weeks data prep\n3 weeks modeling\n4 weeks deployment plus ongoing fixes\n\nWhat helped me ship faster:\n\nSet up CI/CD early.\nStart with a minimum viable model.\nIterate with real user feedback.\nAutomate testing and monitoring from day one."
+  },
+  {
+    "objectID": "blog/posts/2023-01-15-lessons-learned.html#bonus-lesson-build-a-support-network",
+    "href": "blog/posts/2023-01-15-lessons-learned.html#bonus-lesson-build-a-support-network",
+    "title": "5 Critical Lessons from My First Year as a Data Scientist",
+    "section": "Bonus Lesson: Build a Support Network",
+    "text": "Bonus Lesson: Build a Support Network\nMeetups, online communities, open-source contributions, and writing all helped me grow faster and stay motivated."
+  },
+  {
+    "objectID": "blog/posts/2023-01-15-lessons-learned.html#conclusion",
+    "href": "blog/posts/2023-01-15-lessons-learned.html#conclusion",
+    "title": "5 Critical Lessons from My First Year as a Data Scientist",
+    "section": "Conclusion",
+    "text": "Conclusion\nTechnical skills matter, but understanding the full delivery path from business context to production constraints is what creates value."
+  },
+  {
+    "objectID": "indicators/01-water-consents.html",
+    "href": "indicators/01-water-consents.html",
+    "title": "Water Consents Dashboard",
+    "section": "",
+    "text": "Northland consent records in this dataset are dominated by irrigation and drinking-water uses, with a clear split between surface water and groundwater sources."
+  },
+  {
+    "objectID": "indicators/01-water-consents.html#headline-finding",
+    "href": "indicators/01-water-consents.html#headline-finding",
+    "title": "Water Consents Dashboard",
+    "section": "",
+    "text": "Northland consent records in this dataset are dominated by irrigation and drinking-water uses, with a clear split between surface water and groundwater sources."
+  },
+  {
+    "objectID": "indicators/01-water-consents.html#why-this-matters-for-councils",
+    "href": "indicators/01-water-consents.html#why-this-matters-for-councils",
+    "title": "Water Consents Dashboard",
+    "section": "Why this matters for councils",
+    "text": "Why this matters for councils\nConsented take patterns help identify where pressure on freshwater allocation may increase and where review of expiry profiles, monitoring, or demand-management settings may be most useful."
+  },
+  {
+    "objectID": "indicators/01-water-consents.html#interactive-overview",
+    "href": "indicators/01-water-consents.html#interactive-overview",
+    "title": "Water Consents Dashboard",
+    "section": "Interactive overview",
+    "text": "Interactive overview\n\n\nCode\nlibrary(readr)\nlibrary(dplyr)\nlibrary(plotly)\nlibrary(sf)\nlibrary(leaflet)\n\nconsents &lt;- read_csv(\"../data/consented-freshwater-takes/take_frame.csv\", show_col_types = FALSE)\n\nby_use &lt;- consents |&gt;\n  count(primaryuse3, sort = TRUE)\n\nplot_ly(\n  by_use,\n  x = ~reorder(primaryuse3, n),\n  y = ~n,\n  type = \"bar\",\n  marker = list(color = \"#2b7a78\")\n) |&gt;\n  layout(\n    xaxis = list(title = \"Primary use\"),\n    yaxis = list(title = \"Number of consents\"),\n    margin = list(b = 120)\n  )\n\n\n\n\n\n\n\n\nCode\nmap_df &lt;- consents |&gt;\n  filter(!is.na(easting_nztm), !is.na(northing_nztm)) |&gt;\n  mutate(maxannual = suppressWarnings(as.numeric(maxannual)))\n\npts &lt;- st_as_sf(\n  map_df,\n  coords = c(\"northing_nztm\", \"easting_nztm\"),\n  crs = 2193,\n  remove = FALSE\n) |&gt;\n  st_transform(4326)\n\nleaflet(pts) |&gt;\n  addProviderTiles(providers$CartoDB.Positron) |&gt;\n  addCircleMarkers(\n    radius = 4,\n    stroke = FALSE,\n    fillOpacity = 0.65,\n    color = \"#2b7a78\",\n    popup = ~paste0(\n      \"Consent: \", resourceconsentid,\n      \"&lt;br&gt;Use: \", primaryuse3,\n      \"&lt;br&gt;Source: \", primarysource,\n      \"&lt;br&gt;Max annual: \", maxannual\n    )\n  )"
+  },
+  {
+    "objectID": "indicators/01-water-consents.html#methods-and-source",
+    "href": "indicators/01-water-consents.html#methods-and-source",
+    "title": "Water Consents Dashboard",
+    "section": "Methods and source",
+    "text": "Methods and source\n\nSource: Ministry for the Environment / council-supplied consented freshwater takes.\nFiles used: data/consented-freshwater-takes/take_frame.csv.\nSpatial reference in source fields: NZTM coordinates.\nCaveat: this page provides an exploratory operational view and does not represent full allocation accounting.\n\n\n\n\n\n\n\nNoteShow code\n\n\n\n\n\nThe complete source code is available in folded code chunks above."
+  },
+  {
+    "objectID": "indicators/03-groundwater-trends.html",
+    "href": "indicators/03-groundwater-trends.html",
+    "title": "Groundwater Quality State",
+    "section": "",
+    "text": "Groundwater quality reporting tracks multiple contaminant indicators over long time horizons, supporting risk screening for drinking-water safety and ecosystem effects."
+  },
+  {
+    "objectID": "indicators/03-groundwater-trends.html#headline-finding",
+    "href": "indicators/03-groundwater-trends.html#headline-finding",
+    "title": "Groundwater Quality State",
+    "section": "",
+    "text": "Groundwater quality reporting tracks multiple contaminant indicators over long time horizons, supporting risk screening for drinking-water safety and ecosystem effects."
+  },
+  {
+    "objectID": "indicators/03-groundwater-trends.html#why-this-matters-for-councils",
+    "href": "indicators/03-groundwater-trends.html#why-this-matters-for-councils",
+    "title": "Groundwater Quality State",
+    "section": "Why this matters for councils",
+    "text": "Why this matters for councils\nLong-term groundwater indicators help identify where sustained pressure may require tighter management, targeted mitigation, or intensified monitoring."
+  },
+  {
+    "objectID": "indicators/03-groundwater-trends.html#interactive-overview",
+    "href": "indicators/03-groundwater-trends.html#interactive-overview",
+    "title": "Groundwater Quality State",
+    "section": "Interactive overview",
+    "text": "Interactive overview\n\n\nCode\nlibrary(sf)\nlibrary(dplyr)\nlibrary(tidyr)\nlibrary(plotly)\nlibrary(leaflet)\n\ngpkg_path &lt;- \"../data/mfe-groundwater/groundwater-quality-state-20102014.gpkg\"\n\nlayers &lt;- st_layers(gpkg_path)\ngw &lt;- st_read(gpkg_path, layer = layers$name[1], quiet = TRUE)\n\n# convert Results columns to numeric type\ngw_nodg &lt;- st_drop_geometry(gw)\n\n# create numeric result column from likely field names\ncandidate_result_names &lt;- c(\"Result\", \"result\", \"Value\", \"median\", \"c_median\", \"ann_max\", \"q_50\", \"q_25\")\npresent_result_names &lt;- intersect(candidate_result_names, names(gw_nodg))\nif (length(present_result_names) == 0) {\n  stop(\"No candidate result columns found in data; available names: \", paste(names(gw_nodg), collapse = \", \"))\n}\n\n# build Result_char by coalescing over present columns\ngw_nodg$Result_char &lt;- NA_character_\nfor (nm in present_result_names) {\n  gw_nodg$Result_char &lt;- dplyr::coalesce(gw_nodg$Result_char, as.character(gw_nodg[[nm]]))\n}\ngw_nodg$Result_num &lt;- suppressWarnings(as.numeric(gsub(\",\", \"\", gw_nodg$Result_char)))\n\n# detect indicator column name (try a few common variants)\npossible_indicator_names &lt;- c(\n  \"Aggregated_Back_calculated_parameter\",\n  \"aggregated_back_calculated_parameter\",\n  \"Aggregated_Parameter\",\n  \"parameter\",\n  \"Indicator\",\n  \"aggregated_parameter\",\n  # common abbreviated indicator columns in this dataset\n  \"np_id\",\n  \"np_id_name\",\n  \"np_id_units\"\n)\n# prefer descriptive `np_id_name` if present, else first match\nif (\"np_id_name\" %in% names(gw_nodg)) {\n  indicator_col &lt;- \"np_id_name\"\n} else {\n  indicator_col &lt;- intersect(possible_indicator_names, names(gw_nodg))[1]\n}\nif (is.na(indicator_col) || is.null(indicator_col)) {\n  stop(\"Indicator column not found in data; available names: \", paste(names(gw_nodg), collapse = \", \"))\n}\n\nquality_profile &lt;- gw_nodg |&gt;\n  group_by(.data[[indicator_col]]) |&gt;\n  summarise(records = sum(!is.na(Result_num)), .groups = \"drop\") |&gt;\n  rename(indicator = .data[[indicator_col]]) |&gt;\n  arrange(desc(records)) |&gt;\n  slice_head(n = 12)\n\nplot_ly(\n  quality_profile,\n  x = ~reorder(indicator, records),\n  y = ~records,\n  type = \"bar\",\n  marker = list(color = \"#2b7a78\")\n) |&gt;\n  layout(\n    xaxis = list(title = \"Indicator field\"),\n    yaxis = list(title = \"Non-missing records\"),\n    margin = list(b = 180)\n  )\n\n\n\n\n\n\n\n\nCode\n# transform dataframe into sf\n## Coerce coordinate columns (support lowercase names from updated dataset)\ngw &lt;- gw %&gt;%\n  mutate(\n    Easting = coalesce(as.numeric(easting), as.numeric(easting)),\n    Northing = coalesce(as.numeric(northing), as.numeric(northing)),\n    long = coalesce(as.numeric(long), as.numeric(long), as.numeric(long)),\n    lat = coalesce(as.numeric(lat), as.numeric(lat), as.numeric(lat))\n  )\n\n## Build sf either from lon/lat\ngw_wgs84 &lt;- gw %&gt;%\n  filter(!is.na(long) & !is.na(lat)) %&gt;%\n  st_as_sf(coords = c(\"long\", \"lat\"), crs = 4326, remove = FALSE)\n\n\nleaflet(gw_wgs84) |&gt;\n  addProviderTiles(providers$CartoDB.Positron) |&gt;\n  addCircleMarkers(\n    radius = 4,\n    stroke = FALSE,\n    fillOpacity = 0.55,\n    color = \"#ff7a59\",\n    popup = ~paste0(\n      \"location: \", s_id,\n      \"&lt;br&gt;period: \", period,\n      \"&lt;br&gt;indicator: \", np_id,\n      \"&lt;br&gt;median: \", median\n    ))"
+  },
+  {
+    "objectID": "indicators/03-groundwater-trends.html#methods-and-source",
+    "href": "indicators/03-groundwater-trends.html#methods-and-source",
+    "title": "Groundwater Quality State",
+    "section": "Methods and source",
+    "text": "Methods and source\n\nSource: Ministry for the Environment, Groundwater quality 1964-2014.\nFiles used: data/mfe-groundwater/groundwater-quality-19642014.gpkg and data/mfe-groundwater/groundwater-quality-19642014.txt.\nLicense: Creative Commons Attribution 3.0 New Zealand.\nCaveat: indicator fields differ across records and years; this page emphasizes structure and coverage rather than final compliance assessment.\n\n\n\n\n\n\n\nNoteShow code\n\n\n\n\n\nThe complete source code is available in folded code chunks above."
+  },
+  {
+    "objectID": "indicators/04-river-water-quality.html",
+    "href": "indicators/04-river-water-quality.html",
+    "title": "River Water Quality Nitrogen Trends",
+    "section": "",
+    "text": "River nitrogen trend monitoring shows variable trajectories across sites and assessment windows, with trend direction and coverage depending on parameter and period."
+  },
+  {
+    "objectID": "indicators/04-river-water-quality.html#headline-finding",
+    "href": "indicators/04-river-water-quality.html#headline-finding",
+    "title": "River Water Quality Nitrogen Trends",
+    "section": "",
+    "text": "River nitrogen trend monitoring shows variable trajectories across sites and assessment windows, with trend direction and coverage depending on parameter and period."
+  },
+  {
+    "objectID": "indicators/04-river-water-quality.html#why-this-matters-for-councils",
+    "href": "indicators/04-river-water-quality.html#why-this-matters-for-councils",
+    "title": "River Water Quality Nitrogen Trends",
+    "section": "Why this matters for councils",
+    "text": "Why this matters for councils\nRiver nitrogen trend indicators help target catchments where deteriorating water quality may require tighter source controls, restoration investment, or more focused monitoring."
+  },
+  {
+    "objectID": "indicators/04-river-water-quality.html#interactive-overview",
+    "href": "indicators/04-river-water-quality.html#interactive-overview",
+    "title": "River Water Quality Nitrogen Trends",
+    "section": "Interactive overview",
+    "text": "Interactive overview\n\n\nCode\nlibrary(sf)\nlibrary(dplyr)\nlibrary(plotly)\nlibrary(leaflet)\n\ngpkg_path &lt;- \"../data/river-water-quality/river-water-quality-nitrogen-trends-1991-2020.gpkg\"\n\nlayers &lt;- st_layers(gpkg_path)\nrwq &lt;- st_read(gpkg_path, layer = layers$name[1], quiet = TRUE)\nrwq_tbl &lt;- st_drop_geometry(rwq)\n\npick_col &lt;- function(df, candidates) {\n  hits &lt;- intersect(candidates, names(df))\n  if (length(hits) == 0) NA_character_ else hits[1]\n}\n\nparameter_col &lt;- pick_col(\n  rwq_tbl,\n  c(\"parameter\", \"Parameter\", \"indicator\", \"Indicator\", \"np_id_name\", \"np_id\", \"attribute\")\n)\nperiod_col &lt;- pick_col(\n  rwq_tbl,\n  c(\"period\", \"Period\", \"trend_period\", \"window\", \"time_window\", \"assessment_period\")\n)\ntrend_col &lt;- pick_col(\n  rwq_tbl,\n  c(\"trend\", \"Trend\", \"trend_direction\", \"direction\", \"Direction\", \"classification\", \"trend_class\")\n)\n\nif (!is.na(trend_col) && !is.na(period_col)) {\n  trend_profile &lt;- rwq_tbl |&gt;\n    mutate(\n      trend_band = as.character(.data[[trend_col]]),\n      period_band = as.character(.data[[period_col]])\n    ) |&gt;\n    filter(!is.na(trend_band), !is.na(period_band), trend_band != \"\", period_band != \"\") |&gt;\n    count(period_band, trend_band, name = \"records\")\n\n  plot_ly(\n    trend_profile,\n    x = ~period_band,\n    y = ~records,\n    color = ~trend_band,\n    type = \"bar\"\n  ) |&gt;\n    layout(\n      barmode = \"stack\",\n      xaxis = list(title = \"Assessment period\"),\n      yaxis = list(title = \"Number of site records\"),\n      legend = list(title = list(text = \"Trend direction\"))\n    )\n} else if (!is.na(trend_col)) {\n  trend_profile &lt;- rwq_tbl |&gt;\n    mutate(trend_band = as.character(.data[[trend_col]])) |&gt;\n    filter(!is.na(trend_band), trend_band != \"\") |&gt;\n    count(trend_band, name = \"records\")\n\n  plot_ly(\n    trend_profile,\n    x = ~reorder(trend_band, records),\n    y = ~records,\n    type = \"bar\",\n    marker = list(color = \"#2b7a78\")\n  ) |&gt;\n    layout(\n      xaxis = list(title = \"Trend direction\"),\n      yaxis = list(title = \"Number of site records\"),\n      margin = list(b = 120)\n    )\n} else {\n  fallback_col &lt;- ifelse(is.na(parameter_col), names(rwq_tbl)[1], parameter_col)\n\n  coverage_profile &lt;- rwq_tbl |&gt;\n    mutate(group_name = as.character(.data[[fallback_col]])) |&gt;\n    filter(!is.na(group_name), group_name != \"\") |&gt;\n    count(group_name, sort = TRUE, name = \"records\") |&gt;\n    slice_head(n = 12)\n\n  plot_ly(\n    coverage_profile,\n    x = ~reorder(group_name, records),\n    y = ~records,\n    type = \"bar\",\n    marker = list(color = \"#2b7a78\")\n  ) |&gt;\n    layout(\n      xaxis = list(title = \"Indicator field\"),\n      yaxis = list(title = \"Number of records\"),\n      margin = list(b = 160)\n    )\n}\n\n\n\n\n\n\n\n\nCode\nrwq_map &lt;- rwq\n\n\n# convert dataframe to sf object: coerce coords to numeric and remove invalid rows\nrwq_map$long_num &lt;- as.numeric(rwq_map$long)\nrwq_map$lat_num &lt;- as.numeric(rwq_map$lat)\n# drop rows with NA coords (including non-numeric coercion results)\nrwq_map &lt;- rwq_map[!is.na(rwq_map$long_num) & !is.na(rwq_map$lat_num), ]\nrwq_map &lt;- st_as_sf(rwq_map, coords = c(\"long_num\", \"lat_num\"), crs = 4326, remove = TRUE)\n\n\nif (nrow(rwq_map) &gt; 0) {\n  rwq_map &lt;- suppressWarnings(st_transform(rwq_map, 4326))\n}\n\nrwq_map_tbl &lt;- st_drop_geometry(rwq_map)\n\nsite_col &lt;- pick_col(rwq_map_tbl, c(\"site_name\", \"site\", \"s_id\", \"site_id\", \"location\", \"name\"))\nparameter_col &lt;- pick_col(rwq_map_tbl, c(\"parameter\", \"Parameter\", \"indicator\", \"np_id_name\", \"np_id\"))\nperiod_col &lt;- pick_col(rwq_map_tbl, c(\"period\", \"Period\", \"trend_period\", \"window\", \"assessment_period\"))\ntrend_col &lt;- pick_col(rwq_map_tbl, c(\"trend\", \"Trend\", \"trend_direction\", \"direction\", \"classification\", \"trend_class\"))\nvalue_col &lt;- pick_col(rwq_map_tbl, c(\"median\", \"result\", \"Result\", \"value\", \"Value\", \"slope\", \"Sen_slope\", \"sen_slope\"))\n\npopup_fields &lt;- unique(na.omit(c(site_col, parameter_col, period_col, trend_col, value_col)))\n\nif (length(popup_fields) == 0) {\n  popup_text &lt;- rep(\"River monitoring site\", nrow(rwq_map_tbl))\n} else {\n  popup_text &lt;- apply(\n    rwq_map_tbl[, popup_fields, drop = FALSE],\n    1,\n    function(x) {\n      vals &lt;- ifelse(is.na(x) | x == \"\", \"NA\", as.character(x))\n      paste0(names(x), \": \", vals, collapse = \"&lt;br&gt;\")\n    }\n  )\n}\n\nleaflet(rwq_map) |&gt;\n  addProviderTiles(providers$CartoDB.Positron) |&gt;\n  addCircleMarkers(\n    radius = 4,\n    stroke = FALSE,\n    fillOpacity = 0.55,\n    color = \"#ff7a59\",\n    popup = ~paste0(\n      \"measure: \", \"measure\",\n      \"&lt;br&gt;units: \", units,\n      \"&lt;br&gt;median: \", median,\n      \"&lt;br&gt;sen_lci: \", \"sen_lci\",\n      \"&lt;br&gt;trend: \", \"trend_confidence\"\n    )\n  )"
+  },
+  {
+    "objectID": "indicators/04-river-water-quality.html#methods-and-source",
+    "href": "indicators/04-river-water-quality.html#methods-and-source",
+    "title": "River Water Quality Nitrogen Trends",
+    "section": "Methods and source",
+    "text": "Methods and source\n\nSource: Ministry for the Environment, River water quality nitrogen trends (1991-2020).\nFiles used: data/river-water-quality/river-water-quality-nitrogen-trends-1991-2020.gpkg and data/river-water-quality/river-water-quality-nitrogen-trends-1991-2020.txt.\nLicense: Creative Commons Attribution 4.0 International.\nCaveat: trend and parameter fields can vary by schema updates; this page emphasizes exploratory structure and pattern coverage rather than formal compliance assessment.\n\n\n\n\n\n\n\nNoteShow code\n\n\n\n\n\nThe complete source code is available in folded code chunks above."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "I am an Environmental Scientist and Data Analyst focused on turning complex environmental datasets into clear, decision-ready insights. My work combines environmental domain knowledge, geospatial analysis, and statistical programming to support better outcomes for ecosystems and communities.\nI bring practical experience across national environmental reporting, climate data systems, and biodiversity science. I design reproducible analytical workflows in R and Python so evidence can be transparent, reusable, and useful to policy and operational teams."
+  },
+  {
+    "objectID": "about.html#about-me",
+    "href": "about.html#about-me",
+    "title": "About",
+    "section": "",
+    "text": "I am an Environmental Scientist and Data Analyst focused on turning complex environmental datasets into clear, decision-ready insights. My work combines environmental domain knowledge, geospatial analysis, and statistical programming to support better outcomes for ecosystems and communities.\nI bring practical experience across national environmental reporting, climate data systems, and biodiversity science. I design reproducible analytical workflows in R and Python so evidence can be transparent, reusable, and useful to policy and operational teams."
+  },
+  {
+    "objectID": "about.html#the-story-behind-penguinops",
+    "href": "about.html#the-story-behind-penguinops",
+    "title": "About",
+    "section": "The Story Behind Penguinops",
+    "text": "The Story Behind Penguinops\nBefore the world collectively discovered the joys of Zoom fatigue, I was a Marine Biologist. My days were spent pondering the mysteries of the ocean, wrangling algae, and occasionally wondering if my thesis would ever see the light of day. Then, the COVID-19 pandemic arrived, and so my career turned upside down.\nDuring my PhD, my now wife (then my best friend) observed my uncanny resemblance to a Gentoo Penguin. Whether it was my waddling gait after a long day in the lab or my inexplicable fondness for collecting pebbles, she declared the penguin my spirit animal.\nSince then, the penguin has become my personal brand. At work, I am known for data science; outside work, I am Pinguino (Spanish for Penguin). Thus, Penguinops was born: a tribute to my aquatic past, my dry sense of humor, and my ongoing quest to bring a little penguin magic to the world of data."
+  },
+  {
+    "objectID": "about.html#work-experience",
+    "href": "about.html#work-experience",
+    "title": "About",
+    "section": "Work Experience",
+    "text": "Work Experience\n\nKaitatari Hoahoa - Design Analyst\nTautauranga Aotearoa - Stats NZ | February 2023 - Present\n\nTechnical lead for national data science initiatives focused on health and wellbeing data.\nMaintainer and developer of two data portals: Nga Tutohu Aotearoa and the COVID-19 Data Portal.\nStats NZ shinyapps.io administrator for 200+ R Shiny apps.\nStatistics NZ GitHub administrator for private and public repositories.\nContributor to analysis and communication products relevant to public policy and wellbeing outcomes.\n\n\n\nClimate Database Technician\nNational Institute of Water and Atmospheric Research (NIWA) | February 2021 - April 2022\n\nManaged and enhanced climate data systems for research and commercial use.\nBuilt an R Shiny app to explore weather station catalogues, error logs, and upload status.\nImproved quality control workflows for New Zealand’s manual observer weather station network.\nSupported data integrity and operational reliability for climate and environmental monitoring systems.\n\n\n\nMolecular Biologist (Part-time)\nNational Institute of Water and Atmospheric Research (NIWA) | February 2021 - April 2022\n\nConducted genetic sequencing and analysis for biodiversity and ecology projects.\nProduced hundreds of genetic sequences for the marine algae biodiversity programme.\nWorked at the intersection of lab science and data analysis for environmental research programmes."
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "About",
+    "section": "Education",
+    "text": "Education\n\nDoctoral Degree, Biological Sciences - The University of Auckland (Dec 2015 - Nov 2019)\nMaster’s in Marine and Coastal Sciences - UABCS (Aug 2011 - Jun 2013)\nBachelor’s Degree, Biology - Instituto Tecnologico de Bocal del Rio (Jun 2007 - May 2011)"
+  },
+  {
+    "objectID": "about.html#skills",
+    "href": "about.html#skills",
+    "title": "About",
+    "section": "Skills",
+    "text": "Skills\n\nPrimary Skills\nEnvironmental data analysis, R, Python, SQL, geospatial analysis (GIS), Git ecosystem, data visualization\n\n\nSecondary Skills\nShiny apps, Quarto, Docker, Linux, machine learning, API development, Jupyter Notebooks, LaTeX, Markdown, CI/CD, static site generators"
+  }
+]

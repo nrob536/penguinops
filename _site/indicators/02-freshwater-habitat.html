@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Freshwater Habitat Quality – Penguinops</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-7c4064a7dbe0decc9a9be57e3d6a6f4a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-6eb2c6986fd2641d7837c448b07d9d23.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-7c4064a7dbe0decc9a9be57e3d6a6f4a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+<link href="../site_libs/htmltools-fill-0.5.9/fill.css" rel="stylesheet">
+<script src="../site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<script src="../site_libs/plotly-binding-4.12.0/plotly.js"></script>
+<script src="../site_libs/typedarray-0.1/typedarray.min.js"></script>
+<script src="../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="../site_libs/crosstalk-1.2.2/css/crosstalk.min.css" rel="stylesheet">
+<script src="../site_libs/crosstalk-1.2.2/js/crosstalk.min.js"></script>
+<link href="../site_libs/plotly-htmlwidgets-css-2.25.2/plotly-htmlwidgets.css" rel="stylesheet">
+<script src="../site_libs/plotly-main-2.25.2/plotly-latest.min.js"></script>
+<link href="../site_libs/leaflet-1.3.1/leaflet.css" rel="stylesheet">
+<script src="../site_libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="../site_libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet">
+<script src="../site_libs/proj4-2.6.2/proj4.min.js"></script>
+<script src="../site_libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="../site_libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet">
+<script src="../site_libs/leaflet-binding-2.2.3/leaflet.js"></script>
+<script src="../site_libs/leaflet-providers-3.0.0/leaflet-providers.js"></script>
+<script src="../site_libs/leaflet-providers-plugin-2.2.3/leaflet-providers-plugin.js"></script>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Penguinops</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../work.html"> 
+<span class="menu-text">Work</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../indicators/index.html"> 
+<span class="menu-text">Indicators</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../blog/index.html"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/nrob536"> <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://linkedin.com/in/nrob536"> <i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#headline-finding" id="toc-headline-finding" class="nav-link active" data-scroll-target="#headline-finding">Headline finding</a></li>
+  <li><a href="#why-this-matters-for-councils" id="toc-why-this-matters-for-councils" class="nav-link" data-scroll-target="#why-this-matters-for-councils">Why this matters for councils</a></li>
+  <li><a href="#interactive-overview" id="toc-interactive-overview" class="nav-link" data-scroll-target="#interactive-overview">Interactive overview</a></li>
+  <li><a href="#methods-and-source" id="toc-methods-and-source" class="nav-link" data-scroll-target="#methods-and-source">Methods and source</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Freshwater Habitat Quality</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="headline-finding" class="level2">
+<h2 class="anchored" data-anchor-id="headline-finding">Headline finding</h2>
+<p>Most monitored sites in this dataset are rated Fair to Good, with a smaller set of Excellent sites often associated with native or less-modified catchments.</p>
+</section>
+<section id="why-this-matters-for-councils" class="level2">
+<h2 class="anchored" data-anchor-id="why-this-matters-for-councils">Why this matters for councils</h2>
+<p>Habitat-quality indicators support prioritization of restoration investment, catchment action plans, and communication of where ecological gains are being retained or lost.</p>
+</section>
+<section id="interactive-overview" class="level2">
+<h2 class="anchored" data-anchor-id="interactive-overview">Interactive overview</h2>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readr)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(plotly)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(leaflet)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>habitat <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"../data/freshwater-physical-habitat/habitat_quality_scores.csv"</span>, <span class="at">show_col_types =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>by_class <span class="ot">&lt;-</span> habitat <span class="sc">|&gt;</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(habitat_quality, <span class="at">sort =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_ly</span>(</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>  by_class,</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>  <span class="at">x =</span> <span class="sc">~</span><span class="fu">reorder</span>(habitat_quality, n),</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>  <span class="at">y =</span> <span class="sc">~</span>n,</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"bar"</span>,</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>  <span class="at">marker =</span> <span class="fu">list</span>(<span class="at">color =</span> <span class="st">"#ff7a59"</span>)</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>) <span class="sc">|&gt;</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">layout</span>(</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    <span class="at">xaxis =</span> <span class="fu">list</span>(<span class="at">title =</span> <span class="st">"Habitat class"</span>),</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    <span class="at">yaxis =</span> <span class="fu">list</span>(<span class="at">title =</span> <span class="st">"Number of sites"</span>)</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-dc65e147a7d74d95c613" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-dc65e147a7d74d95c613">{"x":{"visdat":{"13f9314b86d":["function () ","plotlyVisDat"]},"cur_data":"13f9314b86d","attrs":{"13f9314b86d":{"x":{},"y":{},"marker":{"color":"#ff7a59"},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"bar"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"xaxis":{"domain":[0,1],"automargin":true,"title":"Habitat class","type":"category","categoryorder":"array","categoryarray":["Fair","Excellent","Good"]},"yaxis":{"domain":[0,1],"automargin":true,"title":"Number of sites"},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":["Good","Excellent","Fair"],"y":[262,102,95],"marker":{"color":"#ff7a59","line":{"color":"rgba(31,119,180,1)"}},"type":"bar","error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_ly</span>(</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  habitat,</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">x =</span> <span class="sc">~</span>dominant_landcover,</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">y =</span> <span class="sc">~</span>habitat_quality_score,</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">color =</span> <span class="sc">~</span>habitat_quality,</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">colors =</span> <span class="fu">c</span>(<span class="st">"#ef4444"</span>, <span class="st">"#f59e0b"</span>, <span class="st">"#10b981"</span>),</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"box"</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>) <span class="sc">|&gt;</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">layout</span>(</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">xaxis =</span> <span class="fu">list</span>(<span class="at">title =</span> <span class="st">"Dominant landcover"</span>),</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">yaxis =</span> <span class="fu">list</span>(<span class="at">title =</span> <span class="st">"Habitat quality score"</span>)</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-46d2c3cfef9c57cdf711" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-46d2c3cfef9c57cdf711">{"x":{"visdat":{"13f9cc914b3":["function () ","plotlyVisDat"]},"cur_data":"13f9cc914b3","attrs":{"13f9cc914b3":{"x":{},"y":{},"color":{},"colors":["#ef4444","#f59e0b","#10b981"],"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"box"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"xaxis":{"domain":[0,1],"automargin":true,"title":"Dominant landcover","type":"category","categoryorder":"array","categoryarray":["Exotic forest","Native","Pastoral","Urban area"]},"yaxis":{"domain":[0,1],"automargin":true,"title":"Habitat quality score"},"hovermode":"closest","showlegend":true},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"fillcolor":"rgba(239,68,68,0.5)","x":["Pastoral","Native","Urban area","Native","Native","Exotic forest","Urban area","Urban area","Pastoral","Native","Native","Native","Native","Native","Exotic forest","Exotic forest","Native","Pastoral","Native","Pastoral","Native","Pastoral","Native","Native","Native","Pastoral","Native","Native","Native","Native","Native","Native","Pastoral","Pastoral","Pastoral","Native","Native","Native","Native","Native","Native","Native","Native","Native","Native","Native","Native","Native","Native","Pastoral","Native","Native","Native","Pastoral","Native","Native","Native","Native","Native","Urban area","Pastoral","Native","Pastoral","Pastoral","Pastoral","Pastoral","Native","Native","Native","Pastoral","Pastoral","Native","Pastoral","Native","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Native","Native","Native","Native","Native","Native","Native","Native","Native","Native","Native","Native","Native","Pastoral","Native","Pastoral","Native","Native","Native","Native","Native","Exotic forest","Native"],"y":[77,84.5,84,79,88,77.5,89,78,76,93.5,92.5,88.75,85.75,86.25,76.75,75.5,90,75.5,78.5,82.75,88,77.5,87.5,87,88.75,91,80,89.25,82,79.75,87,88,81.25,93,76.5,97,93.25,88.5,80.5,91.75,88.75,90.75,90,87,91.5,91.5,94.25,93,86.75,81.25,90.5,93.25,81.5,82,92,87,88,80,79,81,77,85,83,82,84,87.5,82,89,80,78.25,82.5,86,76,85,79,85,79,82,78,94.5,85.25,98,75.5,83,77.75,82.5,89.5,89.5,94.5,85,84,79,77,86,77,89,80,91,88,79,92.5,78],"type":"box","name":"Excellent","marker":{"color":"rgba(239,68,68,1)","line":{"color":"rgba(239,68,68,1)"}},"line":{"color":"rgba(239,68,68,1)"},"xaxis":"x","yaxis":"y","frame":null},{"fillcolor":"rgba(245,158,11,0.5)","x":["Pastoral","Pastoral","Pastoral","Native","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Urban area","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Urban area","Pastoral","Pastoral","Urban area","Pastoral","Pastoral","Pastoral","Pastoral","Native","Exotic forest","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Exotic forest","Exotic forest","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Exotic forest","Pastoral","Urban area","Urban area","Pastoral","Exotic forest","Exotic forest","Urban area","Urban area","Pastoral","Native","Pastoral","Exotic forest","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Urban area","Pastoral","Urban area","Urban area","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Urban area","Pastoral","Pastoral"],"y":[40,48,33,42,49,50,34.5,43,40,35.5,41.5,29.5,36,37.5,45,37,34,42.5,43,35.5,36.5,39,40,27,26.75,41.25,37.5,41.25,42,49.75,43.75,44.5,47,36,34.5,37.5,30,41.25,39,39,42,40,43.5,27,47.5,37,50,35.5,43.5,35,35,30,46,47.5,47,36,48,28,46,33,27,48,34.5,48,39,49,48,37,39,32,44,46,37.5,37,33,41,44.75,31,37.5,47.5,47.5,35,38.5,47,47,35,49,47.5,42,34.5,50,43.5,29,48.5,46.5],"type":"box","name":"Fair","marker":{"color":"rgba(245,158,11,1)","line":{"color":"rgba(245,158,11,1)"}},"line":{"color":"rgba(245,158,11,1)"},"xaxis":"x","yaxis":"y","frame":null},{"fillcolor":"rgba(16,185,129,0.5)","x":["Pastoral","Pastoral","Pastoral","Native","Urban area","Native","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Exotic forest","Pastoral","Exotic forest","Native","Native","Urban area","Pastoral","Pastoral","Pastoral","Pastoral","Native","Native","Native","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Urban area","Pastoral","Pastoral","Pastoral","Native","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Native","Native","Pastoral","Native","Native","Exotic forest","Native","Pastoral","Native","Exotic forest","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Native","Exotic forest","Pastoral","Exotic forest","Pastoral","Exotic forest","Pastoral","Pastoral","Pastoral","Exotic forest","Pastoral","Pastoral","Pastoral","Pastoral","Exotic forest","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Urban area","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Native","Native","Native","Pastoral","Pastoral","Pastoral","Pastoral","Native","Pastoral","Pastoral","Native","Pastoral","Native","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Native","Native","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Native","Pastoral","Pastoral","Pastoral","Urban area","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Urban area","Native","Pastoral","Pastoral","Pastoral","Native","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Native","Native","Native","Pastoral","Urban area","Pastoral","Urban area","Native","Native","Native","Native","Native","Pastoral","Native","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Native","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Native","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Native","Native","Pastoral","Pastoral","Native","Native","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Native","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Pastoral","Native","Pastoral","Native"],"y":[53,61,53.5,73,51.5,52.5,72,52,66,72,64.5,59,62.5,60,68,67,61,56,55,59.5,71,57.25,67,63,75,61,64,73.5,69.5,74.75,73.5,69.5,54.5,70.5,66.5,55,74.25,53,73.75,67,55,57.75,70,71,59.25,59.75,66,72,66.5,72.25,64,62.25,71,67,64.25,62.75,75,61,62,65,67,53.5,72,61,62.5,73,57.5,50.5,54.5,67,54,57,55,72,51,60,69,57.5,53.5,53,51,63,55,57,63,68,67.5,68.5,54.5,54.5,66.5,52,52,55.5,58,57,54,53,70,74,69,73,53,54,68,68,65,60,61,69,73,67,52,74,63,65.5,60,64,56,72,71,58,70.5,73,64,72,64,71.5,66,75,60,62.5,63,66.5,51,64,66,67,53,75,63.5,69,70,74.5,62.5,57,71.5,72,69,66,71,74,59,52,68,73,60,64,69,67,53,55,71,54.5,52,75,70,66,72,73,65.5,63.5,57,53.5,67.75,55,65.75,72,64.25,69,69,61,50.75,70.25,70.5,58,74.75,72.25,67,67.5,67,69.25,63,70.5,52.5,66.5,62.5,72.5,63,53,67,68,64,60,67.5,63,73.5,73,57.5,68,74,52,68.5,58,70,55.5,65,75,62,54.5,65,65.5,74.5,63.5,73,55.5,63.5,56.5,69.5,70,73,53,58.5,57,63,55,56.5,50.5,64.5,58,69.5,59,55.5,59,53.5,59.5,63,56.5,53.5,57,51,58.5,52,65,70,63,63.5,52,55.5,56.5,60,59.5],"type":"box","name":"Good","marker":{"color":"rgba(16,185,129,1)","line":{"color":"rgba(16,185,129,1)"}},"line":{"color":"rgba(16,185,129,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">leaflet</span>(habitat) <span class="sc">|&gt;</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addProviderTiles</span>(providers<span class="sc">$</span>CartoDB.Positron) <span class="sc">|&gt;</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addCircleMarkers</span>(</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">lng =</span> <span class="sc">~</span>long,</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">lat =</span> <span class="sc">~</span>lat,</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">radius =</span> <span class="dv">4</span>,</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">stroke =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">fillOpacity =</span> <span class="fl">0.7</span>,</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> <span class="st">"#2b7a78"</span>,</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">popup =</span> <span class="sc">~</span><span class="fu">paste0</span>(</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>      <span class="st">"Site: "</span>, site_name,</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>      <span class="st">"&lt;br&gt;Region: "</span>, region,</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>      <span class="st">"&lt;br&gt;Score: "</span>, habitat_quality_score,</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>      <span class="st">"&lt;br&gt;Class: "</span>, habitat_quality,</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>      <span class="st">"&lt;br&gt;Landcover: "</span>, dominant_landcover</span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-f2e27ba61e42ef110383" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-f2e27ba61e42ef110383">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addProviderTiles","args":["CartoDB.Positron",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addCircleMarkers","args":[[-34.9960589393,-35.0107657332,-35.0269748663,-35.0369033259,-35.0331381,-35.0409576741,-35.0417904973,-35.0540864476,-35.0726344819,-35.098332437,-35.1140211657,-35.1223218597,-35.1411554777,-35.1481804971,-35.205198165,-35.2101811615,-35.2163278037,-35.2772207767,-35.2822065659,-35.2793763029,-35.2980197959,-35.2993348629,-35.3173232711,-35.3363686856,-35.357549523,-35.3588851472,-35.3794136257,-35.3922759911,-35.4672392318,-35.5335555481,-35.5427169408,-35.5600360499,-35.6189695689,-35.6290905558,-35.6432568602,-35.6460555068,-35.6548607226,-35.6511251249,-35.6607153627,-35.6702787057,-35.6762830684,-35.6844186535,-35.6964455091,-35.7010163215,-35.6992546004,-35.7008435093,-35.7122066465,-35.7085568443,-35.7125180092,-35.7268247466,-35.7290855948,-35.7346941897,-35.7344982462,-35.7643523526,-35.7743292375,-35.7787338863,-35.7796498328,-35.8710976969,-35.960658451,-36.2053404685,-36.512680624,-36.5132921589,-36.590114869,-36.6560714575,-36.6658189763,-36.9576801276,-36.9833383859,-37.0436413972,-37.0622057533,-37.0782722733,-37.1115100187,-37.129698369,-37.146891439,-37.1783372407,-37.2126650611,-37.218000426,-37.3563272114,-37.3804370067,-37.3735417218,-37.3853068261,-37.399027846,-37.4272503023,-37.4474054062,-37.477828617,-37.4721004185,-37.5640802009,-37.6841883082,-37.6936013107,-37.7007432825,-37.7038245019,-37.7084755002,-37.7276259695,-37.7577899195,-37.7570877467,-37.7648800268,-37.7795630302,-37.8018959367,-37.8008189713,-37.8360472631,-37.8137321714,-37.8173608797,-37.8168492598,-37.8126843577,-37.8299961607,-37.8688680001,-37.8892696901,-37.9480515918,-37.9559171759,-37.9489136036,-38.0106792699,-38.0182523145,-38.0266495653,-38.0297447795,-38.0122796114,-38.0506178704,-38.0682191003,-38.0579901461,-38.0614589132,-38.1380295724,-38.1478015023,-38.1490634795,-38.1899249742,-38.1785400587,-38.2389716577,-38.2392279783,-38.2589408279,-38.2616944096,-38.2735386074,-38.2786180572,-38.2658013217,-38.2631083824,-38.30407411,-38.3449622575,-38.3333397413,-38.3837791871,-38.4314788769,-38.5164682413,-38.5178844776,-38.5229477257,-38.5250569007,-38.5348659211,-38.5423355493,-38.5547435307,-38.5730893618,-38.6147008827,-38.6598527628,-39.1587429658,-39.1722267495,-37.6757245027,-38.2026301128,-38.2181965446,-38.3172420926,-38.3630059104,-38.3817727418,-38.4273689378,-38.4593893147,-38.4807373068,-37.563500504,-37.5711299832,-37.5962614657,-37.6077332878,-37.627504543,-37.649185601,-37.6766359805,-37.6901083338,-37.7840891691,-37.8057815053,-37.8396460572,-37.8956577385,-37.9125676288,-37.9510589715,-37.9952354784,-38.0087539631,-38.0192290519,-38.0218101893,-38.0399806483,-38.0479670481,-38.0528989253,-38.0863023091,-38.1616310098,-38.2062199378,-38.2213599704,-38.2857169371,-38.2933643801,-38.2993869429,-38.3590187872,-38.3761545352,-38.3759350463,-38.4207079753,-38.3906946792,-38.4274825697,-38.4493270455,-38.4565628793,-38.4616248239,-38.4602263858,-38.4701188656,-38.4634419819,-38.4730926015,-38.4842378986,-38.5135260173,-38.5151692522,-38.5367042412,-38.5181730142,-38.5461711936,-38.5695618095,-38.5783399532,-38.6320076945,-38.6358912548,-38.6356847918,-38.6512904684,-38.6738542592,-38.6938991848,-38.7372641191,-38.761204765,-38.7762098928,-38.790716101,-38.8032995039,-38.828491256,-39.0199668193,-39.0188417362,-39.0332248726,-39.0346972438,-39.0486861327,-39.0416291515,-39.0578698557,-39.0584353175,-39.0725394568,-39.0858689112,-39.1072018974,-39.1020331231,-39.1096159231,-39.1205276947,-39.1327510411,-39.1453313164,-39.1381025242,-39.1449998794,-39.1498226415,-39.1607133281,-39.159869432,-39.1689335725,-39.1965690705,-39.2046372193,-39.2246760651,-39.2345087851,-39.2733908676,-39.2795266474,-39.2796122739,-39.2811043012,-39.3230690108,-39.3349550604,-39.340179694,-39.3437166219,-39.3620632656,-39.3911929998,-39.3898478002,-39.4143853508,-39.4333336912,-39.4344808725,-39.4487548114,-39.4773257519,-39.4545715849,-39.5038619978,-39.4973134898,-39.5315899362,-39.5077384374,-39.5563788345,-39.5373031995,-39.5641025272,-39.5749306477,-39.586525475,-39.7509714492,-38.5396377784,-38.5875574935,-38.7340910433,-38.8004905436,-38.8177673125,-38.8916949348,-38.9474732194,-38.9499470382,-39.0066927478,-39.0496726242,-39.0164000331,-39.0479357851,-39.0813924507,-39.101609702,-39.147755093,-39.1867400486,-39.2105319751,-39.2113612084,-39.210871658,-39.2313975027,-39.2712566566,-39.3728174039,-39.387540309,-39.4248896504,-39.4416237463,-39.4861893971,-39.5601167253,-39.5717009206,-39.5819642138,-39.5897442348,-39.588804954,-39.6010198339,-39.600880731,-39.6007774943,-39.6121720637,-39.6389750723,-39.673811446,-39.6942184343,-39.692933518,-39.7010554645,-39.7163713784,-39.7344656095,-39.8031150354,-39.8266105364,-39.862922038,-39.8579523799,-39.9094377605,-39.9385978552,-39.9486670651,-39.9703579645,-39.9631694741,-39.9649338458,-39.9906248503,-40.0193335428,-40.0219820955,-40.2032974392,-40.2948929627,-40.2974113121,-40.7396391908,-40.7439472427,-40.7607835938,-40.7521996065,-40.792063039,-40.8256455428,-40.8746051268,-40.878595612,-40.8928842089,-40.9559040582,-40.9578528886,-40.9812811248,-40.9844575906,-41.0000460865,-41.0129753126,-41.0250609584,-41.056552979,-41.06761993,-41.0685821224,-41.0815917851,-41.067260727,-41.0770725471,-41.0822074658,-41.0882458758,-41.0963262821,-41.0914820303,-41.1139029854,-41.1185431691,-41.1520339934,-41.1564875953,-41.1768944703,-41.1991002218,-41.2107260754,-41.2250162926,-41.2600601972,-41.2487255452,-41.2608739859,-41.3019152884,-41.3953824344,-41.4974405747,-45.0663084104,-45.0678633074,-45.3308910701,-45.349710617,-45.4119997517,-45.4657433111,-45.447929901,-45.5051969462,-45.5516928097,-45.5577925067,-45.5311690103,-45.5839025205,-45.5673660145,-45.6046152228,-45.6827463847,-45.7267378303,-45.7184075157,-45.7100962844,-45.7277279529,-45.7391315656,-45.7731310441,-45.7512465866,-45.7829438925,-45.8003194897,-45.7773512664,-45.7986727673,-45.8572062684,-45.852500862,-45.8820523692,-45.914726783,-45.9420486845,-45.9472569531,-45.9451029805,-45.936461851,-45.9777397613,-45.9883625249,-45.9981563342,-46.0008455689,-45.9543815055,-45.9952415992,-46.0042513659,-46.0086513109,-46.0645628088,-46.0313994024,-46.0697357491,-46.066889812,-46.099355698,-46.106376691,-46.1050596299,-46.0790741177,-46.100054879,-46.1345326361,-46.1469535289,-46.1292699988,-46.141990173,-46.1331798926,-46.1404764534,-46.2016719689,-46.2021558318,-46.2183790142,-46.1974850184,-46.2484224895,-46.2630299229,-46.2432053518,-46.2674673093,-46.2489141217,-46.3121980104,-46.2594545234,-46.2866472436,-46.3228149529,-46.3044290847,-46.3152770873,-46.3194831752,-46.3315842127,-46.3644522165,-46.360250196,-46.3416232204,-46.3491784346,-46.3628414747,-46.3844335398,-46.39322447,-46.3864746123,-46.3904512489,-46.4158733877,-46.5214851736,-46.542303734,-46.5436895194,-46.5770906801,-46.6299901769,-46.6250997822],[173.363026424,173.6033909,173.424577753,173.49238322,173.61381447,173.469019237,173.566319319,173.615520626,173.433518911,173.771210394,173.221208416,173.280469058,173.505132428,173.405504629,173.968327825,173.539916443,173.956398357,173.687415015,173.911493984,174.047266841,173.897931411,173.956720912,173.970366354,173.65074297,173.962051821,173.897410809,173.913190749,174.022260944,173.664096561,174.229159002,174.26442586,173.448413663,174.261727031,173.850528513,174.310276591,174.404605963,173.573705656,174.153994742,174.323166857,174.332319598,174.328051325,174.335167957,173.868864979,174.141736596,174.18341368,174.300190082,174.330923384,174.178029314,174.207560597,174.316441797,174.122437483,174.050382419,174.313081224,173.684612804,174.244945756,174.265055047,174.276275859,174.403383615,174.11013024,174.491531654,175.407981762,175.414035056,175.4684929,175.532964475,175.535396692,175.653639809,175.50474096,175.845110899,175.670899822,175.85957607,175.177352017,175.857100805,175.838116331,175.187320771,175.587257627,175.670993505,175.388061288,174.757358451,175.864564366,175.816853969,175.39387024,174.740794776,175.406636878,175.351168128,175.686578691,175.77447742,175.126487483,175.208106227,175.209268012,175.597592313,175.548476147,175.234387888,175.000090747,175.265358837,175.743673761,175.070044406,174.976221329,175.035487986,174.82045481,175.300218372,175.303419222,175.294931035,175.626191578,175.689972862,174.771967854,175.319381874,175.10677241,175.179773007,175.835921894,175.19674134,175.061911904,175.129922915,174.941107824,175.868599423,175.107757674,174.985884217,175.720267522,175.581067376,175.043956796,174.93573412,175.419057747,175.181523441,176.026376274,175.255535905,175.640294037,174.889807392,175.097622215,174.846907598,174.937416565,175.624194711,176.16258387,176.263275501,174.738807305,176.069764242,176.345158849,174.705885855,174.65683326,174.711469716,174.905877799,174.803847828,174.713866011,174.720312837,175.142786649,174.919152097,176.300691942,175.91711688,175.739035356,175.806958074,178.06593282,177.621912042,177.584794172,177.565825677,177.496972993,177.552291804,177.461765314,177.415502789,177.450055828,178.154141671,178.274398504,178.149914833,178.257004072,178.335912985,178.316549161,178.348076326,178.297309689,178.433956565,178.245745331,178.297345242,178.29556276,178.379702882,178.211099067,178.215344285,177.959395874,178.040845763,178.332010879,178.170694516,178.176747868,178.120623014,177.879536782,178.27918664,178.253037933,178.320077799,177.849655331,178.264630993,178.248482858,177.934029572,177.790065154,178.131526585,177.584698698,178.312912179,177.722053476,177.62048358,177.75841715,177.799093589,177.910354616,177.663881343,177.875900952,178.247049647,178.195496224,178.042970929,178.027326902,177.606056551,178.252956089,177.658004401,177.950785569,178.07379567,177.857523149,177.827083086,178.07153996,177.886631441,178.032737738,178.068077032,177.83600849,177.818390642,177.796265751,177.792064114,177.904395931,177.789098301,174.326921642,174.202337171,174.147843495,174.252870928,174.112062597,174.115737663,174.072698474,174.183700302,174.021961735,174.07523058,174.211684678,174.110871463,174.073740727,173.944299681,174.285935909,173.885271701,174.262015415,174.137723233,173.936773936,174.211364346,174.258681921,174.400624165,173.868851242,173.974332176,173.965163719,173.905794558,173.883450118,173.835283539,173.787673104,174.265130321,174.185090977,174.160072194,174.343149715,174.301738449,174.227923914,174.137638768,174.467636729,174.013796042,174.146023713,174.288081312,174.287468147,174.135670523,174.27468045,174.140527128,173.906637122,174.09841191,174.457469099,174.139058236,174.387155502,174.060214208,174.207399651,174.192969647,174.554085451,177.422469507,177.535711955,177.584651984,177.53980404,177.483544343,177.518725829,176.508954554,177.061500707,177.764616145,176.589761579,177.859235537,177.835220133,177.143118777,176.701719888,177.021928854,176.52196278,176.516280466,176.89050113,176.88369029,176.796879221,176.977304744,176.437169022,176.826660991,176.548401979,176.71986533,176.698490718,176.398258175,176.883953843,176.737315068,176.862130664,176.762485227,176.576919259,176.715374326,176.879873926,176.929944306,176.988929132,176.866059636,176.788167158,176.800763059,176.793719214,176.928508955,176.953011489,176.981822826,176.980119685,176.44288781,176.715073651,176.524704947,176.361667519,176.583915068,176.338774183,176.682408288,176.906395267,176.556219437,176.318309267,176.372419336,176.591769206,176.576846008,176.554027716,175.127107439,175.142449952,175.115503026,175.585623279,175.088740331,175.20260261,175.134918094,175.03257852,175.69205639,175.67972446,175.674812216,175.625905657,175.688962642,175.591537427,175.394075874,175.495175645,175.495678569,175.196288833,175.65751741,174.925056536,175.632801569,175.54012767,175.144840887,175.09825267,175.126545261,175.506318093,175.051011602,174.922458382,174.840386766,174.98587433,175.33461148,174.918646599,175.470927733,174.921864988,174.77443446,175.363506547,175.005899554,174.722034476,174.883005772,175.511504017,167.993021063,167.988445351,168.210638645,168.127776804,167.740822645,168.682574581,168.135734437,167.974097307,169.030801283,168.559029063,167.754566161,168.373105248,167.63024182,167.705468311,168.426025553,168.84231487,168.430615974,168.153832646,168.396522485,168.117230522,168.418960724,168.028563327,168.195856937,168.645845793,167.532119304,167.636517381,168.791420296,168.147881985,168.602495377,168.813168223,168.733302133,168.334735075,168.167603782,167.704185194,168.365484551,168.804873544,168.822505346,168.457487856,167.209441451,167.540887252,167.666111683,167.457719049,168.4788328,167.716138542,168.481988178,168.240354865,168.949686062,168.956231597,168.486158503,167.790773756,167.961080791,168.601990882,168.487476585,167.976743074,168.000127086,167.686590543,167.522800555,168.862275418,168.301402524,168.543724384,167.919312234,168.417579459,168.45490025,167.957314107,168.455821869,167.938848832,169.082774766,167.732074629,168.087467302,168.860563465,168.176445508,168.173041346,168.244061144,168.297781801,169.151552097,168.842641267,168.266992618,168.152766437,168.350093596,168.761153774,168.775083637,168.366746962,168.462671563,168.351216849,168.541010965,168.568869372,168.435631535,169.145759091,169.021517026,168.865647226],4,null,null,{"interactive":true,"className":"","stroke":false,"color":"#2b7a78","weight":5,"opacity":0.5,"fill":true,"fillColor":"#2b7a78","fillOpacity":0.7},null,null,["Site: Aurere at Pekerau Rd<br>Region: Northland<br>Score: 40<br>Class: Fair<br>Landcover: Pastoral","Site: Oruaiti at Windust Road<br>Region: Northland<br>Score: 53<br>Class: Good<br>Landcover: Pastoral","Site: Parapara at Taumata Road<br>Region: Northland<br>Score: 48<br>Class: Fair<br>Landcover: Pastoral","Site: Oruru at Oruru Road<br>Region: Northland<br>Score: 33<br>Class: Fair<br>Landcover: Pastoral","Site: Stony Creek at Sawyer Road<br>Region: Northland<br>Score: 77<br>Class: Excellent<br>Landcover: Pastoral","Site: Paranui at Paranui Road<br>Region: Northland<br>Score: 61<br>Class: Good<br>Landcover: Pastoral","Site: Kenana at Kenana Road<br>Region: Northland<br>Score: 42<br>Class: Fair<br>Landcover: Native","Site: Oruaiti at Sawyer Road<br>Region: Northland<br>Score: 53.5<br>Class: Good<br>Landcover: Pastoral","Site: Parapara at Parapara Toatoa Road<br>Region: Northland<br>Score: 49<br>Class: Fair<br>Landcover: Pastoral","Site: Kaeo at Dip Road<br>Region: Northland<br>Score: 50<br>Class: Fair<br>Landcover: Pastoral","Site: Awanui US Waihue Channel<br>Region: Northland<br>Score: 34.5<br>Class: Fair<br>Landcover: Pastoral","Site: Awanui at FNDC<br>Region: Northland<br>Score: 43<br>Class: Fair<br>Landcover: Pastoral","Site: Peria at Honeymoon Valley Road<br>Region: Northland<br>Score: 84.5<br>Class: Excellent<br>Landcover: Native","Site: Victoria at Victoria Valley Road<br>Region: Northland<br>Score: 73<br>Class: Good<br>Landcover: Native","Site: Waipapa at Landing<br>Region: Northland<br>Score: 51.5<br>Class: Good<br>Landcover: Urban area","Site: Mangamuka at Iwitaua Road<br>Region: Northland<br>Score: 52.5<br>Class: Good<br>Landcover: Native","Site: Kerikeri at Stone Store<br>Region: Northland<br>Score: 84<br>Class: Excellent<br>Landcover: Urban area","Site: Waipapa at Forest Ranger<br>Region: Northland<br>Score: 79<br>Class: Excellent<br>Landcover: Native","Site: Waipapa at Waimate North Road<br>Region: Northland<br>Score: 72<br>Class: Good<br>Landcover: Pastoral","Site: Waitangi at Wakelins<br>Region: Northland<br>Score: 40<br>Class: Fair<br>Landcover: Pastoral","Site: Waitangi at Waimate North Road<br>Region: Northland<br>Score: 52<br>Class: Good<br>Landcover: Pastoral","Site: Waitangi at SH10<br>Region: Northland<br>Score: 35.5<br>Class: Fair<br>Landcover: Pastoral","Site: Mania at SH10<br>Region: Northland<br>Score: 41.5<br>Class: Fair<br>Landcover: Pastoral","Site: Utakura at Okaka Bridge<br>Region: Northland<br>Score: 29.5<br>Class: Fair<br>Landcover: Pastoral","Site: Watercress at SH1<br>Region: Northland<br>Score: 66<br>Class: Good<br>Landcover: Pastoral","Site: Pekepeka at Ohaeawai<br>Region: Northland<br>Score: 72<br>Class: Good<br>Landcover: Pastoral","Site: Waiaruhe D/S Mangamutu Confluence<br>Region: Northland<br>Score: 64.5<br>Class: Good<br>Landcover: Pastoral","Site: Waiharakeke at Stinger Road<br>Region: Northland<br>Score: 59<br>Class: Good<br>Landcover: Pastoral","Site: Punakitere at Taheke<br>Region: Northland<br>Score: 62.5<br>Class: Good<br>Landcover: Pastoral","Site: Waiotu River at SH1<br>Region: Northland<br>Score: 36<br>Class: Fair<br>Landcover: Pastoral","Site: Whakapara at Cableway<br>Region: Northland<br>Score: 37.5<br>Class: Fair<br>Landcover: Pastoral","Site: Waimamaku at SH12<br>Region: Northland<br>Score: 60<br>Class: Good<br>Landcover: Pastoral","Site: Mangahahuru at Apotu Road<br>Region: Northland<br>Score: 45<br>Class: Fair<br>Landcover: Pastoral","Site: Mangakahia at Twin Bridges<br>Region: Northland<br>Score: 68<br>Class: Good<br>Landcover: Pastoral","Site: Mangahahuru at Main Road<br>Region: Northland<br>Score: 67<br>Class: Good<br>Landcover: Pastoral","Site: Ngunguru at Coalhill Lane<br>Region: Northland<br>Score: 61<br>Class: Good<br>Landcover: Pastoral","Site: Waipoua at SH12<br>Region: Northland<br>Score: 88<br>Class: Excellent<br>Landcover: Native","Site: Wairua at Purua<br>Region: Northland<br>Score: 37<br>Class: Fair<br>Landcover: Pastoral","Site: Mangakino at Mangakino Lane<br>Region: Northland<br>Score: 77.5<br>Class: Excellent<br>Landcover: Exotic forest","Site: Mangakino U/S Waitaua Confluence<br>Region: Northland<br>Score: 56<br>Class: Good<br>Landcover: Exotic forest","Site: Waitaua at Vinegar Hill Road<br>Region: Northland<br>Score: 34<br>Class: Fair<br>Landcover: Urban area","Site: Hatea at Whangarei Falls<br>Region: Northland<br>Score: 55<br>Class: Good<br>Landcover: Pastoral","Site: Opouteke at Suspension Bridge<br>Region: Northland<br>Score: 59.5<br>Class: Good<br>Landcover: Exotic forest","Site: Mangere at Knight Road<br>Region: Northland<br>Score: 42.5<br>Class: Fair<br>Landcover: Pastoral","Site: Mangere at Kokopu Road<br>Region: Northland<br>Score: 43<br>Class: Fair<br>Landcover: Pastoral","Site: Waiarohia at Whau Valley<br>Region: Northland<br>Score: 71<br>Class: Good<br>Landcover: Native","Site: Hatea at Mair Park<br>Region: Northland<br>Score: 89<br>Class: Excellent<br>Landcover: Urban area","Site: Mangapiu at Kokopu Road<br>Region: Northland<br>Score: 35.5<br>Class: Fair<br>Landcover: Pastoral","Site: Mangere at Wood Road<br>Region: Northland<br>Score: 57.25<br>Class: Good<br>Landcover: Native","Site: Waiarohia at Second Avenue<br>Region: Northland<br>Score: 67<br>Class: Good<br>Landcover: Urban area","Site: Waipao at Draffin Road<br>Region: Northland<br>Score: 63<br>Class: Good<br>Landcover: Pastoral","Site: Mangakahia at Titoki<br>Region: Northland<br>Score: 36.5<br>Class: Fair<br>Landcover: Pastoral","Site: Raumanga at Bernard Street<br>Region: Northland<br>Score: 78<br>Class: Excellent<br>Landcover: Urban area","Site: Kaihu at Gorge<br>Region: Northland<br>Score: 76<br>Class: Excellent<br>Landcover: Pastoral","Site: Otaika at Cemetery Road<br>Region: Northland<br>Score: 39<br>Class: Fair<br>Landcover: Pastoral","Site: Otakaranga at Otaika Valley Road<br>Region: Northland<br>Score: 40<br>Class: Fair<br>Landcover: Pastoral","Site: Otaika at Otaika Valley Road<br>Region: Northland<br>Score: 75<br>Class: Good<br>Landcover: Pastoral","Site: Ruakaka at Flyger Road<br>Region: Northland<br>Score: 61<br>Class: Good<br>Landcover: Pastoral","Site: Manganui at Mititai Road<br>Region: Northland<br>Score: 27<br>Class: Fair<br>Landcover: Pastoral","Site: Hakaru at Topuni<br>Region: Northland<br>Score: 64<br>Class: Good<br>Landcover: Pastoral","Site: Stoney Stream at off Coromandel Walkway 2nd order<br>Region: Waikato<br>Score: 93.5<br>Class: Excellent<br>Landcover: Native","Site: Stoney Stream at off Coromandel Walkway 3rd order<br>Region: Waikato<br>Score: 92.5<br>Class: Excellent<br>Landcover: Native","Site: Ahirau Stm Coromandel Pt Charles Rd 2.5km Colville<br>Region: Waikato<br>Score: 88.75<br>Class: Excellent<br>Landcover: Native","Site: Mataiterangi Stm at Fish Reference site<br>Region: Waikato<br>Score: 85.75<br>Class: Excellent<br>Landcover: Native","Site: Mangatu Stm at Fish Reference site<br>Region: Waikato<br>Score: 86.25<br>Class: Excellent<br>Landcover: Native","Site: Waiwawa River at U/S Toranoho Stm<br>Region: Waikato<br>Score: 73.5<br>Class: Good<br>Landcover: Native","Site: Tapu RiveratTapu-Coroglen Rd<br>Region: Waikato<br>Score: 69.5<br>Class: Good<br>Landcover: Native","Site: Gumdigger Gully Stm at NIWA Report 14<br>Region: Waikato<br>Score: 76.75<br>Class: Excellent<br>Landcover: Exotic forest","Site: Kauaeranga River at Upstream from Road End<br>Region: Waikato<br>Score: 74.75<br>Class: Good<br>Landcover: Native","Site: Wahitapu Stm at NIWA Report<br>Region: Waikato<br>Score: 75.5<br>Class: Excellent<br>Landcover: Exotic forest","Site: Milnes Stream at Mangatangi Hill Rd, Hunua<br>Region: Waikato<br>Score: 90<br>Class: Excellent<br>Landcover: Native","Site: Tawatawa Stm at NIWA Report<br>Region: Waikato<br>Score: 75.5<br>Class: Excellent<br>Landcover: Pastoral","Site: Wharekawa River at U/S Adams Farm Br<br>Region: Waikato<br>Score: 73.5<br>Class: Good<br>Landcover: Pastoral","Site: Mangatangi River at Stubbs Rd<br>Region: Waikato<br>Score: 69.5<br>Class: Good<br>Landcover: Pastoral","Site: Matatoki Stm at Matatoki Rd<br>Region: Waikato<br>Score: 54.5<br>Class: Good<br>Landcover: Pastoral","Site: Apakura Stm at Puriri Valley Rd<br>Region: Waikato<br>Score: 78.5<br>Class: Excellent<br>Landcover: Native","Site: Torehape Stm at Torehape West Rd<br>Region: Waikato<br>Score: 82.75<br>Class: Excellent<br>Landcover: Pastoral","Site: Waikato River TribatTuakau/Port Waikato Rd 2.2 Km E<br>Region: Waikato<br>Score: 88<br>Class: Excellent<br>Landcover: Native","Site: Ohinemuri River at SH25 Br<br>Region: Waikato<br>Score: 70.5<br>Class: Good<br>Landcover: Pastoral","Site: Waitete Stm (Waihi)atClean Streams downstream monit<br>Region: Waikato<br>Score: 77.5<br>Class: Excellent<br>Landcover: Pastoral","Site: Waiwhata Streamat4.3 Km From SH27 On Ohinewai Road<br>Region: Waikato<br>Score: 87.5<br>Class: Excellent<br>Landcover: Native","Site: Huriwai Stm at Waikaretu Rd<br>Region: Waikato<br>Score: 66.5<br>Class: Good<br>Landcover: Pastoral","Site: Mangawara Stm at Mangawara Rd<br>Region: Waikato<br>Score: 55<br>Class: Good<br>Landcover: Pastoral","Site: Mangatea Stream Trib (Tate Property)<br>Region: Waikato<br>Score: 87<br>Class: Excellent<br>Landcover: Native","Site: Waitoki StmatRawhiti Rd<br>Region: Waikato<br>Score: 74.25<br>Class: Good<br>Landcover: Pastoral","Site: Pohomihi StmatAbove Water Intake Consented Site MPD<br>Region: Waikato<br>Score: 88.75<br>Class: Excellent<br>Landcover: Native","Site: Firewood Creek Trib at Off Walkway 2nd Bridge On DO<br>Region: Waikato<br>Score: 91<br>Class: Excellent<br>Landcover: Pastoral","Site: Waikato River TribatUnnamed Trib At Lake Road<br>Region: Waikato<br>Score: 26.75<br>Class: Fair<br>Landcover: Pastoral","Site: Waikato River TribatUnnamed Trib At River Rd Sth Pa<br>Region: Waikato<br>Score: 41.25<br>Class: Fair<br>Landcover: Pastoral","Site: Piako River at Kiwitahi<br>Region: Waikato<br>Score: 37.5<br>Class: Fair<br>Landcover: Pastoral","Site: Toenepi StmatTahuroa Rd<br>Region: Waikato<br>Score: 41.25<br>Class: Fair<br>Landcover: Pastoral","Site: Waikato River TribatUnnamed Trib At River Rd Just S<br>Region: Waikato<br>Score: 42<br>Class: Fair<br>Landcover: Urban area","Site: Maunganui Stream at Ohautira Rd farm track 3rd ord<br>Region: Waikato<br>Score: 80<br>Class: Excellent<br>Landcover: Native","Site: Bankwood Stm at Emerald Tce<br>Region: Waikato<br>Score: 49.75<br>Class: Fair<br>Landcover: Pastoral","Site: Waitoa RiveratLandsdowne Rd Br<br>Region: Waikato<br>Score: 43.75<br>Class: Fair<br>Landcover: Pastoral","Site: Whakakai StreamatWhatawhata Research Station<br>Region: Waikato<br>Score: 89.25<br>Class: Excellent<br>Landcover: Native","Site: Parawai Stm at Ohautira rd<br>Region: Waikato<br>Score: 53<br>Class: Good<br>Landcover: Pastoral","Site: Mangaokahu Stm at Cogswell Road (Upper)<br>Region: Waikato<br>Score: 82<br>Class: Excellent<br>Landcover: Native","Site: Wainui Stm (Raglan)atWainui Stm (Raglan) at Wainui<br>Region: Waikato<br>Score: 79.75<br>Class: Excellent<br>Landcover: Native","Site: Mangakotukutuku Stm (Rukuhia) at Peacockes Rd<br>Region: Waikato<br>Score: 44.5<br>Class: Fair<br>Landcover: Urban area","Site: Mangakotukutuku Stm (Rukuhia) at Waterford Road<br>Region: Waikato<br>Score: 73.75<br>Class: Good<br>Landcover: Pastoral","Site: Mangakotukutuku Stm (Rukuhia) at Pelorus Street<br>Region: Waikato<br>Score: 67<br>Class: Good<br>Landcover: Urban area","Site: Piakonui Stm Trib at Piakonui Road DOC Estate<br>Region: Waikato<br>Score: 87<br>Class: Excellent<br>Landcover: Native","Site: Mangapapa Stm (Matamata) at Henry Watson Rd<br>Region: Waikato<br>Score: 55<br>Class: Good<br>Landcover: Pastoral","Site: Te Rekereke StmatKarioi At Papanui<br>Region: Waikato<br>Score: 88<br>Class: Excellent<br>Landcover: Native","Site: Mystery Creek at Bardoul Farm, 123 Kaipaki Rd<br>Region: Waikato<br>Score: 57.75<br>Class: Good<br>Landcover: Pastoral","Site: Te Pahu Stm Trib at Off Main Farm Track Dstm<br>Region: Waikato<br>Score: 81.25<br>Class: Excellent<br>Landcover: Pastoral","Site: Mangakara Stm (Pirongia) at Bushline<br>Region: Waikato<br>Score: 93<br>Class: Excellent<br>Landcover: Pastoral","Site: Waiomou Stm at Waiomou Rd<br>Region: Waikato<br>Score: 47<br>Class: Fair<br>Landcover: Pastoral","Site: Mangauika Stm at Mangauika Rd Br<br>Region: Waikato<br>Score: 76.5<br>Class: Excellent<br>Landcover: Pastoral","Site: Omanawa Stm Trib at Pirongia West Rd<br>Region: Waikato<br>Score: 97<br>Class: Excellent<br>Landcover: Native","Site: Mangauika Stm at U/S Weir [A]<br>Region: Waikato<br>Score: 93.25<br>Class: Excellent<br>Landcover: Native","Site: Mangahoanga Stm (Moerangi) at Moerangi Rd<br>Region: Waikato<br>Score: 70<br>Class: Good<br>Landcover: Pastoral","Site: Waimakariri Stm at Off End of Waimakariri Rd<br>Region: Waikato<br>Score: 71<br>Class: Good<br>Landcover: Native","Site: Whakarautawa Stm at Mangati Rd<br>Region: Waikato<br>Score: 88.5<br>Class: Excellent<br>Landcover: Native","Site: Waikuku Stream at Te Kauri Lodge<br>Region: Waikato<br>Score: 80.5<br>Class: Excellent<br>Landcover: Native","Site: Pokaiwhenua Stm at Arapuni - Putaruru Rd<br>Region: Waikato<br>Score: 59.25<br>Class: Good<br>Landcover: Pastoral","Site: Otautora Stm at Inside Maungatautari Enclosure<br>Region: Waikato<br>Score: 91.75<br>Class: Excellent<br>Landcover: Native","Site: Purangirangi StreamatOamaru Road<br>Region: Waikato<br>Score: 88.75<br>Class: Excellent<br>Landcover: Native","Site: Awaroa River (Kawhia Hbr) at Hauturu Road Bridge<br>Region: Waikato<br>Score: 59.75<br>Class: Good<br>Landcover: Pastoral","Site: Mangatutu Stm (Waikeria) at NZR08704-381<br>Region: Waikato<br>Score: 66<br>Class: Good<br>Landcover: Pastoral","Site: Waitomo StmatWaitomo Valley Rd<br>Region: Waikato<br>Score: 36<br>Class: Fair<br>Landcover: Pastoral","Site: Mokaihaha Stm at Galaxy Road Upstream Of Road<br>Region: Waikato<br>Score: 90.75<br>Class: Excellent<br>Landcover: Native","Site: Mangawhero Stm Trib (Otorohanga) at Mangawhero Rd<br>Region: Waikato<br>Score: 34.5<br>Class: Fair<br>Landcover: Pastoral","Site: Makomako Stm at Blackwell Downstream<br>Region: Waikato<br>Score: 72<br>Class: Good<br>Landcover: Pastoral","Site: Marokopa Stm at Te Anga Rd<br>Region: Waikato<br>Score: 66.5<br>Class: Good<br>Landcover: Pastoral","Site: Waitomo StmatTumutumu Rd<br>Region: Waikato<br>Score: 37.5<br>Class: Fair<br>Landcover: Pastoral","Site: Tawarau RiveratSpeedies Rd<br>Region: Waikato<br>Score: 72.25<br>Class: Good<br>Landcover: Pastoral","Site: Mangapohue StreamatWaitomo/Marakopa Rd, Opp Marae R<br>Region: Waikato<br>Score: 90<br>Class: Excellent<br>Landcover: Native","Site: Mangawhio Stm Trib at Taupaki Rd<br>Region: Waikato<br>Score: 64<br>Class: Good<br>Landcover: Pastoral","Site: Pokaitu StmatUnder Bridge Southern End Apirana<br>Region: Waikato<br>Score: 62.25<br>Class: Good<br>Landcover: Pastoral","Site: Whirinaki Stm at Corbett Rd<br>Region: Waikato<br>Score: 71<br>Class: Good<br>Landcover: Pastoral","Site: Kiritihere Stm at Mangatoa Rd<br>Region: Waikato<br>Score: 30<br>Class: Fair<br>Landcover: Native","Site: Tahunaatara StmatForlong Downstream<br>Region: Waikato<br>Score: 41.25<br>Class: Fair<br>Landcover: Exotic forest","Site: Kawaunui Stm at SH5 Br<br>Region: Waikato<br>Score: 67<br>Class: Good<br>Landcover: Pastoral","Site: Mangatoa Stm at Awakino/Marakopa Road<br>Region: Waikato<br>Score: 87<br>Class: Excellent<br>Landcover: Native","Site: Paparahia Stm at Fish Reference Site<br>Region: Waikato<br>Score: 91.5<br>Class: Excellent<br>Landcover: Native","Site: Manganui River at Big 3<br>Region: Waikato<br>Score: 91.5<br>Class: Excellent<br>Landcover: Native","Site: Mangaotaki River at SH3 Br<br>Region: Waikato<br>Score: 64.25<br>Class: Good<br>Landcover: Pastoral","Site: Awakino River at Gribbon Road<br>Region: Waikato<br>Score: 94.25<br>Class: Excellent<br>Landcover: Native","Site: Manganui River at Small 3<br>Region: Waikato<br>Score: 93<br>Class: Excellent<br>Landcover: Native","Site: Manganui River at 2nd Order<br>Region: Waikato<br>Score: 86.75<br>Class: Excellent<br>Landcover: Native","Site: Mangawhata Stream at Puhunga Road<br>Region: Waikato<br>Score: 81.25<br>Class: Excellent<br>Landcover: Pastoral","Site: Mokau River at Totoro Rd Recorder<br>Region: Waikato<br>Score: 62.75<br>Class: Good<br>Landcover: Pastoral","Site: Kaiwhitwhiti Stm at Tiverton Downs Farm<br>Region: Waikato<br>Score: 75<br>Class: Good<br>Landcover: Pastoral","Site: Whangamata Stm (Kinloch) at Kinloch<br>Region: Waikato<br>Score: 61<br>Class: Good<br>Landcover: Pastoral","Site: Mangatawai Stm at Off SH1 U/S Bridge<br>Region: Waikato<br>Score: 90.5<br>Class: Excellent<br>Landcover: Native","Site: Tongariro River TribatOff Tree Trunk Gorge Road<br>Region: Waikato<br>Score: 93.25<br>Class: Excellent<br>Landcover: Native","Site: Whangaparoa Trib at Waikura Road<br>Region: Gisborne<br>Score: 39<br>Class: Fair<br>Landcover: Pastoral","Site: Upper Motu Trib at Mangatu<br>Region: Gisborne<br>Score: 81.5<br>Class: Excellent<br>Landcover: Native","Site: Marumoko Str at Marumoko Rd<br>Region: Gisborne<br>Score: 82<br>Class: Excellent<br>Landcover: Pastoral","Site: Whakarau Trib at Whakarau Rd<br>Region: Gisborne<br>Score: 39<br>Class: Fair<br>Landcover: Pastoral","Site: Motu River at Kotare Station Bridge<br>Region: Gisborne<br>Score: 62<br>Class: Good<br>Landcover: Pastoral","Site: Matawai Stream at Tawai<br>Region: Gisborne<br>Score: 42<br>Class: Fair<br>Landcover: Pastoral","Site: Motu River at Matawai Conserv Area<br>Region: Gisborne<br>Score: 92<br>Class: Excellent<br>Landcover: Native","Site: Koranga Rv at Koranga Valley Rd<br>Region: Gisborne<br>Score: 65<br>Class: Good<br>Landcover: Pastoral","Site: Koranga Trib at Rakauroa Rd<br>Region: Gisborne<br>Score: 67<br>Class: Good<br>Landcover: Native","Site: Lottin Point Road Stream<br>Region: Gisborne<br>Score: 40<br>Class: Fair<br>Landcover: Pastoral","Site: Wharekahika River U/S of Wharf Bridge<br>Region: Gisborne<br>Score: 53.5<br>Class: Good<br>Landcover: Native","Site: Oweka River at SH35 Bridge<br>Region: Gisborne<br>Score: 72<br>Class: Good<br>Landcover: Pastoral","Site: Mangatutu Str at Sh35-Waipahuru Bridge<br>Region: Gisborne<br>Score: 61<br>Class: Good<br>Landcover: Native","Site: Karakatuwhero River at SH35 Br<br>Region: Gisborne<br>Score: 62.5<br>Class: Good<br>Landcover: Native","Site: Karakatuwhero Trib at Karakatuwhero Rd<br>Region: Gisborne<br>Score: 73<br>Class: Good<br>Landcover: Exotic forest","Site: Awatere River at SH35 Bridge<br>Region: Gisborne<br>Score: 57.5<br>Class: Good<br>Landcover: Native","Site: Kopuapunamu Str Trib at Te Araroa<br>Region: Gisborne<br>Score: 43.5<br>Class: Fair<br>Landcover: Pastoral","Site: Poroporo River at Rangitukia Rd Bridge<br>Region: Gisborne<br>Score: 50.5<br>Class: Good<br>Landcover: Pastoral","Site: Mangaoparo River at Mangaoparo Road<br>Region: Gisborne<br>Score: 54.5<br>Class: Good<br>Landcover: Native","Site: Mangaoporo River at Tutamatai Bridge<br>Region: Gisborne<br>Score: 67<br>Class: Good<br>Landcover: Exotic forest","Site: Waiapu River at Rotokautuku Br (SH35)<br>Region: Gisborne<br>Score: 54<br>Class: Good<br>Landcover: Pastoral","Site: Mangaehu Stream at Marshall road<br>Region: Gisborne<br>Score: 27<br>Class: Fair<br>Landcover: Pastoral","Site: Mata River at Aorangi (Makarika Road)<br>Region: Gisborne<br>Score: 57<br>Class: Good<br>Landcover: Pastoral","Site: Makarika Str at Keelan Rd<br>Region: Gisborne<br>Score: 55<br>Class: Good<br>Landcover: Pastoral","Site: Mangaokura Stream<br>Region: Gisborne<br>Score: 87<br>Class: Excellent<br>Landcover: Native","Site: Huitatariki Str<br>Region: Gisborne<br>Score: 72<br>Class: Good<br>Landcover: Pastoral","Site: Waipiro Str at Te Puia<br>Region: Gisborne<br>Score: 47.5<br>Class: Fair<br>Landcover: Pastoral","Site: Kouetumara Str at Ihungia Rd<br>Region: Gisborne<br>Score: 37<br>Class: Fair<br>Landcover: Exotic forest","Site: Ihungia River at Ihungia Rd Br<br>Region: Gisborne<br>Score: 51<br>Class: Good<br>Landcover: Pastoral","Site: Mata River at Pouturu Br<br>Region: Gisborne<br>Score: 60<br>Class: Good<br>Landcover: Pastoral","Site: Mata Upper<br>Region: Gisborne<br>Score: 88<br>Class: Excellent<br>Landcover: Native","Site: Makokomuka Str at Anaura Rd<br>Region: Gisborne<br>Score: 69<br>Class: Good<br>Landcover: Pastoral","Site: Hikuwai River at No 4 Bridge<br>Region: Gisborne<br>Score: 57.5<br>Class: Good<br>Landcover: Pastoral","Site: Anaura Str at Anaura Bay Rd<br>Region: Gisborne<br>Score: 53.5<br>Class: Good<br>Landcover: Native","Site: Waipaoa at Armstrong Rd<br>Region: Gisborne<br>Score: 53<br>Class: Good<br>Landcover: Exotic forest","Site: Hikuwai River at Willowflat<br>Region: Gisborne<br>Score: 51<br>Class: Good<br>Landcover: Pastoral","Site: Mangakino Str at Mangatokerau Rd<br>Region: Gisborne<br>Score: 63<br>Class: Good<br>Landcover: Exotic forest","Site: Waingaromia River at Terrace Station<br>Region: Gisborne<br>Score: 50<br>Class: Fair<br>Landcover: Exotic forest","Site: Mangatu River at Omapere Station<br>Region: Gisborne<br>Score: 55<br>Class: Good<br>Landcover: Pastoral","Site: Whakauranga Br at West Ho Rd<br>Region: Gisborne<br>Score: 57<br>Class: Good<br>Landcover: Exotic forest","Site: Waikohu Rv at Oliver Rd<br>Region: Gisborne<br>Score: 63<br>Class: Good<br>Landcover: Pastoral","Site: Kaitawa Str at Wharf Rd<br>Region: Gisborne<br>Score: 35.5<br>Class: Fair<br>Landcover: Pastoral","Site: Waikohu River at Mahaki Station<br>Region: Gisborne<br>Score: 68<br>Class: Good<br>Landcover: Pastoral","Site: Parihihonou Str at SH2 Overbridge<br>Region: Gisborne<br>Score: 67.5<br>Class: Good<br>Landcover: Pastoral","Site: Waihuka River at No.3 Br<br>Region: Gisborne<br>Score: 43.5<br>Class: Fair<br>Landcover: Pastoral","Site: Kurunui Str at Holdsworth Br SH2<br>Region: Gisborne<br>Score: 35<br>Class: Fair<br>Landcover: Pastoral","Site: Mangaoai Str at Mangaoai Rd<br>Region: Gisborne<br>Score: 68.5<br>Class: Good<br>Landcover: Exotic forest","Site: Waihuka at No2 Br<br>Region: Gisborne<br>Score: 54.5<br>Class: Good<br>Landcover: Pastoral","Site: Waipaoa River at Matawhero Bridge<br>Region: Gisborne<br>Score: 35<br>Class: Fair<br>Landcover: Pastoral","Site: Pakarae Trib at Whangara Rd<br>Region: Gisborne<br>Score: 30<br>Class: Fair<br>Landcover: Pastoral","Site: Pakarae trib Stevens Road<br>Region: Gisborne<br>Score: 46<br>Class: Fair<br>Landcover: Pastoral","Site: Waimata River at Monowai Bridge<br>Region: Gisborne<br>Score: 54.5<br>Class: Good<br>Landcover: Pastoral","Site: Waitekaha Str at Tuparoa Rd<br>Region: Gisborne<br>Score: 47.5<br>Class: Fair<br>Landcover: Pastoral","Site: Wharekopae above falls<br>Region: Gisborne<br>Score: 66.5<br>Class: Good<br>Landcover: Pastoral","Site: Pakarae River at Pakarae Station Bridge<br>Region: Gisborne<br>Score: 47<br>Class: Fair<br>Landcover: Pastoral","Site: Wharekopae River at Rangimoe<br>Region: Gisborne<br>Score: 52<br>Class: Good<br>Landcover: Pastoral","Site: Waihirere Str at Domain<br>Region: Gisborne<br>Score: 80<br>Class: Excellent<br>Landcover: Native","Site: Makahakaha Stream<br>Region: Gisborne<br>Score: 52<br>Class: Good<br>Landcover: Exotic forest","Site: Whakaahu Str at Brunton Rd<br>Region: Gisborne<br>Score: 36<br>Class: Fair<br>Landcover: Pastoral","Site: Waikakariki Trib at Quarry<br>Region: Gisborne<br>Score: 48<br>Class: Fair<br>Landcover: Exotic forest","Site: Waimata River at Goodwins Rd Bridge<br>Region: Gisborne<br>Score: 55.5<br>Class: Good<br>Landcover: Pastoral","Site: Waipaoa Trib at Pipiwhakao Road<br>Region: Gisborne<br>Score: 28<br>Class: Fair<br>Landcover: Pastoral","Site: Waipaoa River at Kanakanaia<br>Region: Gisborne<br>Score: 46<br>Class: Fair<br>Landcover: Urban area","Site: Wainui Str at Heath Johnston Park<br>Region: Gisborne<br>Score: 33<br>Class: Fair<br>Landcover: Urban area","Site: Te Arai Trib at Waugh Rd<br>Region: Gisborne<br>Score: 27<br>Class: Fair<br>Landcover: Pastoral","Site: Te Arai River at Pykes Weir<br>Region: Gisborne<br>Score: 58<br>Class: Good<br>Landcover: Pastoral","Site: Te Arai Trib at Waingake Rd<br>Region: Gisborne<br>Score: 48<br>Class: Fair<br>Landcover: Exotic forest","Site: Te Arai Rv at Waingake<br>Region: Gisborne<br>Score: 57<br>Class: Good<br>Landcover: Pastoral","Site: Maraetaha Str at No2 Br<br>Region: Gisborne<br>Score: 34.5<br>Class: Fair<br>Landcover: Exotic forest","Site: Te Arai River at DW Bush Intake Above Weir<br>Region: Gisborne<br>Score: 79<br>Class: Excellent<br>Landcover: Native","Site: Tangahoe R<br>Region: Taranaki<br>Score: 54<br>Class: Good<br>Landcover: Pastoral","Site: Waiau S<br>Region: Taranaki<br>Score: 53<br>Class: Good<br>Landcover: Pastoral","Site: Mangati S<br>Region: Taranaki<br>Score: 48<br>Class: Fair<br>Landcover: Urban area","Site: Waitara R<br>Region: Taranaki<br>Score: 70<br>Class: Good<br>Landcover: Pastoral","Site: Waiwhakaiho R<br>Region: Taranaki<br>Score: 74<br>Class: Good<br>Landcover: Pastoral","Site: Waiwhakaiho R<br>Region: Taranaki<br>Score: 69<br>Class: Good<br>Landcover: Pastoral","Site: Huatoki S<br>Region: Taranaki<br>Score: 39<br>Class: Fair<br>Landcover: Urban area","Site: Maketawa S<br>Region: Taranaki<br>Score: 73<br>Class: Good<br>Landcover: Pastoral","Site: Herekawe S<br>Region: Taranaki<br>Score: 53<br>Class: Good<br>Landcover: Urban area","Site: Huatoki S<br>Region: Taranaki<br>Score: 81<br>Class: Excellent<br>Landcover: Urban area","Site: Tangahoe R<br>Region: Taranaki<br>Score: 49<br>Class: Fair<br>Landcover: Pastoral","Site: Mangorei S<br>Region: Taranaki<br>Score: 77<br>Class: Excellent<br>Landcover: Pastoral","Site: Huatoki S<br>Region: Taranaki<br>Score: 54<br>Class: Good<br>Landcover: Pastoral","Site: Waimoku S<br>Region: Taranaki<br>Score: 68<br>Class: Good<br>Landcover: Pastoral","Site: Manganui R<br>Region: Taranaki<br>Score: 68<br>Class: Good<br>Landcover: Pastoral","Site: Katikara S<br>Region: Taranaki<br>Score: 65<br>Class: Good<br>Landcover: Pastoral","Site: Kurapete S<br>Region: Taranaki<br>Score: 60<br>Class: Good<br>Landcover: Pastoral","Site: Waingongoro R<br>Region: Taranaki<br>Score: 61<br>Class: Good<br>Landcover: Pastoral","Site: Waiokura S<br>Region: Taranaki<br>Score: 69<br>Class: Good<br>Landcover: Pastoral","Site: Kurapete S<br>Region: Taranaki<br>Score: 73<br>Class: Good<br>Landcover: Pastoral","Site: Maketawa S<br>Region: Taranaki<br>Score: 67<br>Class: Good<br>Landcover: Pastoral","Site: Waitara R<br>Region: Taranaki<br>Score: 52<br>Class: Good<br>Landcover: Pastoral","Site: Punehu S<br>Region: Taranaki<br>Score: 74<br>Class: Good<br>Landcover: Native","Site: Hangatahua (Stony) R<br>Region: Taranaki<br>Score: 63<br>Class: Good<br>Landcover: Native","Site: Katikara S<br>Region: Taranaki<br>Score: 85<br>Class: Excellent<br>Landcover: Native","Site: Hangatahua (Stony) R<br>Region: Taranaki<br>Score: 65.5<br>Class: Good<br>Landcover: Native","Site: Kapoaiaia S<br>Region: Taranaki<br>Score: 60<br>Class: Good<br>Landcover: Pastoral","Site: Kapoaiaia S<br>Region: Taranaki<br>Score: 64<br>Class: Good<br>Landcover: Pastoral","Site: Kapoaiaia S<br>Region: Taranaki<br>Score: 56<br>Class: Good<br>Landcover: Pastoral","Site: Manganui R<br>Region: Taranaki<br>Score: 72<br>Class: Good<br>Landcover: Pastoral","Site: Mangawhero S<br>Region: Taranaki<br>Score: 48<br>Class: Fair<br>Landcover: Native","Site: Waiongana S<br>Region: Taranaki<br>Score: 71<br>Class: Good<br>Landcover: Native","Site: Patea R<br>Region: Taranaki<br>Score: 83<br>Class: Excellent<br>Landcover: Pastoral","Site: Mangawhero S<br>Region: Taranaki<br>Score: 58<br>Class: Good<br>Landcover: Pastoral","Site: Waiongana S<br>Region: Taranaki<br>Score: 70.5<br>Class: Good<br>Landcover: Pastoral","Site: Kaupokonui R<br>Region: Taranaki<br>Score: 73<br>Class: Good<br>Landcover: Native","Site: Mangaehu R<br>Region: Taranaki<br>Score: 64<br>Class: Good<br>Landcover: Pastoral","Site: Patea R<br>Region: Taranaki<br>Score: 72<br>Class: Good<br>Landcover: Native","Site: Kaupokonui R<br>Region: Taranaki<br>Score: 64<br>Class: Good<br>Landcover: Pastoral","Site: Waingongoro R<br>Region: Taranaki<br>Score: 71.5<br>Class: Good<br>Landcover: Pastoral","Site: Mangaoraka S<br>Region: Taranaki<br>Score: 66<br>Class: Good<br>Landcover: Pastoral","Site: Kaupokonui R<br>Region: Taranaki<br>Score: 75<br>Class: Good<br>Landcover: Pastoral","Site: Waingongoro R<br>Region: Taranaki<br>Score: 82<br>Class: Excellent<br>Landcover: Pastoral","Site: Waiwhakaiho R<br>Region: Taranaki<br>Score: 60<br>Class: Good<br>Landcover: Pastoral","Site: Patea R<br>Region: Taranaki<br>Score: 62.5<br>Class: Good<br>Landcover: Pastoral","Site: Kaupokonui R<br>Region: Taranaki<br>Score: 63<br>Class: Good<br>Landcover: Pastoral","Site: Tangahoe R<br>Region: Taranaki<br>Score: 66.5<br>Class: Good<br>Landcover: Pastoral","Site: Waiwhakaiho R<br>Region: Taranaki<br>Score: 51<br>Class: Good<br>Landcover: Pastoral","Site: Timaru S<br>Region: Taranaki<br>Score: 84<br>Class: Excellent<br>Landcover: Pastoral","Site: Kaupokonui R<br>Region: Taranaki<br>Score: 64<br>Class: Good<br>Landcover: Pastoral","Site: Waingongoro R<br>Region: Taranaki<br>Score: 66<br>Class: Good<br>Landcover: Pastoral","Site: Waingongoro R<br>Region: Taranaki<br>Score: 67<br>Class: Good<br>Landcover: Pastoral","Site: Whenuakura R<br>Region: Taranaki<br>Score: 37<br>Class: Fair<br>Landcover: Pastoral","Site: Haupapa Str at Tahora Settlement Rd<br>Region: Gisborne<br>Score: 53<br>Class: Good<br>Landcover: Pastoral","Site: Papokeka Str at Pehiri<br>Region: Gisborne<br>Score: 75<br>Class: Good<br>Landcover: Pastoral","Site: Hangaroa Rv at Donneraille Park<br>Region: Hawke's Bay<br>Score: 63.5<br>Class: Good<br>Landcover: Pastoral","Site: Mangaotara Str at Tiniroto Rd<br>Region: Gisborne<br>Score: 87.5<br>Class: Excellent<br>Landcover: Pastoral","Site: Ruakituri Rv at Doughboy Br<br>Region: Hawke's Bay<br>Score: 69<br>Class: Good<br>Landcover: Pastoral","Site: Mangapoike Rv at Suspension Br<br>Region: Hawke's Bay<br>Score: 70<br>Class: Good<br>Landcover: Pastoral","Site: Waiarua Strm U/S SH5 Culv<br>Region: Hawke's Bay<br>Score: 82<br>Class: Excellent<br>Landcover: Native","Site: Waiau Rv at Otoi at NIWA GStn<br>Region: Hawke's Bay<br>Score: 74.5<br>Class: Good<br>Landcover: Pastoral","Site: Nuhaka Rv at Nuhaka Valley Rd<br>Region: Hawke's Bay<br>Score: 62.5<br>Class: Good<br>Landcover: Pastoral","Site: Mokomokonui Rv U/S Waipunga Rv<br>Region: Hawke's Bay<br>Score: 89<br>Class: Excellent<br>Landcover: Native","Site: Kopuawhara Strm at Lower Rail Br<br>Region: Hawke's Bay<br>Score: 39<br>Class: Fair<br>Landcover: Exotic forest","Site: Opoutama Strm at Smiths Woolshed<br>Region: Hawke's Bay<br>Score: 32<br>Class: Fair<br>Landcover: Pastoral","Site: Mohaka River at Raupunga<br>Region: Hawke's Bay<br>Score: 57<br>Class: Good<br>Landcover: Native","Site: Mohaka Rv D/S Waipunga Rv<br>Region: Hawke's Bay<br>Score: 71.5<br>Class: Good<br>Landcover: Native","Site: Waikari Rv at Glenbrook Rd<br>Region: Hawke's Bay<br>Score: 72<br>Class: Good<br>Landcover: Pastoral","Site: Ripia Rv U/S Mohaka Rv<br>Region: Hawke's Bay<br>Score: 80<br>Class: Excellent<br>Landcover: Native","Site: Mohaka Rv D/S Ripia Rv<br>Region: Hawke's Bay<br>Score: 78.25<br>Class: Excellent<br>Landcover: Pastoral","Site: Sandy Creek U/S Mahiaruhe Strm<br>Region: Hawke's Bay<br>Score: 44<br>Class: Fair<br>Landcover: Pastoral","Site: Mahiaruhe Strm D/S Sandy Creek Conf<br>Region: Hawke's Bay<br>Score: 46<br>Class: Fair<br>Landcover: Pastoral","Site: Esk Rv at Berry Rd<br>Region: Hawke's Bay<br>Score: 82.5<br>Class: Excellent<br>Landcover: Pastoral","Site: Aropaoanui Rv at Aropaoanui Rd Br<br>Region: Hawke's Bay<br>Score: 69<br>Class: Good<br>Landcover: Pastoral","Site: Tutaekuri Rv at Lawrence Hut<br>Region: Hawke's Bay<br>Score: 86<br>Class: Excellent<br>Landcover: Native","Site: Esk Rv at Waipunga Br<br>Region: Hawke's Bay<br>Score: 66<br>Class: Good<br>Landcover: Pastoral","Site: Mangatutu Strm at Mangatutu Rd<br>Region: Hawke's Bay<br>Score: 76<br>Class: Excellent<br>Landcover: Pastoral","Site: Mangaone Rv at Rissington GStn<br>Region: Hawke's Bay<br>Score: 71<br>Class: Good<br>Landcover: Pastoral","Site: Tutaekuri Rv U/S Mangaone Rv at Dartmoor<br>Region: Hawke's Bay<br>Score: 74<br>Class: Good<br>Landcover: Pastoral","Site: Ngaruroro Rv at Whanawhana GStn<br>Region: Hawke's Bay<br>Score: 85<br>Class: Excellent<br>Landcover: Native","Site: Tutaekuri Rv at Brookfields Br<br>Region: Hawke's Bay<br>Score: 59<br>Class: Good<br>Landcover: Pastoral","Site: Ohiwa Strm at Broughtons Br<br>Region: Hawke's Bay<br>Score: 52<br>Class: Good<br>Landcover: Pastoral","Site: Tutaekuri-Waimate Strm U/S Ngaruroro Rv at Chesterhope<br>Region: Hawke's Bay<br>Score: 37.5<br>Class: Fair<br>Landcover: Pastoral","Site: Ngaruroro Rv at Fernhill GStn<br>Region: Hawke's Bay<br>Score: 68<br>Class: Good<br>Landcover: Pastoral","Site: Ngaruroro Rv D/S Hawkes Bay Dairies<br>Region: Hawke's Bay<br>Score: 73<br>Class: Good<br>Landcover: Native","Site: Waitio Strm at Ohiti Rd<br>Region: Hawke's Bay<br>Score: 60<br>Class: Good<br>Landcover: Pastoral","Site: Clive Rv U/S Whakatu Rail Br<br>Region: Hawke's Bay<br>Score: 37<br>Class: Fair<br>Landcover: Pastoral","Site: Tukituki River at Black Bridge<br>Region: Hawke's Bay<br>Score: 64<br>Class: Good<br>Landcover: Pastoral","Site: Maraetotara Rv at Te Awanga<br>Region: Hawke's Bay<br>Score: 69<br>Class: Good<br>Landcover: Pastoral","Site: Herehere Strm at Te Aute Rd<br>Region: Hawke's Bay<br>Score: 67<br>Class: Good<br>Landcover: Urban area","Site: Karewarewa Strm at Pakipaki Old Main Rd Br<br>Region: Hawke's Bay<br>Score: 53<br>Class: Good<br>Landcover: Pastoral","Site: Awanui Strm at Flume GStn<br>Region: Hawke's Bay<br>Score: 33<br>Class: Fair<br>Landcover: Pastoral","Site: Poukawa Strm at Stock Rd<br>Region: Hawke's Bay<br>Score: 55<br>Class: Good<br>Landcover: Pastoral","Site: Tukituki Rv at Red Br<br>Region: Hawke's Bay<br>Score: 71<br>Class: Good<br>Landcover: Pastoral","Site: Maraetotara Rv at Waimarama Rd<br>Region: Hawke's Bay<br>Score: 79<br>Class: Excellent<br>Landcover: Pastoral","Site: Waingongoro Strm at Waimarama Rd<br>Region: Hawke's Bay<br>Score: 85<br>Class: Excellent<br>Landcover: Pastoral","Site: Pouhokio Strm at Te Apiti Rd<br>Region: Hawke's Bay<br>Score: 54.5<br>Class: Good<br>Landcover: Pastoral","Site: Waipawa Rv at SH50<br>Region: Hawke's Bay<br>Score: 79<br>Class: Excellent<br>Landcover: Pastoral","Site: Papanui Strm at Middle Rd<br>Region: Hawke's Bay<br>Score: 52<br>Class: Good<br>Landcover: Pastoral","Site: Mangaonuku Strm U/S Waipawa Rv at Tikokino Rd<br>Region: Hawke's Bay<br>Score: 75<br>Class: Good<br>Landcover: Pastoral","Site: Tukituki Rv at SH50<br>Region: Hawke's Bay<br>Score: 82<br>Class: Excellent<br>Landcover: Pastoral","Site: Waipawa Rv at SH2 Br (SoE)<br>Region: Hawke's Bay<br>Score: 70<br>Class: Good<br>Landcover: Pastoral","Site: Tukipo Rv at SH50<br>Region: Hawke's Bay<br>Score: 66<br>Class: Good<br>Landcover: Pastoral","Site: Tukituki Rv at Tamumu Br<br>Region: Hawke's Bay<br>Score: 72<br>Class: Good<br>Landcover: Pastoral","Site: Mangakuri Rv 1 km U/S Mangakuri Rd Br<br>Region: Hawke's Bay<br>Score: 41<br>Class: Fair<br>Landcover: Pastoral","Site: Tukituki Rv at SH2 Br (SoE)<br>Region: Hawke's Bay<br>Score: 73<br>Class: Good<br>Landcover: Pastoral","Site: Makaretu Rv at SH50<br>Region: Hawke's Bay<br>Score: 78<br>Class: Excellent<br>Landcover: Pastoral","Site: Porangahau Strm at Oruawhara Rd<br>Region: Hawke's Bay<br>Score: 65.5<br>Class: Good<br>Landcover: Pastoral","Site: Taurekaitai Strm U/S Porangahau Rv at Wallingford GStn<br>Region: Hawke's Bay<br>Score: 44.75<br>Class: Fair<br>Landcover: Pastoral","Site: Porangahau Rv at Porongahau Rd opposite Quarry<br>Region: Hawke's Bay<br>Score: 63.5<br>Class: Good<br>Landcover: Pastoral","Site: Mangaorapa Strm at Mangaorapa Rd GStn<br>Region: Hawke's Bay<br>Score: 57<br>Class: Good<br>Landcover: Pastoral","Site: Waitohu Stream at Norfolk Crescent<br>Region: Wellington<br>Score: 31<br>Class: Fair<br>Landcover: Pastoral","Site: Mangapouri Stream at Bennetts Rd<br>Region: Wellington<br>Score: 53.5<br>Class: Good<br>Landcover: Urban area","Site: Otaki River at Mouth<br>Region: Wellington<br>Score: 67.75<br>Class: Good<br>Landcover: Native","Site: Ruamahanga River at McLays<br>Region: Wellington<br>Score: 94.5<br>Class: Excellent<br>Landcover: Native","Site: Mangaone Stream at Sims Road Bridge<br>Region: Wellington<br>Score: 37.5<br>Class: Fair<br>Landcover: Urban area","Site: Otaki River at Pukehinau<br>Region: Wellington<br>Score: 85.25<br>Class: Excellent<br>Landcover: Native","Site: Waikanae River at Footbridge on Mangaone Walkway<br>Region: Wellington<br>Score: 98<br>Class: Excellent<br>Landcover: Native","Site: Waikanae River at Greenaway Rd<br>Region: Wellington<br>Score: 75.5<br>Class: Excellent<br>Landcover: Native","Site: Kopuaranga Stream at Stewarts<br>Region: Wellington<br>Score: 55<br>Class: Good<br>Landcover: Pastoral","Site: Ruamahanga River at Te Ore Ore<br>Region: Wellington<br>Score: 65.75<br>Class: Good<br>Landcover: Pastoral","Site: Waipoua River at Colombo Road Bridge<br>Region: Wellington<br>Score: 72<br>Class: Good<br>Landcover: Pastoral","Site: Waingawa River at South Rd<br>Region: Wellington<br>Score: 64.25<br>Class: Good<br>Landcover: Native","Site: Whangaehu River at 250m from Confluence<br>Region: Wellington<br>Score: 47.5<br>Class: Fair<br>Landcover: Pastoral","Site: Parkvale Tributary at Lowes Reserve<br>Region: Wellington<br>Score: 69<br>Class: Good<br>Landcover: Pastoral","Site: Waiohine River at Gorge<br>Region: Wellington<br>Score: 83<br>Class: Excellent<br>Landcover: Native","Site: Enaki Stream - Downstream site for RIPARIAN<br>Region: Wellington<br>Score: 69<br>Class: Good<br>Landcover: Pastoral","Site: Mangatarere River at State Highway 2<br>Region: Wellington<br>Score: 61<br>Class: Good<br>Landcover: Pastoral","Site: Pakuratahi River 50m Below Farm Creek<br>Region: Wellington<br>Score: 77.75<br>Class: Excellent<br>Landcover: Native","Site: Taueru River at Gladstone<br>Region: Wellington<br>Score: 50.75<br>Class: Good<br>Landcover: Pastoral","Site: Horokiri Stream at Snodgrass<br>Region: Wellington<br>Score: 70.25<br>Class: Good<br>Landcover: Pastoral","Site: Ruamahanga River at Gladstone Bridge<br>Region: Wellington<br>Score: 70.5<br>Class: Good<br>Landcover: Pastoral","Site: Parkvale Stream at weir<br>Region: Wellington<br>Score: 58<br>Class: Good<br>Landcover: Pastoral","Site: Hutt River at Te Marua Intake Site<br>Region: Wellington<br>Score: 82.5<br>Class: Excellent<br>Landcover: Native","Site: Akatarawa River at Hutt Confluence<br>Region: Wellington<br>Score: 89.5<br>Class: Excellent<br>Landcover: Native","Site: Mangaroa River at Te Marua<br>Region: Wellington<br>Score: 74.75<br>Class: Good<br>Landcover: Pastoral","Site: Waiohine River at Bicknells<br>Region: Wellington<br>Score: 72.25<br>Class: Good<br>Landcover: Pastoral","Site: Whakatikei River at Riverstone<br>Region: Wellington<br>Score: 89.5<br>Class: Excellent<br>Landcover: Native","Site: Pauatahanui Stream at Elmwood Bridge<br>Region: Wellington<br>Score: 67<br>Class: Good<br>Landcover: Pastoral","Site: Porirua Stream at Wall Park<br>Region: Wellington<br>Score: 47.5<br>Class: Fair<br>Landcover: Urban area","Site: Hutt River Opposite Manor Park Golf Club<br>Region: Wellington<br>Score: 67.5<br>Class: Good<br>Landcover: Native","Site: Tauherenikau River at Websters<br>Region: Wellington<br>Score: 67<br>Class: Good<br>Landcover: Native","Site: Hutt River at Boulcott<br>Region: Wellington<br>Score: 69.25<br>Class: Good<br>Landcover: Native","Site: Huangarua River at Ponatahi Bridge<br>Region: Wellington<br>Score: 63<br>Class: Good<br>Landcover: Pastoral","Site: Waiwhetu at Whites Line East<br>Region: Wellington<br>Score: 35<br>Class: Fair<br>Landcover: Urban area","Site: Kaiwharawhara Stream at Ngaio Gorge<br>Region: Wellington<br>Score: 70.5<br>Class: Good<br>Landcover: Urban area","Site: Ruamahanga River at Pukio<br>Region: Wellington<br>Score: 52.5<br>Class: Good<br>Landcover: Pastoral","Site: Wainuiomata River at Manuka Track<br>Region: Wellington<br>Score: 94.5<br>Class: Excellent<br>Landcover: Native","Site: Karori Stream at Makara Peak Mountain Bike Park<br>Region: Wellington<br>Score: 66.5<br>Class: Good<br>Landcover: Urban area","Site: Wainuiomata River Downstream of White Bridge<br>Region: Wellington<br>Score: 62.5<br>Class: Good<br>Landcover: Native","Site: Awhea River at Tora Rd<br>Region: Wellington<br>Score: 38.5<br>Class: Fair<br>Landcover: Pastoral","Site: McKay Creek at Milford Road<br>Region: Southland<br>Score: 85<br>Class: Excellent<br>Landcover: Native","Site: Eglington River at McKay Creek Confluence<br>Region: Southland<br>Score: 72.5<br>Class: Good<br>Landcover: Native","Site: Oreti River at McKellars Flat<br>Region: Southland<br>Score: 63<br>Class: Good<br>Landcover: Native","Site: Mararoa River at Kiwiburn<br>Region: Southland<br>Score: 53<br>Class: Good<br>Landcover: Native","Site: Upukerora River at Te Anau Milford Road<br>Region: Southland<br>Score: 67<br>Class: Good<br>Landcover: Native","Site: Mataura River at Garston<br>Region: Southland<br>Score: 68<br>Class: Good<br>Landcover: Pastoral","Site: Oreti River at Three Kings<br>Region: Southland<br>Score: 64<br>Class: Good<br>Landcover: Native","Site: Mararoa River at Mararoa Road Bridge<br>Region: Southland<br>Score: 60<br>Class: Good<br>Landcover: Pastoral","Site: Waikaia River u/s Piano Flat<br>Region: Southland<br>Score: 84<br>Class: Excellent<br>Landcover: Native","Site: Mataura River at Parawa<br>Region: Southland<br>Score: 67.5<br>Class: Good<br>Landcover: Pastoral","Site: Whitestone River d/s Manapouri-Hillside<br>Region: Southland<br>Score: 63<br>Class: Good<br>Landcover: Pastoral","Site: Cromel Stream at Selbie Road<br>Region: Southland<br>Score: 79<br>Class: Excellent<br>Landcover: Native","Site: Home Creek at Manapouri<br>Region: Southland<br>Score: 73.5<br>Class: Good<br>Landcover: Pastoral","Site: Mararoa River at Weir Road<br>Region: Southland<br>Score: 73<br>Class: Good<br>Landcover: Pastoral","Site: Irthing Stream at Ellis Road<br>Region: Southland<br>Score: 77<br>Class: Excellent<br>Landcover: Pastoral","Site: Waikaia River at Waikaia<br>Region: Southland<br>Score: 57.5<br>Class: Good<br>Landcover: Native","Site: Oreti River at Lumsden Bridge<br>Region: Southland<br>Score: 68<br>Class: Good<br>Landcover: Pastoral","Site: Hamilton Burn at Goodall Road<br>Region: Southland<br>Score: 74<br>Class: Good<br>Landcover: Pastoral","Site: Murray Creek at Cumming Road<br>Region: Southland<br>Score: 52<br>Class: Good<br>Landcover: Pastoral","Site: Aparima River at Dunrobin<br>Region: Southland<br>Score: 68.5<br>Class: Good<br>Landcover: Pastoral","Site: Murray Creek at Double Road<br>Region: Southland<br>Score: 58<br>Class: Good<br>Landcover: Pastoral","Site: North Etal Creek u/s Dunrobin Valley Rd<br>Region: Southland<br>Score: 70<br>Class: Good<br>Landcover: Pastoral","Site: Hamilton Burn at Affleck Road<br>Region: Southland<br>Score: 55.5<br>Class: Good<br>Landcover: Pastoral","Site: Mataura River at Keowns Road Bridge<br>Region: Southland<br>Score: 65<br>Class: Good<br>Landcover: Pastoral","Site: Pig Creek at Borland Lodge<br>Region: Southland<br>Score: 86<br>Class: Excellent<br>Landcover: Native","Site: Waiau River at Sunnyside<br>Region: Southland<br>Score: 75<br>Class: Good<br>Landcover: Native","Site: Waikaia River at Waipounamu Bridge Road<br>Region: Southland<br>Score: 62<br>Class: Good<br>Landcover: Pastoral","Site: Taringatura Creek at Tiromaunga<br>Region: Southland<br>Score: 77<br>Class: Excellent<br>Landcover: Pastoral","Site: Longridge Stream at Sandstone<br>Region: Southland<br>Score: 54.5<br>Class: Good<br>Landcover: Pastoral","Site: Mataura River at Pyramid Bridge<br>Region: Southland<br>Score: 65<br>Class: Good<br>Landcover: Pastoral","Site: Sandstone Stream at Kingston Crossing Rd<br>Region: Southland<br>Score: 47<br>Class: Fair<br>Landcover: Pastoral","Site: Oreti River at Benmore<br>Region: Southland<br>Score: 65.5<br>Class: Good<br>Landcover: Pastoral","Site: Hillpoint Stream at Waikana Road<br>Region: Southland<br>Score: 47<br>Class: Fair<br>Landcover: Pastoral","Site: Wairaki River at Blackmount Road<br>Region: Southland<br>Score: 74.5<br>Class: Good<br>Landcover: Pastoral","Site: Winton Stream at Benmore - Otapiri Road<br>Region: Southland<br>Score: 35<br>Class: Fair<br>Landcover: Pastoral","Site: Waimea Stream at Mandeville<br>Region: Southland<br>Score: 49<br>Class: Fair<br>Landcover: Pastoral","Site: Otamita Stream at Mandeville<br>Region: Southland<br>Score: 63.5<br>Class: Good<br>Landcover: Pastoral","Site: Otapiri Stream at Otapiri Gorge<br>Region: Southland<br>Score: 73<br>Class: Good<br>Landcover: Pastoral","Site: Dipton Stream at South Hillend-Dipton Road<br>Region: Southland<br>Score: 55.5<br>Class: Good<br>Landcover: Native","Site: Lill Burn at Hindley Rd<br>Region: Southland<br>Score: 63.5<br>Class: Good<br>Landcover: Native","Site: Lill Burn at Lill Burn-Monowai Road<br>Region: Southland<br>Score: 56.5<br>Class: Good<br>Landcover: Pastoral","Site: Thicket Burn at Lake Hauroko Road<br>Region: Southland<br>Score: 69.5<br>Class: Good<br>Landcover: Pastoral","Site: Silver Stream at Lora Gorge Road<br>Region: Southland<br>Score: 70<br>Class: Good<br>Landcover: Native","Site: Waiau River 100m u/s Clifden Bridge<br>Region: Southland<br>Score: 73<br>Class: Good<br>Landcover: Native","Site: Makarewa River at Lora Gorge Road<br>Region: Southland<br>Score: 53<br>Class: Good<br>Landcover: Pastoral","Site: Bog Burn d/s Hundred Line Road<br>Region: Southland<br>Score: 58.5<br>Class: Good<br>Landcover: Pastoral","Site: Mataura River at Gore<br>Region: Southland<br>Score: 57<br>Class: Good<br>Landcover: Pastoral","Site: Waikaka Stream at Gore<br>Region: Southland<br>Score: 63<br>Class: Good<br>Landcover: Pastoral","Site: Makarewa River at King Road<br>Region: Southland<br>Score: 55<br>Class: Good<br>Landcover: Pastoral","Site: Orauea River at Orawia Pukemaori Road<br>Region: Southland<br>Score: 56.5<br>Class: Good<br>Landcover: Pastoral","Site: Otautau Stream at Waikouro<br>Region: Southland<br>Score: 50.5<br>Class: Good<br>Landcover: Pastoral","Site: Dunsdale Stream at Dunsdale Reserve<br>Region: Southland<br>Score: 89<br>Class: Excellent<br>Landcover: Native","Site: Otapiri Stream at Anderson Road<br>Region: Southland<br>Score: 64.5<br>Class: Good<br>Landcover: Pastoral","Site: Otautau Stream at Otautau-Tuatapere Road<br>Region: Southland<br>Score: 58<br>Class: Good<br>Landcover: Pastoral","Site: Otautau Stream at Otautau<br>Region: Southland<br>Score: 47.5<br>Class: Fair<br>Landcover: Pastoral","Site: Waiau River at Tuatapere<br>Region: Southland<br>Score: 69.5<br>Class: Good<br>Landcover: Native","Site: Rowallan Burn East at Rowallan Road<br>Region: Southland<br>Score: 80<br>Class: Excellent<br>Landcover: Native","Site: Mataura River 200m d/s Mataura Bridge<br>Region: Southland<br>Score: 59<br>Class: Good<br>Landcover: Pastoral","Site: Winton Stream at Lochiel<br>Region: Southland<br>Score: 55.5<br>Class: Good<br>Landcover: Pastoral","Site: Hedgehope Stream at Block Road<br>Region: Southland<br>Score: 59<br>Class: Good<br>Landcover: Pastoral","Site: Pourakino River at Jubilee Hill Road<br>Region: Southland<br>Score: 91<br>Class: Excellent<br>Landcover: Native","Site: Tussock Creek at Cooper Road<br>Region: Southland<br>Score: 42<br>Class: Fair<br>Landcover: Pastoral","Site: Makarewa River u/s Hedgehope Confluence<br>Region: Southland<br>Score: 53.5<br>Class: Good<br>Landcover: Pastoral","Site: Pourakino River at Ermedale Road<br>Region: Southland<br>Score: 88<br>Class: Excellent<br>Landcover: Native","Site: Hedgehope Stream 20m u/s Makarewa Confl<br>Region: Southland<br>Score: 59.5<br>Class: Good<br>Landcover: Pastoral","Site: Cascade Stream at Pourakino Valley Road<br>Region: Southland<br>Score: 79<br>Class: Excellent<br>Landcover: Native","Site: Mimihau Stream Tributary at Venlaw Forest<br>Region: Southland<br>Score: 92.5<br>Class: Excellent<br>Landcover: Exotic forest","Site: Waimeamea River at Young Road<br>Region: Southland<br>Score: 78<br>Class: Excellent<br>Landcover: Native","Site: Aparima River at Thornbury<br>Region: Southland<br>Score: 63<br>Class: Good<br>Landcover: Pastoral","Site: Mimihau Stream at Wyndham<br>Region: Southland<br>Score: 56.5<br>Class: Good<br>Landcover: Pastoral","Site: Waimatuku Stream at Lorneville Riverton Hwy<br>Region: Southland<br>Score: 53.5<br>Class: Good<br>Landcover: Pastoral","Site: Waimatuku at Waimatuku Township Road<br>Region: Southland<br>Score: 57<br>Class: Good<br>Landcover: Pastoral","Site: Waianiwa Creek 1 at Lornville Riverton Highway<br>Region: Southland<br>Score: 51<br>Class: Good<br>Landcover: Pastoral","Site: Makarewa River at Wallacetown<br>Region: Southland<br>Score: 58.5<br>Class: Good<br>Landcover: Pastoral","Site: Mokoreta River at Egremont Road<br>Region: Southland<br>Score: 52<br>Class: Good<br>Landcover: Pastoral","Site: Mokoreta River at Wyndham River Road<br>Region: Southland<br>Score: 65<br>Class: Good<br>Landcover: Pastoral","Site: Oreti River at Wallacetown<br>Region: Southland<br>Score: 70<br>Class: Good<br>Landcover: Pastoral","Site: Waimatuku Stream at Rance Road<br>Region: Southland<br>Score: 63<br>Class: Good<br>Landcover: Pastoral","Site: Waikiwi Stream at North Road<br>Region: Southland<br>Score: 34.5<br>Class: Fair<br>Landcover: Pastoral","Site: Oteramika Stream at Seaward Downs<br>Region: Southland<br>Score: 50<br>Class: Fair<br>Landcover: Pastoral","Site: Mataura River at Mataura Island Bridge<br>Region: Southland<br>Score: 63.5<br>Class: Good<br>Landcover: Pastoral","Site: Waihopai River u/s Queens Drive<br>Region: Southland<br>Score: 43.5<br>Class: Fair<br>Landcover: Pastoral","Site: Waihopai River at Kennington<br>Region: Southland<br>Score: 52<br>Class: Good<br>Landcover: Pastoral","Site: Otepuni Creek at Nith Street<br>Region: Southland<br>Score: 29<br>Class: Fair<br>Landcover: Urban area","Site: Waituna Creek at Marshall Road<br>Region: Southland<br>Score: 48.5<br>Class: Fair<br>Landcover: Pastoral","Site: Moffat Creek at Moffat Road<br>Region: Southland<br>Score: 55.5<br>Class: Good<br>Landcover: Pastoral","Site: Mokotua Stream at Awarua<br>Region: Southland<br>Score: 56.5<br>Class: Good<br>Landcover: Native","Site: Waikawa River at Progress Valley<br>Region: Southland<br>Score: 60<br>Class: Good<br>Landcover: Pastoral","Site: Waikopikopiko Stream at Haldane CurioBay<br>Region: Southland<br>Score: 59.5<br>Class: Good<br>Landcover: Native","Site: Tokanui River at Fortrose Otara Road<br>Region: Southland<br>Score: 46.5<br>Class: Fair<br>Landcover: Pastoral"],null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[-46.6299901769,-34.9960589393],"lng":[167.209441451,178.433956565]}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+<section id="methods-and-source" class="level2">
+<h2 class="anchored" data-anchor-id="methods-and-source">Methods and source</h2>
+<ul>
+<li>Source: freshwater physical habitat indicator dataset.</li>
+<li>File used: <code>data/freshwater-physical-habitat/habitat_quality_scores.csv</code>.</li>
+<li>Indicator fields include score, class, landcover context, and site coordinates.</li>
+<li>Caveat: this is a compact communication layer; interpretation should include local context and sampling design.</li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Show code
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>The complete source code is available in folded code chunks above.</p>
+</div>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/nrob536\.github\.io");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Copyright 2026 Nestor M. Robinson</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="mailto:nrob536@aucklanduni.ac.nz">
+<p>Email</p>
+</a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
