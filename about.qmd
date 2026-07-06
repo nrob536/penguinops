@@ -4,9 +4,9 @@ title: About
 
 ## About Me
 
-I am an Environmental Scientist and Data Analyst focused on turning complex environmental datasets into clear, decision-ready insights. My work combines environmental domain knowledge, geospatial analysis, and statistical programming to support better outcomes for ecosystems and communities.
+I am an environmental scientist with a Doctoral Degree in Biological Sciences and practical experience across field sampling, laboratory workflows and environmental data products. My roles at NIWA and Tatauranga Aotearoa (Stats NZ) combined hands-on sampling protocol development, quality-control of observational networks, and delivery of national data portals and reporting tools that support evidence-based decision-making.
 
-I bring practical experience across national environmental reporting, climate data systems, and biodiversity science. I design reproducible analytical workflows in R and Python so evidence can be transparent, reusable, and useful to policy and operational teams.
+I bring strong technical skills in R and Python for data analysis and visualization, experience drafting technical reports and SOPs, and clear communication with iwi, stakeholders and landowners. Based in the Wairarapa, I am committed to applying my field and data expertise to groundwater monitoring, consenting support and regional planning in the Masterton area.
 
 ## The Story Behind Penguinops
 

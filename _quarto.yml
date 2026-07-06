@@ -33,9 +33,8 @@ website:
 format:
   html:  
     theme:
-      light: flatly
-      dark: darkly
-    css: styles.css
+      dark: [cyborg, dark-theme.css]
+      light: [cosmo, light-theme.css]
     toc: true
     smooth-scroll: true
 

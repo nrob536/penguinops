@@ -4,6 +4,33 @@ title: Work
 
 A showcase of projects focused on environmental science, public-sector data systems, and reproducible analysis.
 
+## Relevant Project Experience
+
+- Our Freshwater 2026 - Internal Consistency Checking — Ministry for the Environment publication support; Environmental reporting, QA, data assurance
+
+	- Contributed to internal consistency checking of _Our Freshwater 2026_ report before publication.
+	- Supported quality assurance of environmental evidence used to inform national and regional policy discussions.
+	- Link: https://environment.govt.nz/publications/our-freshwater-2026/
+
+- National Indicators - River and Lake Water Quality — Stats NZ Environmental Reporting team collaboration; R, indicator data, publication workflows
+
+	- Collaborated with analysts in the Environmental Reporting team to publish national indicator data for river and lake water quality.
+	- Helped maintain reliable and transparent data pipelines that support environmental decision-making.
+	- Link: https://www.stats.govt.nz/indicators/river-water-quality-nitrogen-data-to-2024/
+
+- Ngā Tūtōhu Aotearoa - Indicators Aotearoa New Zealand — Technical lead for environmental and wellbeing indicators platform; R Shiny, data products, stakeholder communication
+
+	- Led technical development of the Indicators Aotearoa New Zealand platform, integrating diverse environmental datasets into accessible reporting tools.
+	- Worked with internal and external users to translate complex data needs into practical, customer-focused outputs.
+	- Link: https://statisticsnz.shinyapps.io/wellbeingindicators/
+
+- Customer-Centred Data Delivery Across Environmental Roles — Stats NZ and Earth Sciences New Zealand (formerly NIWA); Stakeholder engagement, service delivery, communication
+
+	- Delivered data products and support to a wide range of stakeholders and customers in both public sector and science service settings.
+	- Built strong working relationships through clear communication, responsiveness, and practical problem solving.
+	- Mentored analysts and early career staff across Stats NZ and Earth Sciences New Zealand. Earlier on as a Biology Professor, supporting capability growth, confidence, and collaborative team performance.
+
+
 ## Predicting Macroalgal Introductions at Global and Regional Scales
 
 - Period: Dec 2015 - Nov 2019
