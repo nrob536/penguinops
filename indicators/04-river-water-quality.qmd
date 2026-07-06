@@ -1,0 +1,184 @@
+---
+title: River Water Quality Nitrogen Trends
+toc: true
+---
+
+## Headline finding
+
+River nitrogen trend monitoring shows variable trajectories across sites and assessment windows, with trend direction and coverage depending on parameter and period.
+
+## Why this matters for councils
+
+River nitrogen trend indicators help target catchments where deteriorating water quality may require tighter source controls, restoration investment, or more focused monitoring.
+
+## Interactive overview
+
+```{r}
+#| warning: false
+#| message: false
+#| code-fold: true
+library(sf)
+library(dplyr)
+library(plotly)
+library(leaflet)
+
+gpkg_path <- "../data/river-water-quality/river-water-quality-nitrogen-trends-1991-2020.gpkg"
+
+layers <- st_layers(gpkg_path)
+rwq <- st_read(gpkg_path, layer = layers$name[1], quiet = TRUE)
+rwq_tbl <- st_drop_geometry(rwq)
+
+pick_col <- function(df, candidates) {
+  hits <- intersect(candidates, names(df))
+  if (length(hits) == 0) NA_character_ else hits[1]
+}
+
+parameter_col <- pick_col(
+  rwq_tbl,
+  c("parameter", "Parameter", "indicator", "Indicator", "np_id_name", "np_id", "attribute")
+)
+period_col <- pick_col(
+  rwq_tbl,
+  c("period", "Period", "trend_period", "window", "time_window", "assessment_period")
+)
+trend_col <- pick_col(
+  rwq_tbl,
+  c("trend", "Trend", "trend_direction", "direction", "Direction", "classification", "trend_class")
+)
+
+if (!is.na(trend_col) && !is.na(period_col)) {
+  trend_profile <- rwq_tbl |>
+    mutate(
+      trend_band = as.character(.data[[trend_col]]),
+      period_band = as.character(.data[[period_col]])
+    ) |>
+    filter(!is.na(trend_band), !is.na(period_band), trend_band != "", period_band != "") |>
+    count(period_band, trend_band, name = "records")
+
+  plot_ly(
+    trend_profile,
+    x = ~period_band,
+    y = ~records,
+    color = ~trend_band,
+    type = "bar"
+  ) |>
+    layout(
+      barmode = "stack",
+      xaxis = list(title = "Assessment period"),
+      yaxis = list(title = "Number of site records"),
+      legend = list(title = list(text = "Trend direction"))
+    )
+} else if (!is.na(trend_col)) {
+  trend_profile <- rwq_tbl |>
+    mutate(trend_band = as.character(.data[[trend_col]])) |>
+    filter(!is.na(trend_band), trend_band != "") |>
+    count(trend_band, name = "records")
+
+  plot_ly(
+    trend_profile,
+    x = ~reorder(trend_band, records),
+    y = ~records,
+    type = "bar",
+    marker = list(color = "#2b7a78")
+  ) |>
+    layout(
+      xaxis = list(title = "Trend direction"),
+      yaxis = list(title = "Number of site records"),
+      margin = list(b = 120)
+    )
+} else {
+  fallback_col <- ifelse(is.na(parameter_col), names(rwq_tbl)[1], parameter_col)
+
+  coverage_profile <- rwq_tbl |>
+    mutate(group_name = as.character(.data[[fallback_col]])) |>
+    filter(!is.na(group_name), group_name != "") |>
+    count(group_name, sort = TRUE, name = "records") |>
+    slice_head(n = 12)
+
+  plot_ly(
+    coverage_profile,
+    x = ~reorder(group_name, records),
+    y = ~records,
+    type = "bar",
+    marker = list(color = "#2b7a78")
+  ) |>
+    layout(
+      xaxis = list(title = "Indicator field"),
+      yaxis = list(title = "Number of records"),
+      margin = list(b = 160)
+    )
+}
+```
+
+```{r}
+#| warning: false
+#| message: false
+#| code-fold: true
+
+rwq_map <- rwq
+
+
+# convert dataframe to sf object: coerce coords to numeric and remove invalid rows
+rwq_map$long_num <- as.numeric(rwq_map$long)
+rwq_map$lat_num <- as.numeric(rwq_map$lat)
+# drop rows with NA coords (including non-numeric coercion results)
+rwq_map <- rwq_map[!is.na(rwq_map$long_num) & !is.na(rwq_map$lat_num), ]
+rwq_map <- st_as_sf(rwq_map, coords = c("long_num", "lat_num"), crs = 4326, remove = TRUE)
+
+
+if (nrow(rwq_map) > 0) {
+  rwq_map <- suppressWarnings(st_transform(rwq_map, 4326))
+}
+
+rwq_map_tbl <- st_drop_geometry(rwq_map)
+
+site_col <- pick_col(rwq_map_tbl, c("site_name", "site", "s_id", "site_id", "location", "name"))
+parameter_col <- pick_col(rwq_map_tbl, c("parameter", "Parameter", "indicator", "np_id_name", "np_id"))
+period_col <- pick_col(rwq_map_tbl, c("period", "Period", "trend_period", "window", "assessment_period"))
+trend_col <- pick_col(rwq_map_tbl, c("trend", "Trend", "trend_direction", "direction", "classification", "trend_class"))
+value_col <- pick_col(rwq_map_tbl, c("median", "result", "Result", "value", "Value", "slope", "Sen_slope", "sen_slope"))
+
+popup_fields <- unique(na.omit(c(site_col, parameter_col, period_col, trend_col, value_col)))
+
+if (length(popup_fields) == 0) {
+  popup_text <- rep("River monitoring site", nrow(rwq_map_tbl))
+} else {
+  popup_text <- apply(
+    rwq_map_tbl[, popup_fields, drop = FALSE],
+    1,
+    function(x) {
+      vals <- ifelse(is.na(x) | x == "", "NA", as.character(x))
+      paste0(names(x), ": ", vals, collapse = "<br>")
+    }
+  )
+}
+
+leaflet(rwq_map) |>
+  addProviderTiles(providers$CartoDB.Positron) |>
+  addCircleMarkers(
+    radius = 4,
+    stroke = FALSE,
+    fillOpacity = 0.55,
+    color = "#ff7a59",
+    popup = ~paste0(
+      "measure: ", "measure",
+      "<br>units: ", units,
+      "<br>median: ", median,
+      "<br>sen_lci: ", "sen_lci",
+      "<br>trend: ", "trend_confidence"
+    )
+  )
+```
+
+## Methods and source
+
+- Source: Ministry for the Environment, River water quality nitrogen trends (1991-2020).
+- Files used: `data/river-water-quality/river-water-quality-nitrogen-trends-1991-2020.gpkg` and `data/river-water-quality/river-water-quality-nitrogen-trends-1991-2020.txt`.
+- License: Creative Commons Attribution 4.0 International.
+- Caveat: trend and parameter fields can vary by schema updates; this page emphasizes exploratory structure and pattern coverage rather than formal compliance assessment.
+
+::: {.callout-note collapse="true"}
+## Show code
+
+The complete source code is available in folded code chunks above.
+:::

@@ -1,0 +1,95 @@
+---
+title: Freshwater Habitat Quality
+toc: true
+---
+
+## Headline finding
+
+Most monitored sites in this dataset are rated Fair to Good, with a smaller set of Excellent sites often associated with native or less-modified catchments.
+
+## Why this matters for councils
+
+Habitat-quality indicators support prioritization of restoration investment, catchment action plans, and communication of where ecological gains are being retained or lost.
+
+## Interactive overview
+
+```{r}
+#| warning: false
+#| message: false
+#| code-fold: true
+library(readr)
+library(dplyr)
+library(plotly)
+library(leaflet)
+
+habitat <- read_csv("../data/freshwater-physical-habitat/habitat_quality_scores.csv", show_col_types = FALSE)
+
+by_class <- habitat |>
+  count(habitat_quality, sort = TRUE)
+
+plot_ly(
+  by_class,
+  x = ~reorder(habitat_quality, n),
+  y = ~n,
+  type = "bar",
+  marker = list(color = "#ff7a59")
+) |>
+  layout(
+    xaxis = list(title = "Habitat class"),
+    yaxis = list(title = "Number of sites")
+  )
+```
+
+```{r}
+#| warning: false
+#| message: false
+#| code-fold: true
+plot_ly(
+  habitat,
+  x = ~dominant_landcover,
+  y = ~habitat_quality_score,
+  color = ~habitat_quality,
+  colors = c("#ef4444", "#f59e0b", "#10b981"),
+  type = "box"
+) |>
+  layout(
+    xaxis = list(title = "Dominant landcover"),
+    yaxis = list(title = "Habitat quality score")
+  )
+```
+
+```{r}
+#| warning: false
+#| message: false
+#| code-fold: true
+leaflet(habitat) |>
+  addProviderTiles(providers$CartoDB.Positron) |>
+  addCircleMarkers(
+    lng = ~long,
+    lat = ~lat,
+    radius = 4,
+    stroke = FALSE,
+    fillOpacity = 0.7,
+    color = "#2b7a78",
+    popup = ~paste0(
+      "Site: ", site_name,
+      "<br>Region: ", region,
+      "<br>Score: ", habitat_quality_score,
+      "<br>Class: ", habitat_quality,
+      "<br>Landcover: ", dominant_landcover
+    )
+  )
+```
+
+## Methods and source
+
+- Source: freshwater physical habitat indicator dataset.
+- File used: `data/freshwater-physical-habitat/habitat_quality_scores.csv`.
+- Indicator fields include score, class, landcover context, and site coordinates.
+- Caveat: this is a compact communication layer; interpretation should include local context and sampling design.
+
+::: {.callout-note collapse="true"}
+## Show code
+
+The complete source code is available in folded code chunks above.
+:::

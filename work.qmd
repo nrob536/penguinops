@@ -2,25 +2,7 @@
 title: Work
 ---
 
-A showcase of projects, from machine learning research to production-ready tools.
-
-## Git Learning Environment
-
-- Period: August 2024
-- Status: Current
-- Technologies: Git, shell scripting, R
-- Description: A repository to test Git skills through unsupervised challenges, from beginner to expert levels, set in a magical fantasy world.
-
-Highlights:
-
-- Immersive storylines and characters for each challenge.
-- Tasks covering branching, merging, rebasing, and conflict resolution.
-- Automated feedback and hints for learners.
-- Open-sourced design for community contributions.
-
-Links:
-
-- [GitHub](https://github.com/nrob536/git-fantasy-quest)
+A showcase of projects focused on environmental science, public-sector data systems, and reproducible analysis.
 
 ## Predicting Macroalgal Introductions at Global and Regional Scales
 
@@ -39,6 +21,24 @@ Highlights:
 Links:
 
 - [GitHub](https://github.com/nrob536/doctoral-thesis)
+
+## Git Learning Environment
+
+- Period: August 2024
+- Status: Current
+- Technologies: Git, shell scripting, R
+- Description: A repository to test Git skills through unsupervised challenges, from beginner to expert levels, set in a magical fantasy world.
+
+Highlights:
+
+- Immersive storylines and characters for each challenge.
+- Tasks covering branching, merging, rebasing, and conflict resolution.
+- Automated feedback and hints for learners.
+- Open-sourced design for community contributions.
+
+Links:
+
+- [GitHub](https://github.com/nrob536/git-fantasy-quest)
 
 ## Interactive Population Clock (Demo)
 

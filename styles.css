@@ -92,6 +92,57 @@ h1, h2, h3, .navbar-title {
   color: var(--p-sea);
 }
 
+.indicator-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.indicator-card {
+  border-left: 4px solid var(--p-sea);
+  border-radius: 12px;
+  padding: 1rem 1.1rem;
+  background: rgba(222, 242, 241, 0.55);
+  box-shadow: 0 8px 20px rgba(23, 37, 42, 0.08);
+}
+
+.indicator-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.chip {
+  display: inline-block;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  border: 1px solid rgba(23, 37, 42, 0.15);
+  background: #fff;
+}
+
+.chip-good {
+  background: #e8f8ef;
+  border-color: #6bc091;
+}
+
+.chip-watch {
+  background: #fff7e7;
+  border-color: #d7a23a;
+}
+
+.chip-risk {
+  background: #ffeceb;
+  border-color: #dc6d63;
+}
+
+.indicator-note {
+  font-size: 0.95rem;
+  opacity: 0.92;
+}
+
 @media (max-width: 700px) {
   .hero-wrap {
     margin-top: 1.25rem;
@@ -102,4 +153,21 @@ h1, h2, h3, .navbar-title {
     width: 140px;
     height: 140px;
   }
+}
+
+/* Dark and Light Theme Overrides */
+theme-light {
+  --p-ink: #17252a;
+  --p-sea: #2b7a78;
+  --p-mint: #def2f1;
+  --p-sand: #f6f3ea;
+  --p-accent: #ff7a59;
+}
+  
+theme-dark {
+  --p-ink: #e0e0e0;
+  --p-sea: #2b7a78;
+  --p-mint: #def2f1;
+  --p-sand: #17252a;
+  --p-accent: #ff7a59;
 }

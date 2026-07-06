@@ -4,9 +4,9 @@ title: About
 
 ## About Me
 
-I am a passionate data scientist with a strong foundation in statistical analysis, machine learning, and data engineering. My journey in data science began with curiosity about patterns in data and has evolved into a career focused on extracting actionable insights from complex datasets.
+I am an Environmental Scientist and Data Analyst focused on turning complex environmental datasets into clear, decision-ready insights. My work combines environmental domain knowledge, geospatial analysis, and statistical programming to support better outcomes for ecosystems and communities.
 
-I specialize in building end-to-end machine learning pipelines, from data collection and preprocessing to model deployment and monitoring. My approach combines technical rigor with business acumen to deliver solutions that create real value.
+I bring practical experience across national environmental reporting, climate data systems, and biodiversity science. I design reproducible analytical workflows in R and Python so evidence can be transparent, reusable, and useful to policy and operational teams.
 
 ## The Story Behind Penguinops
 
@@ -26,6 +26,7 @@ Tautauranga Aotearoa - Stats NZ | February 2023 - Present
 - Maintainer and developer of two data portals: Nga Tutohu Aotearoa and the COVID-19 Data Portal.
 - Stats NZ shinyapps.io administrator for 200+ R Shiny apps.
 - Statistics NZ GitHub administrator for private and public repositories.
+- Contributor to analysis and communication products relevant to public policy and wellbeing outcomes.
 
 ### Climate Database Technician
 
@@ -34,6 +35,7 @@ National Institute of Water and Atmospheric Research (NIWA) | February 2021 - Ap
 - Managed and enhanced climate data systems for research and commercial use.
 - Built an R Shiny app to explore weather station catalogues, error logs, and upload status.
 - Improved quality control workflows for New Zealand's manual observer weather station network.
+- Supported data integrity and operational reliability for climate and environmental monitoring systems.
 
 ### Molecular Biologist (Part-time)
 
@@ -41,6 +43,7 @@ National Institute of Water and Atmospheric Research (NIWA) | February 2021 - Ap
 
 - Conducted genetic sequencing and analysis for biodiversity and ecology projects.
 - Produced hundreds of genetic sequences for the marine algae biodiversity programme.
+- Worked at the intersection of lab science and data analysis for environmental research programmes.
 
 ## Education
 
@@ -52,8 +55,8 @@ National Institute of Water and Atmospheric Research (NIWA) | February 2021 - Ap
 
 ### Primary Skills
 
-Python, R, SQL, JavaScript, Git ecosystem, API development, Data Visualization
+Environmental data analysis, R, Python, SQL, geospatial analysis (GIS), Git ecosystem, data visualization
 
 ### Secondary Skills
 
-Docker, Machine Learning, Proxmox, Linux, Shiny apps, Jupyter Notebooks, LaTeX, Markdown, CI/CD, Static Site Generators, Security Best Practices
+Shiny apps, Quarto, Docker, Linux, machine learning, API development, Jupyter Notebooks, LaTeX, Markdown, CI/CD, static site generators

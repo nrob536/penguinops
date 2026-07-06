@@ -1,0 +1,71 @@
+---
+title: Indicators
+toc: false
+---
+
+This section presents compact environmental indicators for policy and planning audiences, including regional councils, local authorities, and environmental consultancies.
+
+::: {.indicator-grid}
+::: {.indicator-card}
+### Water Consents Dashboard
+
+A compact view of consented freshwater takes by use type and source, with map context for where takes are located.
+
+[Open indicator](01-water-consents.qmd)
+
+::: {.indicator-meta}
+<span class="chip chip-watch">Freshwater</span>
+<span class="chip">Consent records</span>
+<span class="chip">Northland focus</span>
+:::
+:::
+
+::: {.indicator-card}
+### Freshwater Habitat Quality
+
+Interactive summary of habitat quality scores, dominant landcover context, and site-level distribution.
+
+[Open indicator](02-freshwater-habitat.qmd)
+
+::: {.indicator-meta}
+<span class="chip chip-good">Habitat condition</span>
+<span class="chip">Site monitoring</span>
+<span class="chip">Multi-region</span>
+:::
+:::
+
+::: {.indicator-card}
+### Groundwater Quality Trends
+
+Exploration view of long-term groundwater quality data structure and measured variables.
+
+[Open indicator](03-groundwater-trends.qmd)
+
+::: {.indicator-meta}
+<span class="chip chip-risk">Groundwater quality</span>
+<span class="chip">1964-2014 state</span>
+<span class="chip">Trend context</span>
+:::
+:::
+
+::: {.indicator-card}
+### River Water Quality Nitrogen Trends
+
+Exploration view of river nitrogen trend records by period, direction, and site geography.
+
+[Open indicator](04-river-water-quality.qmd)
+
+::: {.indicator-meta}
+<span class="chip chip-watch">River quality</span>
+<span class="chip">1991-2020 trends</span>
+<span class="chip">Nitrogen focus</span>
+:::
+:::
+
+:::
+
+
+::: {.callout-note}
+## Source and transparency
+All pages include a Methods and source section and a collapsed code block so readers can inspect the exact analysis steps.
+:::
