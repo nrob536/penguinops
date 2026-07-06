@@ -7,6 +7,13 @@
     "text": "A showcase of projects focused on environmental science, public-sector data systems, and reproducible analysis."
   },
   {
+    "objectID": "work.html#relevant-project-experience",
+    "href": "work.html#relevant-project-experience",
+    "title": "Work",
+    "section": "Relevant Project Experience",
+    "text": "Relevant Project Experience\n\nOur Freshwater 2026 - Internal Consistency Checking — Ministry for the Environment publication support; Environmental reporting, QA, data assurance\n\nContributed to internal consistency checking of Our Freshwater 2026 report before publication.\nSupported quality assurance of environmental evidence used to inform national and regional policy discussions.\nLink: https://environment.govt.nz/publications/our-freshwater-2026/\n\nNational Indicators - River and Lake Water Quality — Stats NZ Environmental Reporting team collaboration; R, indicator data, publication workflows\n\nCollaborated with analysts in the Environmental Reporting team to publish national indicator data for river and lake water quality.\nHelped maintain reliable and transparent data pipelines that support environmental decision-making.\nLink: https://www.stats.govt.nz/indicators/river-water-quality-nitrogen-data-to-2024/\n\nNgā Tūtōhu Aotearoa - Indicators Aotearoa New Zealand — Technical lead for environmental and wellbeing indicators platform; R Shiny, data products, stakeholder communication\n\nLed technical development of the Indicators Aotearoa New Zealand platform, integrating diverse environmental datasets into accessible reporting tools.\nWorked with internal and external users to translate complex data needs into practical, customer-focused outputs.\nLink: https://statisticsnz.shinyapps.io/wellbeingindicators/\n\nCustomer-Centred Data Delivery Across Environmental Roles — Stats NZ and Earth Sciences New Zealand (formerly NIWA); Stakeholder engagement, service delivery, communication\n\nDelivered data products and support to a wide range of stakeholders and customers in both public sector and science service settings.\nBuilt strong working relationships through clear communication, responsiveness, and practical problem solving.\nMentored analysts and early career staff across Stats NZ and Earth Sciences New Zealand. Earlier on as a Biology Professor, supporting capability growth, confidence, and collaborative team performance."
+  },
+  {
     "objectID": "work.html#predicting-macroalgal-introductions-at-global-and-regional-scales",
     "href": "work.html#predicting-macroalgal-introductions-at-global-and-regional-scales",
     "title": "Work",
@@ -480,14 +487,14 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "I am an Environmental Scientist and Data Analyst focused on turning complex environmental datasets into clear, decision-ready insights. My work combines environmental domain knowledge, geospatial analysis, and statistical programming to support better outcomes for ecosystems and communities.\nI bring practical experience across national environmental reporting, climate data systems, and biodiversity science. I design reproducible analytical workflows in R and Python so evidence can be transparent, reusable, and useful to policy and operational teams."
+    "text": "I am an environmental scientist with a Doctoral Degree in Biological Sciences and practical experience across field sampling, laboratory workflows and environmental data products. My roles at NIWA and Tatauranga Aotearoa (Stats NZ) combined hands-on sampling protocol development, quality-control of observational networks, and delivery of national data portals and reporting tools that support evidence-based decision-making.\nI bring strong technical skills in R and Python for data analysis and visualization, experience drafting technical reports and SOPs, and clear communication with iwi, stakeholders and landowners. Based in the Wairarapa, I am committed to applying my field and data expertise to groundwater monitoring, consenting support and regional planning in the Masterton area."
   },
   {
     "objectID": "about.html#about-me",
     "href": "about.html#about-me",
     "title": "About",
     "section": "",
-    "text": "I am an Environmental Scientist and Data Analyst focused on turning complex environmental datasets into clear, decision-ready insights. My work combines environmental domain knowledge, geospatial analysis, and statistical programming to support better outcomes for ecosystems and communities.\nI bring practical experience across national environmental reporting, climate data systems, and biodiversity science. I design reproducible analytical workflows in R and Python so evidence can be transparent, reusable, and useful to policy and operational teams."
+    "text": "I am an environmental scientist with a Doctoral Degree in Biological Sciences and practical experience across field sampling, laboratory workflows and environmental data products. My roles at NIWA and Tatauranga Aotearoa (Stats NZ) combined hands-on sampling protocol development, quality-control of observational networks, and delivery of national data portals and reporting tools that support evidence-based decision-making.\nI bring strong technical skills in R and Python for data analysis and visualization, experience drafting technical reports and SOPs, and clear communication with iwi, stakeholders and landowners. Based in the Wairarapa, I am committed to applying my field and data expertise to groundwater monitoring, consenting support and regional planning in the Masterton area."
   },
   {
     "objectID": "about.html#the-story-behind-penguinops",
