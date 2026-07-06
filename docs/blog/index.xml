@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Penguinops</title>
+<link>https://nrob536.github.io/blog/</link>
+<atom:link href="https://nrob536.github.io/blog/index.xml" rel="self" type="application/rss+xml"/>
+<description></description>
+<generator>quarto-1.9.38</generator>
+<lastBuildDate>Tue, 30 Sep 2025 11:00:00 GMT</lastBuildDate>
+<item>
+  <title>A Game Changer in My Data Science Journey: A Year of Self-Hosting with Proxmox VE</title>
+  <link>https://nrob536.github.io/blog/posts/2025-10-01-self-hosting-journey.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="day-one-how-i-accidentally-became-my-own-it-department" class="level2">
+<h2 class="anchored" data-anchor-id="day-one-how-i-accidentally-became-my-own-it-department">Day One: How I Accidentally Became My Own IT Department</h2>
+<p>It started innocently enough: a dusty ex-lease desktop, a vague memory of someone online saying “Proxmox is awesome”, and a dangerous amount of curiosity.</p>
+<p>A year later, my home office looked like a low-budget science-fiction movie.</p>
+</section>
+<section id="enter-proxmox-the-rabbit-hole-beckons" class="level2">
+<h2 class="anchored" data-anchor-id="enter-proxmox-the-rabbit-hole-beckons">Enter Proxmox: The Rabbit Hole Beckons</h2>
+<p>When I first installed Proxmox VE, I thought, “How hard could it be?”</p>
+<p>Within days, evenings were spent spinning up LXC containers and virtual machines like a caffeinated DJ at a tech conference.</p>
+</section>
+<section id="from-hello-world-to-hello-world-of-problems" class="level2">
+<h2 class="anchored" data-anchor-id="from-hello-world-to-hello-world-of-problems">From Hello World to Hello, World of Problems</h2>
+<p>Most of my early adventures centered on programming environments, data pipelines, and getting JupyterLab to cooperate. Soon, I was running media servers, exploring distributed databases, and learning hard lessons about networking.</p>
+</section>
+<section id="lessons-learned-or-how-i-learned-to-love-snapshots" class="level2">
+<h2 class="anchored" data-anchor-id="lessons-learned-or-how-i-learned-to-love-snapshots">Lessons Learned (Or: How I Learned to Love Snapshots)</h2>
+<p>Snapshots became my safety net. Before every risky change, I took a snapshot, crossed my fingers, and experimented freely.</p>
+<p>Through all the breaking and fixing, Proxmox became a cornerstone of my data science workflow: enabling rapid experiments, safer failures, and faster iteration.</p>
+</section>
+<section id="final-thoughts" class="level2">
+<h2 class="anchored" data-anchor-id="final-thoughts">Final Thoughts</h2>
+<p>If you are thinking about building a home lab, do it. You will learn far more than expected about infrastructure, reliability, and your own debugging patience.</p>
+<p>May your containers always start, your VMs stay calm, and your family never notice the 2am reboots.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>data-science</category>
+  <category>self-hosting</category>
+  <category>proxmox</category>
+  <category>virtualization</category>
+  <category>home-lab</category>
+  <guid>https://nrob536.github.io/blog/posts/2025-10-01-self-hosting-journey.html</guid>
+  <pubDate>Tue, 30 Sep 2025 11:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>I Just Became a Citizen of Aotearoa New Zealand</title>
+  <link>https://nrob536.github.io/blog/posts/2025-08-20-becoming-a-citizen.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><img src="https://nrob536.github.io/static/img/citizen2.jpg" class="img-fluid"></p>
+<section id="kaikorero-response-to-the-mayors-welcome" class="level2">
+<h2 class="anchored" data-anchor-id="kaikorero-response-to-the-mayors-welcome">Kaikorero: Response to the Mayor’s Welcome</h2>
+<p>Before the ceremony, the organizers asked for a volunteer to say a few words in response to the mayor’s welcome. I did not hesitate to raise my hand.</p>
+<p>I came up with a short speech on behalf of all the new citizens attending the ceremony. Here, I want to share what becoming a citizen means to me.</p>
+</section>
+<section id="hei-te-tau-titoki-the-year-the-titoki-tree-blooms" class="level2">
+<h2 class="anchored" data-anchor-id="hei-te-tau-titoki-the-year-the-titoki-tree-blooms">“Hei te tau titoki”, the year the titoki tree blooms</h2>
+<p>This whakatauki speaks of a long-awaited moment, a season of renewal and promise. For me, becoming a citizen of Aotearoa is that moment.</p>
+<p>Although I have lived away from my birth country of Mexico for many years, I carry my Mexican whakapapa with pride. Becoming a citizen of Aotearoa does not replace that identity; it enriches it.</p>
+<p>Aotearoa has welcomed me through its people, culture, and values. Here, I have embraced te ao Maori, the spirit of whanau, manaakitanga, and kotahitanga. Citizenship is more than a legal status. It is a commitment to contribute, protect, and grow alongside the people of this land.</p>
+<p>As the titoki blooms, so does my sense of identity. I am proud of where I come from, and proud now to call myself a citizen of Aotearoa New Zealand.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>personal</category>
+  <category>citizenship</category>
+  <category>aotearoa</category>
+  <category>identity</category>
+  <category>belonging</category>
+  <guid>https://nrob536.github.io/blog/posts/2025-08-20-becoming-a-citizen.html</guid>
+  <pubDate>Tue, 19 Aug 2025 12:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Measuring What Matters: Reflections on Nga Tutohu Aotearoa</title>
+  <link>https://nrob536.github.io/blog/posts/2024-06-30-measuring-what-matters.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><strong>Note:</strong> This post reflects my personal views and experiences working on the Nga Tutohu Aotearoa project. It does not represent the official position of any organisation or government agency.</p>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>Societal progress is often measured through economic metrics such as GDP, but those numbers are only part of the picture. Working on Nga Tutohu Aotearoa reinforced that meaningful progress must include wellbeing.</p>
+</section>
+<section id="what-is-nga-tutohu-aotearoa" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-nga-tutohu-aotearoa">What Is Nga Tutohu Aotearoa?</h2>
+<p>Nga Tutohu Aotearoa is a national wellbeing framework with indicators across social, environmental, and economic dimensions. It supports policy design that values long-term sustainability and collective wellbeing.</p>
+<p>At its core, the framework aims to:</p>
+<ul>
+<li>Measure what matters to people and communities</li>
+<li>Track wellbeing outcomes over time and across groups</li>
+<li>Support evidence-informed policy</li>
+<li>Reflect Te Ao Maori perspectives</li>
+</ul>
+</section>
+<section id="my-role-and-reflections" class="level2">
+<h2 class="anchored" data-anchor-id="my-role-and-reflections">My Role and Reflections</h2>
+<p>My work focused on data integration, dashboard development, and analytical consistency. Through this, I saw how deeply interconnected wellbeing outcomes are across domains.</p>
+</section>
+<section id="from-data-to-insight" class="level2">
+<h2 class="anchored" data-anchor-id="from-data-to-insight">From Data to Insight</h2>
+<section id="context-matters" class="level3">
+<h3 class="anchored" data-anchor-id="context-matters">1. Context Matters</h3>
+<p>Indicators need lived context. A metric can improve while lived wellbeing declines.</p>
+</section>
+<section id="accessibility-drives-impact" class="level3">
+<h3 class="anchored" data-anchor-id="accessibility-drives-impact">2. Accessibility Drives Impact</h3>
+<p>Well-designed dashboards and visual tools broaden participation and understanding.</p>
+</section>
+<section id="consistency-enables-trust" class="level3">
+<h3 class="anchored" data-anchor-id="consistency-enables-trust">3. Consistency Enables Trust</h3>
+<p>Metadata quality, version control, and reproducible workflows are essential for credibility.</p>
+</section>
+</section>
+<section id="te-ao-maori-and-wellbeing" class="level2">
+<h2 class="anchored" data-anchor-id="te-ao-maori-and-wellbeing">Te Ao Maori and Wellbeing</h2>
+<p>Integrating Te Ao Maori perspectives expanded the analytical lens by emphasizing collective and relational wellbeing, values such as manaakitanga, whanaungatanga, and kaitiakitanga, and the stewardship role of data.</p>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>Data science is not only about managing information; it is also about shaping narratives that influence collective choices. When those narratives reflect people, place, and values, they can drive more inclusive progress.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>data-science</category>
+  <category>wellbeing</category>
+  <category>public-policy</category>
+  <category>indicators</category>
+  <category>te-ao-maori</category>
+  <guid>https://nrob536.github.io/blog/posts/2024-06-30-measuring-what-matters.html</guid>
+  <pubDate>Sat, 29 Jun 2024 12:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Social Investment in Practice: Lessons from New Zealand’s COVID-19 Data Portal</title>
+  <link>https://nrob536.github.io/blog/posts/2024-03-15-social-investment-in-practice.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p><strong>Note:</strong> This post reflects my personal views and experiences working on the COVID-19 data portal project. It does not represent the official position of any organisation or government agency.</p>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>The COVID-19 pandemic did not just challenge public health systems; it reshaped how governments think about investing in people. For those of us working with data, it became a real-world test of how evidence can guide policy under pressure.</p>
+</section>
+<section id="covid-19-as-a-social-investment-case-study" class="level2">
+<h2 class="anchored" data-anchor-id="covid-19-as-a-social-investment-case-study">COVID-19 as a Social Investment Case Study</h2>
+<p>When COVID-19 arrived, existing policy frameworks were stretched. Decisions needed to be made quickly while still grounded in evidence. That required:</p>
+<ul>
+<li>Real-time data to track fast-changing conditions</li>
+<li>Integrated analysis across health, social, and economic domains</li>
+<li>Predictive models to anticipate downstream impacts</li>
+<li>Rapid evaluation of interventions</li>
+</ul>
+</section>
+<section id="the-data-foundation" class="level2">
+<h2 class="anchored" data-anchor-id="the-data-foundation">The Data Foundation</h2>
+<p>The analytical framework relied on multiple, complementary data sources:</p>
+<ul>
+<li>Administrative data: employment, benefit payments, business activity</li>
+<li>Survey data: wellbeing and social cohesion</li>
+<li>Economic indicators: transactions, productivity, GDP trends</li>
+<li>Health data: case counts, testing rates, hospital capacity</li>
+</ul>
+</section>
+<section id="key-insights" class="level2">
+<h2 class="anchored" data-anchor-id="key-insights">Key Insights</h2>
+<section id="data-integration-is-transformative" class="level3">
+<h3 class="anchored" data-anchor-id="data-integration-is-transformative">1. Data Integration Is Transformative</h3>
+<p>Linking datasets across agencies revealed patterns no single dataset could capture and improved holistic policy evaluation.</p>
+</section>
+<section id="balancing-speed-and-rigor" class="level3">
+<h3 class="anchored" data-anchor-id="balancing-speed-and-rigor">2. Balancing Speed and Rigor</h3>
+<p>Crisis response demanded iterative analysis: rapid prototypes for immediate decisions, followed by method refinement as data quality improved.</p>
+</section>
+<section id="engagement-enables-impact" class="level3">
+<h3 class="anchored" data-anchor-id="engagement-enables-impact">3. Engagement Enables Impact</h3>
+<p>Data analysis alone does not change policy. Collaboration with policy teams and clear communication formats (dashboards, summaries, interactive tools) made evidence usable.</p>
+</section>
+</section>
+<section id="te-ao-maori-perspectives-in-social-investment" class="level2">
+<h2 class="anchored" data-anchor-id="te-ao-maori-perspectives-in-social-investment">Te Ao Maori Perspectives in Social Investment</h2>
+<p>Social investment aligns with Te Ao Maori principles of collective wellbeing, long-term stewardship, and intergenerational equity. This perspective reminds us that data carries values and responsibilities, not just metrics.</p>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>Social investment is about using evidence to improve lives. The pandemic showed both its potential and its complexity at scale. The most important lesson for me was that robust analysis can support empathy and equity, not only efficiency.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>data-science</category>
+  <category>social-investment</category>
+  <category>covid-19</category>
+  <category>public-policy</category>
+  <category>wellbeing</category>
+  <guid>https://nrob536.github.io/blog/posts/2024-03-15-social-investment-in-practice.html</guid>
+  <pubDate>Thu, 14 Mar 2024 11:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>5 Critical Lessons from My First Year as a Data Scientist</title>
+  <link>https://nrob536.github.io/blog/posts/2023-01-15-lessons-learned.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>My first year as a professional data scientist was a whirlwind of learning, challenges, and growth. Here are the five most important lessons I wish someone had told me earlier.</p>
+<section id="communication-is-more-important-than-code" class="level2">
+<h2 class="anchored" data-anchor-id="communication-is-more-important-than-code">1. Communication Is More Important Than Code</h2>
+<p>A perfectly optimized model that stakeholders do not understand or trust will never make it to production.</p>
+<p>What I learned:</p>
+<ul>
+<li>Start with the business problem, not the algorithm.</li>
+<li>Use visualizations to tell a story, not just display data.</li>
+<li>Tailor your message to your audience.</li>
+<li>Document everything for your future self.</li>
+</ul>
+</section>
+<section id="clean-data-is-a-myth-and-that-is-okay" class="level2">
+<h2 class="anchored" data-anchor-id="clean-data-is-a-myth-and-that-is-okay">2. Clean Data Is a Myth (And That Is Okay)</h2>
+<p>In production, data is messy, incomplete, and sometimes wrong.</p>
+<p>Common real-world issues I faced:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Data Issue</th>
+<th style="text-align: right;">Frequency (%)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Missing values</td>
+<td style="text-align: right;">85</td>
+</tr>
+<tr class="even">
+<td>Inconsistent formats</td>
+<td style="text-align: right;">72</td>
+</tr>
+<tr class="odd">
+<td>Duplicates</td>
+<td style="text-align: right;">58</td>
+</tr>
+<tr class="even">
+<td>Outliers</td>
+<td style="text-align: right;">45</td>
+</tr>
+<tr class="odd">
+<td>Schema changes</td>
+<td style="text-align: right;">38</td>
+</tr>
+</tbody>
+</table>
+<p>Key takeaway: spend more effort on data pipeline quality and validation than on endless hyperparameter tuning.</p>
+</section>
+<section id="simple-models-often-win" class="level2">
+<h2 class="anchored" data-anchor-id="simple-models-often-win">3. Simple Models Often Win</h2>
+<p>Simple, interpretable models often outperform complex pipelines in business settings because they are easier to trust and maintain.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: right;">Model Complexity</th>
+<th style="text-align: right;">Accuracy (%)</th>
+<th style="text-align: right;">Maintainability (%)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">95</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">87</td>
+<td style="text-align: right;">85</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">70</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">93</td>
+<td style="text-align: right;">50</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">30</td>
+</tr>
+</tbody>
+</table>
+<p>My approach now: start simple, measure impact, then add complexity only when justified.</p>
+</section>
+<section id="version-control-everything-not-just-code" class="level2">
+<h2 class="anchored" data-anchor-id="version-control-everything-not-just-code">4. Version Control Everything (Not Just Code)</h2>
+<p>Version control should include data schemas, model artifacts, experiment metadata, and environment configurations.</p>
+<p>One of my hardest lessons was being unable to reproduce a model from three months earlier because I did not track the exact data version.</p>
+</section>
+<section id="the-best-model-is-the-one-that-ships" class="level2">
+<h2 class="anchored" data-anchor-id="the-best-model-is-the-one-that-ships">5. The Best Model Is the One That Ships</h2>
+<p>Perfect is the enemy of done.</p>
+<p>Planned timeline:</p>
+<ul>
+<li>2 weeks data prep</li>
+<li>2 weeks modeling</li>
+<li>1 week deployment</li>
+</ul>
+<p>Reality:</p>
+<ul>
+<li>4 weeks data prep</li>
+<li>3 weeks modeling</li>
+<li>4 weeks deployment plus ongoing fixes</li>
+</ul>
+<p>What helped me ship faster:</p>
+<ol type="1">
+<li>Set up CI/CD early.</li>
+<li>Start with a minimum viable model.</li>
+<li>Iterate with real user feedback.</li>
+<li>Automate testing and monitoring from day one.</li>
+</ol>
+</section>
+<section id="bonus-lesson-build-a-support-network" class="level2">
+<h2 class="anchored" data-anchor-id="bonus-lesson-build-a-support-network">Bonus Lesson: Build a Support Network</h2>
+<p>Meetups, online communities, open-source contributions, and writing all helped me grow faster and stay motivated.</p>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>Technical skills matter, but understanding the full delivery path from business context to production constraints is what creates value.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>data-science</category>
+  <category>career</category>
+  <category>lessons-learned</category>
+  <category>machine-learning</category>
+  <guid>https://nrob536.github.io/blog/posts/2023-01-15-lessons-learned.html</guid>
+  <pubDate>Sat, 14 Jan 2023 11:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>
