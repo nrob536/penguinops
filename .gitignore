@@ -1,5 +1,6 @@
 # Quarto output and cache
 .quarto/
+/_site/
 
 # Optional local dependencies
 node_modules/
