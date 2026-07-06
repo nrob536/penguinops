@@ -24,6 +24,6 @@ My programming days began before GenAI and LLMs made everyone look like a genius
 ::: {.hero-social}
 [GitHub](https://github.com/nrob536)
 [LinkedIn](https://linkedin.com/in/nrob536)
-[Email](mailto:nrob536@aucklanduni.ac.nz)
+[Email](mailto:robinson.biol@gmail.com)
 :::
 :::
