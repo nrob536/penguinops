@@ -16,3 +16,6 @@ npm-debug.log*
 
 /.quarto/
 **/*.quarto_ipynb
+
+/data
+/_freeze

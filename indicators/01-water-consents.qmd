@@ -1,0 +1,88 @@
+---
+title: Water Consents Dashboard
+toc: true
+---
+
+## Headline finding
+
+Northland consent records in this dataset are dominated by irrigation and drinking-water uses, with a clear split between surface water and groundwater sources.
+
+## Why this matters for councils
+
+Consented take patterns help identify where pressure on freshwater allocation may increase and where review of expiry profiles, monitoring, or demand-management settings may be most useful.
+
+## Interactive overview
+
+```{r}
+#| warning: false
+#| message: false
+#| code-fold: true
+library(readr)
+library(dplyr)
+library(plotly)
+library(sf)
+library(leaflet)
+
+consents <- read_csv("../data/consented-freshwater-takes/take_frame.csv", show_col_types = FALSE)
+
+by_use <- consents |>
+  count(primaryuse3, sort = TRUE)
+
+plot_ly(
+  by_use,
+  x = ~reorder(primaryuse3, n),
+  y = ~n,
+  type = "bar",
+  marker = list(color = "#2b7a78")
+) |>
+  layout(
+    xaxis = list(title = "Primary use"),
+    yaxis = list(title = "Number of consents"),
+    margin = list(b = 120)
+  )
+```
+
+```{r}
+#| warning: false
+#| message: false
+#| code-fold: true
+map_df <- consents |>
+  filter(!is.na(easting_nztm), !is.na(northing_nztm)) |>
+  mutate(maxannual = suppressWarnings(as.numeric(maxannual)))
+
+pts <- st_as_sf(
+  map_df,
+  coords = c("northing_nztm", "easting_nztm"),
+  crs = 2193,
+  remove = FALSE
+) |>
+  st_transform(4326)
+
+leaflet(pts) |>
+  addProviderTiles(providers$CartoDB.Positron) |>
+  addCircleMarkers(
+    radius = 4,
+    stroke = FALSE,
+    fillOpacity = 0.65,
+    color = "#2b7a78",
+    popup = ~paste0(
+      "Consent: ", resourceconsentid,
+      "<br>Use: ", primaryuse3,
+      "<br>Source: ", primarysource,
+      "<br>Max annual: ", maxannual
+    )
+  )
+```
+
+## Methods and source
+
+- Source: Ministry for the Environment / council-supplied consented freshwater takes.
+- Files used: `data/consented-freshwater-takes/take_frame.csv`.
+- Spatial reference in source fields: NZTM coordinates.
+- Caveat: this page provides an exploratory operational view and does not represent full allocation accounting.
+
+::: {.callout-note collapse="true"}
+## Show code
+
+The complete source code is available in folded code chunks above.
+:::

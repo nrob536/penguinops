@@ -1,0 +1,140 @@
+---
+title: Groundwater Quality State
+toc: true
+---
+
+## Headline finding
+
+Groundwater quality reporting tracks multiple contaminant indicators over long time horizons, supporting risk screening for drinking-water safety and ecosystem effects.
+
+## Why this matters for councils
+
+Long-term groundwater indicators help identify where sustained pressure may require tighter management, targeted mitigation, or intensified monitoring.
+
+## Interactive overview
+
+```{r}
+#| warning: false
+#| message: false
+#| code-fold: true
+library(sf)
+library(dplyr)
+library(tidyr)
+library(plotly)
+library(leaflet)
+
+gpkg_path <- "../data/mfe-groundwater/groundwater-quality-state-20102014.gpkg"
+
+layers <- st_layers(gpkg_path)
+gw <- st_read(gpkg_path, layer = layers$name[1], quiet = TRUE)
+
+# convert Results columns to numeric type
+gw_nodg <- st_drop_geometry(gw)
+
+# create numeric result column from likely field names
+candidate_result_names <- c("Result", "result", "Value", "median", "c_median", "ann_max", "q_50", "q_25")
+present_result_names <- intersect(candidate_result_names, names(gw_nodg))
+if (length(present_result_names) == 0) {
+  stop("No candidate result columns found in data; available names: ", paste(names(gw_nodg), collapse = ", "))
+}
+
+# build Result_char by coalescing over present columns
+gw_nodg$Result_char <- NA_character_
+for (nm in present_result_names) {
+  gw_nodg$Result_char <- dplyr::coalesce(gw_nodg$Result_char, as.character(gw_nodg[[nm]]))
+}
+gw_nodg$Result_num <- suppressWarnings(as.numeric(gsub(",", "", gw_nodg$Result_char)))
+
+# detect indicator column name (try a few common variants)
+possible_indicator_names <- c(
+  "Aggregated_Back_calculated_parameter",
+  "aggregated_back_calculated_parameter",
+  "Aggregated_Parameter",
+  "parameter",
+  "Indicator",
+  "aggregated_parameter",
+  # common abbreviated indicator columns in this dataset
+  "np_id",
+  "np_id_name",
+  "np_id_units"
+)
+# prefer descriptive `np_id_name` if present, else first match
+if ("np_id_name" %in% names(gw_nodg)) {
+  indicator_col <- "np_id_name"
+} else {
+  indicator_col <- intersect(possible_indicator_names, names(gw_nodg))[1]
+}
+if (is.na(indicator_col) || is.null(indicator_col)) {
+  stop("Indicator column not found in data; available names: ", paste(names(gw_nodg), collapse = ", "))
+}
+
+quality_profile <- gw_nodg |>
+  group_by(.data[[indicator_col]]) |>
+  summarise(records = sum(!is.na(Result_num)), .groups = "drop") |>
+  rename(indicator = .data[[indicator_col]]) |>
+  arrange(desc(records)) |>
+  slice_head(n = 12)
+
+plot_ly(
+  quality_profile,
+  x = ~reorder(indicator, records),
+  y = ~records,
+  type = "bar",
+  marker = list(color = "#2b7a78")
+) |>
+  layout(
+    xaxis = list(title = "Indicator field"),
+    yaxis = list(title = "Non-missing records"),
+    margin = list(b = 180)
+  )
+```
+
+```{r}
+#| warning: false
+#| message: false
+#| code-fold: true
+
+# transform dataframe into sf
+## Coerce coordinate columns (support lowercase names from updated dataset)
+gw <- gw %>%
+  mutate(
+    Easting = coalesce(as.numeric(easting), as.numeric(easting)),
+    Northing = coalesce(as.numeric(northing), as.numeric(northing)),
+    long = coalesce(as.numeric(long), as.numeric(long), as.numeric(long)),
+    lat = coalesce(as.numeric(lat), as.numeric(lat), as.numeric(lat))
+  )
+
+## Build sf either from lon/lat
+gw_wgs84 <- gw %>%
+  filter(!is.na(long) & !is.na(lat)) %>%
+  st_as_sf(coords = c("long", "lat"), crs = 4326, remove = FALSE)
+
+
+leaflet(gw_wgs84) |>
+  addProviderTiles(providers$CartoDB.Positron) |>
+  addCircleMarkers(
+    radius = 4,
+    stroke = FALSE,
+    fillOpacity = 0.55,
+    color = "#ff7a59",
+    popup = ~paste0(
+      "location: ", s_id,
+      "<br>period: ", period,
+      "<br>indicator: ", np_id,
+      "<br>median: ", median
+    ))
+    
+```
+
+## Methods and source
+
+- Source: Ministry for the Environment, Groundwater quality 1964-2014.
+- Files used: `data/mfe-groundwater/groundwater-quality-19642014.gpkg` and `data/mfe-groundwater/groundwater-quality-19642014.txt`.
+- License: Creative Commons Attribution 3.0 New Zealand.
+- Caveat: indicator fields differ across records and years; this page emphasizes structure and coverage rather than final compliance assessment.
+
+::: {.callout-note collapse="true"}
+## Show code
+
+The complete source code is available in folded code chunks above.
+:::
